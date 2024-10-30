@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/widgets/support/widget.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nexport { accessibleHandler } from \"./decorators/accessibleHandler.js\";\nexport { messageBundle } from \"./decorators/messageBundle.js\";\nexport { vmEvent } from \"./decorators/vmEvent.js\";\nexport { tsx, tsxFragment } from \"./jsxFactory.js\";\nexport { additionalAllowedTags, classes, cssTransition, discardNode, getDir, isActivationKey, isRTL, keepMenuItemWithinView, onResize, renderingSanitizer, safeAttrs, someElementsAreVisible, storeNode } from \"./widgetUtils.js\";\nexport { getCalciteThemeClass, isDarkTheme, setCalciteThemeClass } from \"../../support/themeUtils.js\";\nfunction e(e) {\n  return e && \"function\" == typeof e.render;\n}\nfunction t(e) {\n  return e && \"function\" == typeof e.postMixInProperties && \"function\" == typeof e.buildRendering && \"function\" == typeof e.postCreate && \"function\" == typeof e.startup;\n}\nexport { t as hasDomNode, e as isWidget };"],
+  "mappings": ";AAUA,SAASA,GAAEA,IAAG;AACZ,SAAOA,MAAK,cAAc,OAAOA,GAAE;AACrC;AACA,SAASC,GAAED,IAAG;AACZ,SAAOA,MAAK,cAAc,OAAOA,GAAE,uBAAuB,cAAc,OAAOA,GAAE,kBAAkB,cAAc,OAAOA,GAAE,cAAc,cAAc,OAAOA,GAAE;AACjK;",
+  "names": ["e", "t"]
+}

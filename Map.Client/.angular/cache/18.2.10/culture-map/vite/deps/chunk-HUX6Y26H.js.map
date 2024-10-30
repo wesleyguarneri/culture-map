@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/support/requestImageUtils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport e from \"../request.js\";\nasync function t(t, r) {\n  const {\n    data: a\n  } = await e(t, {\n    responseType: \"image\",\n    ...r\n  });\n  return a;\n}\nexport { t as requestImage };"],
+  "mappings": ";;;;;;;;;AAKA,SAAe,EAAEA,IAAG,GAAG;AAAA;AACrB,UAAM;AAAA,MACJ,MAAM;AAAA,IACR,IAAI,MAAM,EAAEA,IAAG;AAAA,MACb,cAAc;AAAA,OACX,EACJ;AACD,WAAO;AAAA,EACT;AAAA;",
+  "names": ["t"]
+}

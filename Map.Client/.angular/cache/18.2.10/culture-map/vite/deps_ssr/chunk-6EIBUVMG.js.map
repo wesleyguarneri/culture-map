@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/core/accessorSupport/decorators/enumeration.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { JSONMap as e } from \"../../jsonMap.js\";\nimport { property as n } from \"./property.js\";\nfunction o(o, r = {}) {\n  const a = o instanceof e ? o : new e(o, r),\n    l = {\n      type: r?.ignoreUnknown ?? 1 ? a.apiValues : String,\n      json: {\n        type: a.jsonValues,\n        read: !r?.readOnly && {\n          reader: a.read\n        },\n        write: {\n          writer: a.write\n        }\n      }\n    };\n  return void 0 !== r?.readOnly && (l.readOnly = !!r.readOnly), void 0 !== r?.default && (l.json.default = r.default), void 0 !== r?.name && (l.json.name = r.name), void 0 !== r?.nonNullable && (l.nonNullable = r.nonNullable), n(l);\n}\nexport { o as enumeration };"],
+  "mappings": ";;;;;;;;;AAMA,SAAS,EAAEA,IAAG,IAAI,CAAC,GAAG;AACpB,QAAM,IAAIA,cAAa,IAAIA,KAAI,IAAI,EAAEA,IAAG,CAAC,GACvC,IAAI;AAAA,IACF,MAAM,GAAG,iBAAiB,IAAI,EAAE,YAAY;AAAA,IAC5C,MAAM;AAAA,MACJ,MAAM,EAAE;AAAA,MACR,MAAM,CAAC,GAAG,YAAY;AAAA,QACpB,QAAQ,EAAE;AAAA,MACZ;AAAA,MACA,OAAO;AAAA,QACL,QAAQ,EAAE;AAAA,MACZ;AAAA,IACF;AAAA,EACF;AACF,SAAO,WAAW,GAAG,aAAa,EAAE,WAAW,CAAC,CAAC,EAAE,WAAW,WAAW,GAAG,YAAY,EAAE,KAAK,UAAU,EAAE,UAAU,WAAW,GAAG,SAAS,EAAE,KAAK,OAAO,EAAE,OAAO,WAAW,GAAG,gBAAgB,EAAE,cAAc,EAAE,cAAc,EAAE,CAAC;AACtO;",
+  "names": ["o"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/draw/support/helpMessageUtils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction e(e, l) {\n  switch (e) {\n    case \"point\":\n    case \"multipoint\":\n      return n();\n    case \"polyline\":\n      return t(l);\n    case \"polygon\":\n      return o(l);\n    default:\n      return;\n  }\n}\nfunction n(e) {\n  return \"point\";\n}\nfunction t(e) {\n  return (null != e && \"polyline\" === e.type && e.paths.length ? e.paths[0].length : 0) < 2 ? \"polylineZeroVertices\" : \"polylineOneVertex\";\n}\nfunction o(e) {\n  const n = null != e && \"polygon\" === e.type && e.rings.length ? e.rings[0].length : 0;\n  return n < 3 ? \"polylineZeroVertices\" : n < 4 ? \"polygonOneVertex\" : \"polygonTwoVertices\";\n}\nexport { e as getDrawHelpMessage };"],
+  "mappings": ";;;AAIA,SAAS,EAAEA,IAAG,GAAG;AACf,UAAQA,IAAG;AAAA,IACT,KAAK;AAAA,IACL,KAAK;AACH,aAAO,EAAE;AAAA,IACX,KAAK;AACH,aAAO,EAAE,CAAC;AAAA,IACZ,KAAK;AACH,aAAO,EAAE,CAAC;AAAA,IACZ;AACE;AAAA,EACJ;AACF;AACA,SAAS,EAAEA,IAAG;AACZ,SAAO;AACT;AACA,SAAS,EAAEA,IAAG;AACZ,UAAQ,QAAQA,MAAK,eAAeA,GAAE,QAAQA,GAAE,MAAM,SAASA,GAAE,MAAM,CAAC,EAAE,SAAS,KAAK,IAAI,yBAAyB;AACvH;AACA,SAAS,EAAEA,IAAG;AACZ,QAAMC,KAAI,QAAQD,MAAK,cAAcA,GAAE,QAAQA,GAAE,MAAM,SAASA,GAAE,MAAM,CAAC,EAAE,SAAS;AACpF,SAAOC,KAAI,IAAI,yBAAyBA,KAAI,IAAI,qBAAqB;AACvE;",
+  "names": ["e", "n"]
+}

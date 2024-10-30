@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/environment/CloudsData.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nvar n, u;\nfunction I(n) {\n  return null != n?.cubeMap;\n}\nfunction N(n) {\n  return null != n && !n.running;\n}\n!function (n) {\n  n[n.RENDERING = 0] = \"RENDERING\", n[n.FADING = 1] = \"FADING\", n[n.FINISHED = 2] = \"FINISHED\";\n}(n || (n = {})), function (n) {\n  n[n.RG = 0] = \"RG\", n[n.BA = 1] = \"BA\";\n}(u || (u = {}));\nexport { n as CloudsRenderingStages, u as CloudsTextureChannels, N as ensureClouds, I as isReadyCloudsData };"],
+  "mappings": ";;;AAIA,IAAI;AAAJ,IAAO;AACP,SAAS,EAAEA,IAAG;AACZ,SAAO,QAAQA,IAAG;AACpB;AACA,SAAS,EAAEA,IAAG;AACZ,SAAO,QAAQA,MAAK,CAACA,GAAE;AACzB;AACA,CAAC,SAAUA,IAAG;AACZ,EAAAA,GAAEA,GAAE,YAAY,CAAC,IAAI,aAAaA,GAAEA,GAAE,SAAS,CAAC,IAAI,UAAUA,GAAEA,GAAE,WAAW,CAAC,IAAI;AACpF,EAAE,MAAM,IAAI,CAAC,EAAE,GAAG,SAAUA,IAAG;AAC7B,EAAAA,GAAEA,GAAE,KAAK,CAAC,IAAI,MAAMA,GAAEA,GAAE,KAAK,CAAC,IAAI;AACpC,EAAE,MAAM,IAAI,CAAC,EAAE;",
+  "names": ["n"]
+}

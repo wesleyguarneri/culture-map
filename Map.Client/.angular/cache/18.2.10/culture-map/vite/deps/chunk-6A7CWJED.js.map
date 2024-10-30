@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/core/collectionUtils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport r from \"./Collection.js\";\nfunction n(n, t, i = r) {\n  return t || (t = new i()), t === n || (t.removeAll(), e(n) ? t.addMany(n) : n && t.add(n)), t;\n}\nfunction t(r) {\n  return r;\n}\nfunction e(r) {\n  return r && (Array.isArray(r) || \"items\" in r && Array.isArray(r.items));\n}\nexport { t as castForReferenceSetter, n as referenceSetter };"],
+  "mappings": ";;;;;AAKA,SAAS,EAAEA,IAAGC,IAAG,IAAI,GAAG;AACtB,SAAOA,OAAMA,KAAI,IAAI,EAAE,IAAIA,OAAMD,OAAMC,GAAE,UAAU,GAAG,EAAED,EAAC,IAAIC,GAAE,QAAQD,EAAC,IAAIA,MAAKC,GAAE,IAAID,EAAC,IAAIC;AAC9F;AACA,SAAS,EAAE,GAAG;AACZ,SAAO;AACT;AACA,SAAS,EAAE,GAAG;AACZ,SAAO,MAAM,MAAM,QAAQ,CAAC,KAAK,WAAW,KAAK,MAAM,QAAQ,EAAE,KAAK;AACxE;",
+  "names": ["n", "t"]
+}

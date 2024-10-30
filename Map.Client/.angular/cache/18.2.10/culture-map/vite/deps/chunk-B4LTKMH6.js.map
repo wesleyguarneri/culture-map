@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/layers/support/editableLayers.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { isLayerFromCatalog as t } from \"../catalog/catalogUtils.js\";\nimport { getEffectiveLayerCapabilities as o, getEffectiveEditingEnabled as i } from \"./layerUtils.js\";\nfunction n(t) {\n  return \"object\" == typeof t && null != t && \"loaded\" in t && !0 === t.loaded && \"type\" in t;\n}\nfunction e(e) {\n  return !(!n(e) || !o(e)?.operations?.supportsEditing || \"editingEnabled\" in e && !i(e) || t(e));\n}\nexport { e as isEditableLayer };"],
+  "mappings": ";;;;;;;;;AAMA,SAAS,EAAE,GAAG;AACZ,SAAO,YAAY,OAAO,KAAK,QAAQ,KAAK,YAAY,KAAK,SAAO,EAAE,UAAU,UAAU;AAC5F;AACA,SAAS,EAAEA,IAAG;AACZ,SAAO,EAAE,CAAC,EAAEA,EAAC,KAAK,CAAC,EAAEA,EAAC,GAAG,YAAY,mBAAmB,oBAAoBA,MAAK,CAAC,EAAEA,EAAC,KAAK,EAAEA,EAAC;AAC/F;",
+  "names": ["e"]
+}

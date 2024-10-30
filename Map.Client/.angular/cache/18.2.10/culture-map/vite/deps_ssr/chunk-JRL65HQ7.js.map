@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/webmap/utils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction e(e) {\n  return null != e && \"object\" == typeof e && \"declaredClass\" in e && \"esri.WebMap\" === e.declaredClass;\n}\nexport { e as isWebMap };"],
+  "mappings": ";;;AAIA,SAAS,EAAEA,IAAG;AACZ,SAAO,QAAQA,MAAK,YAAY,OAAOA,MAAK,mBAAmBA,MAAK,kBAAkBA,GAAE;AAC1F;",
+  "names": ["e"]
+}

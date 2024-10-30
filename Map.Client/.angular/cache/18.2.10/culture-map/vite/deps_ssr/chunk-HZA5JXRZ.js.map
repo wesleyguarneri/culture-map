@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/layers/VoxelWasm.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nlet e,\n  n = null;\nconst t = new Map();\nasync function l(l) {\n  null == n && (null == e && (e = import(\"../../../layers/VoxelWasmPerSceneView.js\")), n = await e);\n  const o = l.view;\n  let i = t.get(o);\n  return i || (i = new n.default({\n    view: o\n  }), t.set(o, i)), i.addVoxelLayer(l);\n}\nfunction o(e) {\n  return t.get(e);\n}\nfunction i(l) {\n  const o = l.view,\n    i = t.get(o);\n  if (i) {\n    i.removeVoxelLayer(l) < 1 && (t.delete(o), 0 === t.size && (e = null, n = null));\n  }\n}\nexport { l as addLayerViewToWasm, o as getVoxelWasm, i as removeLayerViewFromWasm };"],
+  "mappings": ";;;;;;AAIA,IAAI;AAAJ,IACE,IAAI;AACN,IAAM,IAAI,oBAAI,IAAI;AAClB,SAAe,EAAEA,IAAG;AAAA;AAClB,YAAQ,MAAM,QAAQ,MAAM,IAAI,OAAO,qCAA0C,IAAI,IAAI,MAAM;AAC/F,UAAMC,KAAID,GAAE;AACZ,QAAIE,KAAI,EAAE,IAAID,EAAC;AACf,WAAOC,OAAMA,KAAI,IAAI,EAAE,QAAQ;AAAA,MAC7B,MAAMD;AAAA,IACR,CAAC,GAAG,EAAE,IAAIA,IAAGC,EAAC,IAAIA,GAAE,cAAcF,EAAC;AAAA,EACrC;AAAA;AACA,SAAS,EAAEG,IAAG;AACZ,SAAO,EAAE,IAAIA,EAAC;AAChB;AACA,SAAS,EAAEH,IAAG;AACZ,QAAMC,KAAID,GAAE,MACVE,KAAI,EAAE,IAAID,EAAC;AACb,MAAIC,IAAG;AACL,IAAAA,GAAE,iBAAiBF,EAAC,IAAI,MAAM,EAAE,OAAOC,EAAC,GAAG,MAAM,EAAE,SAAS,IAAI,MAAM,IAAI;AAAA,EAC5E;AACF;",
+  "names": ["l", "o", "i", "e"]
+}

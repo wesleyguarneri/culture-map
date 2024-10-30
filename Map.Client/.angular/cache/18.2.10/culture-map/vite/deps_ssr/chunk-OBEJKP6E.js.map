@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/widgets/ElevationProfile/support/intlUtils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction e(e, {\n  profiles: r\n}) {\n  const t = e.title;\n  if (null != t) return t;\n  switch (e.type) {\n    case \"ground\":\n      return r.ground;\n    case \"input\":\n      return r.input;\n    case \"query\":\n      return r.query;\n    case \"view\":\n      return r.view;\n    default:\n      return \"\";\n  }\n}\nexport { e as getTranslatedLineTitle };"],
+  "mappings": ";;;AAIA,SAAS,EAAEA,IAAG;AAAA,EACZ,UAAU;AACZ,GAAG;AACD,QAAM,IAAIA,GAAE;AACZ,MAAI,QAAQ,EAAG,QAAO;AACtB,UAAQA,GAAE,MAAM;AAAA,IACd,KAAK;AACH,aAAO,EAAE;AAAA,IACX,KAAK;AACH,aAAO,EAAE;AAAA,IACX,KAAK;AACH,aAAO,EAAE;AAAA,IACX,KAAK;AACH,aAAO,EAAE;AAAA,IACX;AACE,aAAO;AAAA,EACX;AACF;",
+  "names": ["e"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/rest/query/executeForTopIds.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { parseUrl as o } from \"../utils.js\";\nimport { executeQueryForTopIds as r } from \"./operations/queryTopFeatures.js\";\nimport t from \"../support/TopFeaturesQuery.js\";\nasync function s(s, e, p) {\n  const a = o(s);\n  return (await r(a, t.from(e), {\n    ...p\n  })).data.objectIds;\n}\nexport { s as executeForTopIds };"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAOA,SAAe,EAAEA,IAAG,GAAG,GAAG;AAAA;AACxB,UAAM,IAAI,EAAEA,EAAC;AACb,YAAQ,MAAM,EAAE,GAAG,EAAE,KAAK,CAAC,GAAG,mBACzB,EACJ,GAAG,KAAK;AAAA,EACX;AAAA;",
+  "names": ["s"]
+}

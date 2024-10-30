@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/core/signal.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { equalsShallow as t } from \"./lang.js\";\nimport { trackAccess as e } from \"./accessorSupport/tracking.js\";\nimport { SimpleObservable as s } from \"./accessorSupport/tracking/SimpleObservable.js\";\nclass i {\n  constructor(t, e) {\n    this._observable = new s(), this._value = t, this._equalityFunction = e;\n  }\n  get value() {\n    return e(this._observable), this._value;\n  }\n  set value(t) {\n    this._equalityFunction(t, this._value) || (this._value = t, this._observable.notify());\n  }\n  mutate(t) {\n    t(this._value), this._observable.notify();\n  }\n}\nfunction r(e, s = t) {\n  return new i(e, s);\n}\nexport { r as signal };"],
+  "mappings": ";;;;;;;;;;;;AAOA,IAAM,IAAN,MAAQ;AAAA,EACN,YAAY,GAAG,GAAG;AAChB,SAAK,cAAc,IAAIA,GAAE,GAAG,KAAK,SAAS,GAAG,KAAK,oBAAoB;AAAA,EACxE;AAAA,EACA,IAAI,QAAQ;AACV,WAAO,EAAE,KAAK,WAAW,GAAG,KAAK;AAAA,EACnC;AAAA,EACA,IAAI,MAAM,GAAG;AACX,SAAK,kBAAkB,GAAG,KAAK,MAAM,MAAM,KAAK,SAAS,GAAG,KAAK,YAAY,OAAO;AAAA,EACtF;AAAA,EACA,OAAO,GAAG;AACR,MAAE,KAAK,MAAM,GAAG,KAAK,YAAY,OAAO;AAAA,EAC1C;AACF;AACA,SAAS,EAAE,GAAGA,KAAI,GAAG;AACnB,SAAO,IAAI,EAAE,GAAGA,EAAC;AACnB;",
+  "names": ["s"]
+}

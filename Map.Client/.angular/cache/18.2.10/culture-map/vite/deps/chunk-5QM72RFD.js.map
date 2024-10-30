@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/interactive/snapping/candidates/DrapedEdgeSnappingCandidate.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { DrapedLineConstraint as t } from \"../../sketch/constraints.js\";\nimport { LineSegmentHintType as n } from \"../snappingUtils.js\";\nimport { FeatureSnappingCandidate as s } from \"./FeatureSnappingCandidate.js\";\nimport { LineSnappingHint as i } from \"../hints/LineSnappingHint.js\";\nclass r extends s {\n  constructor(n) {\n    super({\n      ...n,\n      isDraped: !0,\n      constraint: new t(n.edgeStart, n.edgeEnd, n.getGroundElevation)\n    });\n  }\n  get hints() {\n    return [new i(n.REFERENCE, this.constraint.start, this.constraint.end, this.isDraped, this.domain)];\n  }\n}\nexport { r as DrapedEdgeSnappingCandidate };"],
+  "mappings": ";;;;;;;;;;;;;;;;AAQA,IAAM,IAAN,cAAgBA,GAAE;AAAA,EAChB,YAAYA,IAAG;AACb,UAAM,iCACDA,KADC;AAAA,MAEJ,UAAU;AAAA,MACV,YAAY,IAAI,GAAEA,GAAE,WAAWA,GAAE,SAASA,GAAE,kBAAkB;AAAA,IAChE,EAAC;AAAA,EACH;AAAA,EACA,IAAI,QAAQ;AACV,WAAO,CAAC,IAAI,EAAE,EAAE,WAAW,KAAK,WAAW,OAAO,KAAK,WAAW,KAAK,KAAK,UAAU,KAAK,MAAM,CAAC;AAAA,EACpG;AACF;",
+  "names": ["n"]
+}

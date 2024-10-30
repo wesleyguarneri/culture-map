@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/rest/versionManagement/gdbVersion/serverVersionUtils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport e from \"../../../request.js\";\nasync function r(r, t) {\n  let n = null;\n  const a = \"string\" == typeof t ? t : t.path;\n  if (!r.has(a)) {\n    const s = await e(a.replace(/\\/VersionManagementServer/i, \"/FeatureServer\"), {\n      query: {\n        f: \"json\"\n      }\n    });\n    n = {\n      serverVersion: Number(s.data.currentVersion),\n      featureServerUrl: a.replace(/\\/VersionManagementServer/i, \"/FeatureServer\")\n    }, r.set(t, n);\n  }\n}\nexport { r as addServerVersion };"],
+  "mappings": ";;;;;;;;AAKA,SAAe,EAAEA,IAAG,GAAG;AAAA;AACrB,QAAI,IAAI;AACR,UAAM,IAAI,YAAY,OAAO,IAAI,IAAI,EAAE;AACvC,QAAI,CAACA,GAAE,IAAI,CAAC,GAAG;AACb,YAAM,IAAI,MAAM,EAAE,EAAE,QAAQ,8BAA8B,gBAAgB,GAAG;AAAA,QAC3E,OAAO;AAAA,UACL,GAAG;AAAA,QACL;AAAA,MACF,CAAC;AACD,UAAI;AAAA,QACF,eAAe,OAAO,EAAE,KAAK,cAAc;AAAA,QAC3C,kBAAkB,EAAE,QAAQ,8BAA8B,gBAAgB;AAAA,MAC5E,GAAGA,GAAE,IAAI,GAAG,CAAC;AAAA,IACf;AAAA,EACF;AAAA;",
+  "names": ["r"]
+}

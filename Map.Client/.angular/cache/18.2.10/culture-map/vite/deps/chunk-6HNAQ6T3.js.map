@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/collections/Component/SourceGeometry.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { newLayout as e } from \"../../../support/buffer/InterleavedLayout.js\";\nimport { TextureCoordinateAttributeType as r } from \"../../core/shaderLibrary/attributes/TextureCoordinateAttribute.glsl.js\";\nimport { VertexAttribute as t } from \"../../lib/VertexAttribute.js\";\nfunction o(o) {\n  const i = e().vec3f(t.POSITION);\n  return o.hasNormals && i.vec2i16(t.NORMALCOMPRESSED, {\n    glNormalized: !0\n  }), o.textureCoordinates === r.Default ? i.vec2f(t.UV0) : o.textureCoordinates === r.Atlas && (i.vec2f(t.UV0), i.vec4u16(t.UVREGION, {\n    glNormalized: !0\n  })), o.colors && i.vec4u8(t.COLOR, {\n    glNormalized: !0\n  }), i;\n}\nexport { o as createVertexBufferLayout };"],
+  "mappings": ";;;;;;;;;;;AAOA,SAAS,EAAEA,IAAG;AACZ,QAAM,IAAI,EAAE,EAAE,MAAM,EAAE,QAAQ;AAC9B,SAAOA,GAAE,cAAc,EAAE,QAAQ,EAAE,kBAAkB;AAAA,IACnD,cAAc;AAAA,EAChB,CAAC,GAAGA,GAAE,uBAAuB,EAAE,UAAU,EAAE,MAAM,EAAE,GAAG,IAAIA,GAAE,uBAAuB,EAAE,UAAU,EAAE,MAAM,EAAE,GAAG,GAAG,EAAE,QAAQ,EAAE,UAAU;AAAA,IACnI,cAAc;AAAA,EAChB,CAAC,IAAIA,GAAE,UAAU,EAAE,OAAO,EAAE,OAAO;AAAA,IACjC,cAAc;AAAA,EAChB,CAAC,GAAG;AACN;",
+  "names": ["o"]
+}

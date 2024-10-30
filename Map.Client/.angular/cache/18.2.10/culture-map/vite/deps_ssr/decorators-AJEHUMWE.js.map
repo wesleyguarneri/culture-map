@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/core/accessorSupport/decorators/aliasOf.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { property as r } from \"./property.js\";\nfunction o(o, t) {\n  const e = t ? {\n    ...t,\n    source: o\n  } : o;\n  return r({\n    aliasOf: e\n  });\n}\nexport { o as aliasOf };"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAKA,SAASA,GAAEA,IAAG,GAAG;AACf,QAAM,IAAI,IAAI,iCACT,IADS;AAAA,IAEZ,QAAQA;AAAA,EACV,KAAIA;AACJ,SAAO,EAAE;AAAA,IACP,SAAS;AAAA,EACX,CAAC;AACH;",
+  "names": ["o"]
+}

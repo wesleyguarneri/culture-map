@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/support/buffer/workerHelper.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { PackedLayout as e, InterleavedLayout as r } from \"./InterleavedLayout.js\";\nfunction u(r, u) {\n  return u.push(r.buffer), {\n    buffer: r.buffer,\n    layout: new e(r.layout)\n  };\n}\nfunction t(e) {\n  return new r(e.layout).createView(e.buffer);\n}\nexport { u as packInterleavedBuffer, t as unpackInterleavedBuffer };"],
+  "mappings": ";;;;;;;AAKA,SAAS,EAAE,GAAGA,IAAG;AACf,SAAOA,GAAE,KAAK,EAAE,MAAM,GAAG;AAAA,IACvB,QAAQ,EAAE;AAAA,IACV,QAAQ,IAAI,EAAE,EAAE,MAAM;AAAA,EACxB;AACF;AACA,SAAS,EAAE,GAAG;AACZ,SAAO,IAAI,EAAE,EAAE,MAAM,EAAE,WAAW,EAAE,MAAM;AAC5C;",
+  "names": ["u"]
+}

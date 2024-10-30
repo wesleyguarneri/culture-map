@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@esri/calcite-components/dist/components/Validation.js"],
+  "sourcesContent": ["/*!\n * All material copyright ESRI, All Rights Reserved, unless otherwise specified.\n * See https://github.com/Esri/calcite-design-system/blob/dev/LICENSE.md for details.\n * v2.13.2\n */\nimport { h } from '@stencil/core/internal/client';\nconst CSS = {\n  validationContainer: \"validation-container\"\n};\nconst Validation = ({\n  scale,\n  status,\n  id,\n  icon,\n  message\n}) => h(\"div\", {\n  class: CSS.validationContainer\n}, h(\"calcite-input-message\", {\n  \"aria-live\": \"polite\",\n  icon: icon,\n  id: id,\n  scale: scale,\n  status: status\n}, message));\nexport { Validation as V };\n\n"],
+  "mappings": ";;;;;AAMA,IAAM,MAAM;AAAA,EACV,qBAAqB;AACvB;AACA,IAAM,aAAa,CAAC;AAAA,EAClB;AAAA,EACA;AAAA,EACA;AAAA,EACA;AAAA,EACA;AACF,MAAM,EAAE,OAAO;AAAA,EACb,OAAO,IAAI;AACb,GAAG,EAAE,yBAAyB;AAAA,EAC5B,aAAa;AAAA,EACb;AAAA,EACA;AAAA,EACA;AAAA,EACA;AACF,GAAG,OAAO,CAAC;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/core/shaderModules/Matrix4PassUniform.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { Uniform as r } from \"./Uniform.js\";\nimport { BindType as s } from \"../shaderTechnique/BindType.js\";\nclass e extends r {\n  constructor(r, e) {\n    super(r, \"mat4\", s.Pass, (s, o, t) => s.setUniformMatrix4fv(r, e(o, t)));\n  }\n}\nexport { e as Matrix4PassUniform };"],
+  "mappings": ";;;;;;;;AAMA,IAAM,IAAN,cAAgBA,GAAE;AAAA,EAChB,YAAY,GAAGC,IAAG;AAChB,UAAM,GAAG,QAAQ,EAAE,MAAM,CAAC,GAAG,GAAG,MAAM,EAAE,oBAAoB,GAAGA,GAAE,GAAG,CAAC,CAAC,CAAC;AAAA,EACzE;AACF;",
+  "names": ["a", "e"]
+}

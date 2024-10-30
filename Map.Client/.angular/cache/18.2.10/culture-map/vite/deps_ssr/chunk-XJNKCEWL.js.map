@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/core/nextTick.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nconst o = [];\nfunction t(t) {\n  o.push(t), 1 === o.length && queueMicrotask(() => {\n    const t = o.slice();\n    o.length = 0;\n    for (const o of t) o();\n  });\n}\nexport { t as nextTick };"],
+  "mappings": ";;;AAIA,IAAM,IAAI,CAAC;AACX,SAAS,EAAEA,IAAG;AACZ,IAAE,KAAKA,EAAC,GAAG,MAAM,EAAE,UAAU,eAAe,MAAM;AAChD,UAAMA,KAAI,EAAE,MAAM;AAClB,MAAE,SAAS;AACX,eAAWC,MAAKD,GAAG,CAAAC,GAAE;AAAA,EACvB,CAAC;AACH;",
+  "names": ["t", "o"]
+}

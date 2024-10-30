@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/layers/graphics/dehydratedFeatureUtils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction t(t) {\n  return \"point\" === t.type;\n}\nexport { t as isDehydratedPoint };"],
+  "mappings": ";;;AAIA,SAAS,EAAEA,IAAG;AACZ,SAAO,YAAYA,GAAE;AACvB;",
+  "names": ["t"]
+}

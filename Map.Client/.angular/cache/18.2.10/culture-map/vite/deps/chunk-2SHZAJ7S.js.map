@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/support/getDefaultUnitForView.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { getDefaultUnitSystem as t } from \"../core/unitUtils.js\";\nimport r from \"../portal/Portal.js\";\nfunction e(e) {\n  const n = \"metric\";\n  if (null == e) return n;\n  const i = e.map,\n    l = (i && \"portalItem\" in i ? i.portalItem?.portal : null) ?? r.getDefault();\n  switch (l.user?.units ?? l.units) {\n    case n:\n      return n;\n    case \"english\":\n      return \"imperial\";\n  }\n  return t(e.spatialReference) ?? n;\n}\nexport { e as getDefaultUnitForView };"],
+  "mappings": ";;;;;;;;AAMA,SAAS,EAAEA,IAAG;AACZ,QAAM,IAAI;AACV,MAAI,QAAQA,GAAG,QAAO;AACtB,QAAM,IAAIA,GAAE,KACV,KAAK,KAAK,gBAAgB,IAAI,EAAE,YAAY,SAAS,SAAS,EAAE,WAAW;AAC7E,UAAQ,EAAE,MAAM,SAAS,EAAE,OAAO;AAAA,IAChC,KAAK;AACH,aAAO;AAAA,IACT,KAAK;AACH,aAAO;AAAA,EACX;AACA,SAAO,GAAEA,GAAE,gBAAgB,KAAK;AAClC;",
+  "names": ["e"]
+}

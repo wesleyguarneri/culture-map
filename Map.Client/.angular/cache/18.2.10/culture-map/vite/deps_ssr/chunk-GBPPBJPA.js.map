@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/arcade/ImmutableArray.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nclass t {\n  constructor(t = []) {\n    this._elements = t;\n  }\n  length() {\n    return this._elements.length;\n  }\n  get(t) {\n    return this._elements[t];\n  }\n  toArray() {\n    return this.slice();\n  }\n  slice(t = 0, e = this.length()) {\n    const s = [];\n    for (let r = t; r < e; r++) s.push(this.get(r));\n    return s;\n  }\n}\nexport { t as default };"],
+  "mappings": ";;;AAIA,IAAM,IAAN,MAAQ;AAAA,EACN,YAAYA,KAAI,CAAC,GAAG;AAClB,SAAK,YAAYA;AAAA,EACnB;AAAA,EACA,SAAS;AACP,WAAO,KAAK,UAAU;AAAA,EACxB;AAAA,EACA,IAAIA,IAAG;AACL,WAAO,KAAK,UAAUA,EAAC;AAAA,EACzB;AAAA,EACA,UAAU;AACR,WAAO,KAAK,MAAM;AAAA,EACpB;AAAA,EACA,MAAMA,KAAI,GAAG,IAAI,KAAK,OAAO,GAAG;AAC9B,UAAM,IAAI,CAAC;AACX,aAAS,IAAIA,IAAG,IAAI,GAAG,IAAK,GAAE,KAAK,KAAK,IAAI,CAAC,CAAC;AAC9C,WAAO;AAAA,EACT;AACF;",
+  "names": ["t"]
+}

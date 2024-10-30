@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/geometry/support/typeUtils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { strict as e } from \"../../core/jsonMap.js\";\nconst o = e()({\n    esriGeometryPoint: \"point\",\n    esriGeometryMultipoint: \"multipoint\",\n    esriGeometryPolyline: \"polyline\",\n    esriGeometryPolygon: \"polygon\"\n  }),\n  i = e()({\n    esriGeometryPoint: \"point\",\n    esriGeometryMultipoint: \"multipoint\",\n    esriGeometryPolyline: \"polyline\",\n    esriGeometryPolygon: \"polygon\",\n    esriGeometryEnvelope: \"extent\",\n    mesh: \"mesh\"\n  });\nexport { o as featureGeometryTypeKebabDictionary, i as typeKebabDictionary };"],
+  "mappings": ";;;;;AAKA,IAAM,IAAI,EAAE,EAAE;AAAA,EACV,mBAAmB;AAAA,EACnB,wBAAwB;AAAA,EACxB,sBAAsB;AAAA,EACtB,qBAAqB;AACvB,CAAC;AALH,IAMEA,KAAI,EAAE,EAAE;AAAA,EACN,mBAAmB;AAAA,EACnB,wBAAwB;AAAA,EACxB,sBAAsB;AAAA,EACtB,qBAAqB;AAAA,EACrB,sBAAsB;AAAA,EACtB,MAAM;AACR,CAAC;",
+  "names": ["i"]
+}

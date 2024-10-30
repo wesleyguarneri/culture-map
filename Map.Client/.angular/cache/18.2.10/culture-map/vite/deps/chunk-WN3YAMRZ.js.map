@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/geometry/support/FloatArray.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { nativeArrayMaxSize as r, isArray as n } from \"../../core/typedArrayUtil.js\";\nfunction t(n, t = !1) {\n  return n <= r ? t ? new Array(n).fill(0) : new Array(n) : new Float32Array(n);\n}\nfunction e(t) {\n  return n(t) ? t.length < r ? t : new Float32Array(t) : t.length < r ? Array.from(t) : t;\n}\nfunction a(t) {\n  return (n(t) ? t.length : t.byteLength / 8) <= r ? Array.from(t) : new Float32Array(t);\n}\nfunction o(r, n, t) {\n  return Array.isArray(r) ? r.slice(n, n + t) : r.subarray(n, n + t);\n}\nexport { e as compactFloatArray, a as floatArrayFrom, o as floatSubArray, t as newFloatArray };"],
+  "mappings": ";;;;;;AAKA,SAAS,EAAE,GAAGA,KAAI,OAAI;AACpB,SAAO,KAAK,IAAIA,KAAI,IAAI,MAAM,CAAC,EAAE,KAAK,CAAC,IAAI,IAAI,MAAM,CAAC,IAAI,IAAI,aAAa,CAAC;AAC9E;AACA,SAAS,EAAEA,IAAG;AACZ,SAAO,EAAEA,EAAC,IAAIA,GAAE,SAAS,IAAIA,KAAI,IAAI,aAAaA,EAAC,IAAIA,GAAE,SAAS,IAAI,MAAM,KAAKA,EAAC,IAAIA;AACxF;AACA,SAAS,EAAEA,IAAG;AACZ,UAAQ,EAAEA,EAAC,IAAIA,GAAE,SAASA,GAAE,aAAa,MAAM,IAAI,MAAM,KAAKA,EAAC,IAAI,IAAI,aAAaA,EAAC;AACvF;AACA,SAAS,EAAE,GAAG,GAAGA,IAAG;AAClB,SAAO,MAAM,QAAQ,CAAC,IAAI,EAAE,MAAM,GAAG,IAAIA,EAAC,IAAI,EAAE,SAAS,GAAG,IAAIA,EAAC;AACnE;",
+  "names": ["t"]
+}

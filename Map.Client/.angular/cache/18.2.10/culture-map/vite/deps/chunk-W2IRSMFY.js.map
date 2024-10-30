@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/rest/query/operations/queryZScale.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { getGeometryZScaler as e } from \"../../../geometry/support/zscale.js\";\nfunction t(t, o, r) {\n  if (!r?.features || !r.hasZ) return;\n  const f = e(r.geometryType, o, t.outSpatialReference);\n  if (null != f) for (const e of r.features) f(e.geometry);\n}\nexport { t as applyFeatureSetZUnitScaling };"],
+  "mappings": ";;;;;AAKA,SAAS,EAAEA,IAAGC,IAAG,GAAG;AAClB,MAAI,CAAC,GAAG,YAAY,CAAC,EAAE,KAAM;AAC7B,QAAM,IAAI,EAAE,EAAE,cAAcA,IAAGD,GAAE,mBAAmB;AACpD,MAAI,QAAQ,EAAG,YAAW,KAAK,EAAE,SAAU,GAAE,EAAE,QAAQ;AACzD;",
+  "names": ["t", "o"]
+}

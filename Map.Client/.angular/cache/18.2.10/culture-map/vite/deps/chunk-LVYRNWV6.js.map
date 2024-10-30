@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/layers/support/projectExtentUtils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { project as e } from \"../../../../geometry/support/webMercatorUtils.js\";\nimport { projectGeometry as r } from \"../../../../portal/support/geometryServiceUtils.js\";\nfunction l(l) {\n  const t = l.view.spatialReference,\n    o = l.layer.fullExtent,\n    s = null != o && o.spatialReference;\n  if (null == o || !s) return Promise.resolve(null);\n  if (s.equals(t)) return Promise.resolve(o.clone());\n  const n = e(o, t);\n  return null != n ? Promise.resolve(n) : l.view.state.isLocal ? r(o, t, l.layer.portalItem).then(e => !l.destroyed && e ? e : null).catch(() => null) : Promise.resolve(null);\n}\nexport { l as toViewIfLocal };"],
+  "mappings": ";;;;;;;;AAMA,SAAS,EAAEA,IAAG;AACZ,QAAM,IAAIA,GAAE,KAAK,kBACf,IAAIA,GAAE,MAAM,YACZ,IAAI,QAAQ,KAAK,EAAE;AACrB,MAAI,QAAQ,KAAK,CAAC,EAAG,QAAO,QAAQ,QAAQ,IAAI;AAChD,MAAI,EAAE,OAAO,CAAC,EAAG,QAAO,QAAQ,QAAQ,EAAE,MAAM,CAAC;AACjD,QAAM,IAAI,EAAE,GAAG,CAAC;AAChB,SAAO,QAAQ,IAAI,QAAQ,QAAQ,CAAC,IAAIA,GAAE,KAAK,MAAM,UAAU,EAAE,GAAG,GAAGA,GAAE,MAAM,UAAU,EAAE,KAAK,OAAK,CAACA,GAAE,aAAa,IAAI,IAAI,IAAI,EAAE,MAAM,MAAM,IAAI,IAAI,QAAQ,QAAQ,IAAI;AAC7K;",
+  "names": ["l"]
+}

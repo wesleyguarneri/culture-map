@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/core/ByteSizeUnit.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nvar E;\n!function (E) {\n  E[E.KILOBYTES = 1024] = \"KILOBYTES\", E[E.MEGABYTES = 1048576] = \"MEGABYTES\", E[E.GIGABYTES = 1073741824] = \"GIGABYTES\";\n}(E || (E = {}));\nexport { E as ByteSizeUnit };"],
+  "mappings": ";;;AAIA,IAAI;AACJ,CAAC,SAAUA,IAAG;AACZ,EAAAA,GAAEA,GAAE,YAAY,IAAI,IAAI,aAAaA,GAAEA,GAAE,YAAY,OAAO,IAAI,aAAaA,GAAEA,GAAE,YAAY,UAAU,IAAI;AAC7G,EAAE,MAAM,IAAI,CAAC,EAAE;",
+  "names": ["E"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/core/shaderModules/FloatsPassUniform.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { Uniform as r } from \"./Uniform.js\";\nimport { BindType as s } from \"../shaderTechnique/BindType.js\";\nclass o extends r {\n  constructor(r, o, e) {\n    super(r, \"float\", s.Pass, (s, e, t) => s.setUniform1fv(r, o(e, t)), e);\n  }\n}\nexport { o as FloatsPassUniform };"],
+  "mappings": ";;;;;;;;;AAMA,IAAM,IAAN,cAAgBA,GAAE;AAAA,EAChB,YAAY,GAAGC,IAAG,GAAG;AACnB,UAAM,GAAG,SAAS,EAAE,MAAM,CAAC,GAAGC,IAAG,MAAM,EAAE,cAAc,GAAGD,GAAEC,IAAG,CAAC,CAAC,GAAG,CAAC;AAAA,EACvE;AACF;",
+  "names": ["a", "o", "e"]
+}

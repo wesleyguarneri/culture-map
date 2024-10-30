@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/core/accessorSupport/tracking/SimpleObservable.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { ObservableBase as o } from \"../ObservableBase.js\";\nclass s extends o {\n  notify() {\n    const o = this._observers;\n    if (o && o.length > 0) {\n      const s = o.slice();\n      for (const o of s) o.onInvalidated(), o.onCommitted();\n    }\n  }\n}\nexport { s as SimpleObservable };"],
+  "mappings": ";;;;;;AAKA,IAAM,IAAN,cAAgB,EAAE;AAAA,EAChB,SAAS;AACP,UAAM,IAAI,KAAK;AACf,QAAI,KAAK,EAAE,SAAS,GAAG;AACrB,YAAMA,KAAI,EAAE,MAAM;AAClB,iBAAWC,MAAKD,GAAG,CAAAC,GAAE,cAAc,GAAGA,GAAE,YAAY;AAAA,IACtD;AAAA,EACF;AACF;",
+  "names": ["s", "o"]
+}

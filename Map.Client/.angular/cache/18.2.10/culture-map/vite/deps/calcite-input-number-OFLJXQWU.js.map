@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@esri/calcite-components/dist/components/calcite-input-number.js"],
+  "sourcesContent": ["/*!\n * All material copyright ESRI, All Rights Reserved, unless otherwise specified.\n * See https://github.com/Esri/calcite-design-system/blob/dev/LICENSE.md for details.\n * v2.13.2\n */\nimport { I as InputNumber, d as defineCustomElement$1 } from './input-number.js';\nconst CalciteInputNumber = InputNumber;\nconst defineCustomElement = defineCustomElement$1;\nexport { CalciteInputNumber, defineCustomElement };\n\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;AAMA,IAAM,qBAAqB;AAC3B,IAAMA,uBAAsB;",
+  "names": ["defineCustomElement"]
+}

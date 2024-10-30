@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/core/accessorSupport/originUtils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { isMultiOriginJSONMixin as r } from \"../multiOriginJSONSupportUtils.js\";\nfunction i(i) {\n  i?.writtenProperties && i.writtenProperties.forEach(({\n    target: i,\n    propName: t,\n    newOrigin: e\n  }) => {\n    r(i) && e && i.originOf(t) !== e && i.updateOrigin(t, e);\n  });\n}\nexport { i as updateOrigins };"],
+  "mappings": ";;;;;AAKA,SAASA,GAAEA,IAAG;AACZ,EAAAA,IAAG,qBAAqBA,GAAE,kBAAkB,QAAQ,CAAC;AAAA,IACnD,QAAQA;AAAA,IACR,UAAU;AAAA,IACV,WAAW;AAAA,EACb,MAAM;AACJ,MAAEA,EAAC,KAAK,KAAKA,GAAE,SAAS,CAAC,MAAM,KAAKA,GAAE,aAAa,GAAG,CAAC;AAAA,EACzD,CAAC;AACH;",
+  "names": ["i"]
+}

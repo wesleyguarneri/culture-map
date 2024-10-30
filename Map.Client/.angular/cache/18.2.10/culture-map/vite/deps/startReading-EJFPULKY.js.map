@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/rest/versionManagement/gdbVersion/startReading.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport s from \"../../../request.js\";\nimport r from \"../../../core/Error.js\";\nimport { parseUrl as t, asValidOptions as i, encode as o } from \"../../utils.js\";\nasync function e(e, n, a, m) {\n  if (!n) throw new r(\"start-reading:missing-guid\", \"guid for version is missing\");\n  const u = t(e),\n    c = i(u.query, {\n      query: o({\n        sessionId: a,\n        f: \"json\"\n      }),\n      ...m,\n      method: \"post\"\n    });\n  n.startsWith(\"{\") && (n = n.slice(1, -1));\n  const d = `${u.path}/versions/${n}/startReading`,\n    {\n      data: f\n    } = await s(d, c);\n  return f || {\n    success: !1\n  };\n}\nexport { e as startReading };"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAOA,SAAe,EAAEA,IAAG,GAAG,GAAG,GAAG;AAAA;AAC3B,QAAI,CAAC,EAAG,OAAM,IAAI,EAAE,8BAA8B,6BAA6B;AAC/E,UAAM,IAAI,EAAEA,EAAC,GACX,IAAI,EAAE,EAAE,OAAO;AAAA,MACb,OAAOC,GAAE;AAAA,QACP,WAAW;AAAA,QACX,GAAG;AAAA,MACL,CAAC;AAAA,OACE,IALU;AAAA,MAMb,QAAQ;AAAA,IACV,EAAC;AACH,MAAE,WAAW,GAAG,MAAM,IAAI,EAAE,MAAM,GAAG,EAAE;AACvC,UAAM,IAAI,GAAG,EAAE,IAAI,aAAa,CAAC,iBAC/B;AAAA,MACE,MAAMC;AAAA,IACR,IAAI,MAAM,EAAE,GAAG,CAAC;AAClB,WAAOA,MAAK;AAAA,MACV,SAAS;AAAA,IACX;AAAA,EACF;AAAA;",
+  "names": ["e", "s", "f"]
+}

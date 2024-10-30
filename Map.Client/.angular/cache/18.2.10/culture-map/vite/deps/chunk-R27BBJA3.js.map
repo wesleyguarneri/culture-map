@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/webgl/contextUtils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction t(t, n = {}) {\n  const e = t.getContext(\"webgl2\", n);\n  return e || null;\n}\nexport { t as createContext };"],
+  "mappings": ";AAIA,SAAS,EAAEA,IAAG,IAAI,CAAC,GAAG;AACpB,QAAM,IAAIA,GAAE,WAAW,UAAU,CAAC;AAClC,SAAO,KAAK;AACd;",
+  "names": ["t"]
+}

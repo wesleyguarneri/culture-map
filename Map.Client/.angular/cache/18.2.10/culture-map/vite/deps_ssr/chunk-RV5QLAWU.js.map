@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/core/shaderLibrary/attributes/VertexColor.glsl.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { glsl as o } from \"../../shaderModules/interfaces.js\";\nimport { VertexAttribute as r } from \"../../../lib/VertexAttribute.js\";\nfunction e(e, d) {\n  d.hasVertexColors ? (e.attributes.add(r.COLOR, \"vec4\"), e.varyings.add(\"vColor\", \"vec4\"), e.vertex.code.add(o`void forwardVertexColor() { vColor = color; }`), e.vertex.code.add(o`void forwardNormalizedVertexColor() { vColor = color * 0.003921568627451; }`)) : e.vertex.code.add(o`void forwardVertexColor() {}\nvoid forwardNormalizedVertexColor() {}`);\n}\nexport { e as VertexColor };"],
+  "mappings": ";;;;;;;;;AAMA,SAASA,GAAEA,IAAG,GAAG;AACf,IAAE,mBAAmBA,GAAE,WAAW,IAAI,EAAE,OAAO,MAAM,GAAGA,GAAE,SAAS,IAAI,UAAU,MAAM,GAAGA,GAAE,OAAO,KAAK,IAAI,gDAAgD,GAAGA,GAAE,OAAO,KAAK,IAAI,8EAA8E,KAAKA,GAAE,OAAO,KAAK,IAAI;AAAA,uCACjP;AACvC;",
+  "names": ["e"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/core/NestedMap.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nclass t {\n  constructor() {\n    this._outer = new Map();\n  }\n  clear() {\n    this._outer.clear();\n  }\n  get empty() {\n    return 0 === this._outer.size;\n  }\n  get(t, e) {\n    return this._outer.get(t)?.get(e);\n  }\n  set(t, e, r) {\n    const s = this._outer.get(t);\n    s ? s.set(e, r) : this._outer.set(t, new Map([[e, r]]));\n  }\n  delete(t, e) {\n    const r = this._outer.get(t);\n    r && (r.delete(e), 0 === r.size && this._outer.delete(t));\n  }\n  forEach(t) {\n    this._outer.forEach((e, r) => t(e, r));\n  }\n}\nexport { t as NestedMap };"],
+  "mappings": ";;;AAIA,IAAM,IAAN,MAAQ;AAAA,EACN,cAAc;AACZ,SAAK,SAAS,oBAAI,IAAI;AAAA,EACxB;AAAA,EACA,QAAQ;AACN,SAAK,OAAO,MAAM;AAAA,EACpB;AAAA,EACA,IAAI,QAAQ;AACV,WAAO,MAAM,KAAK,OAAO;AAAA,EAC3B;AAAA,EACA,IAAIA,IAAG,GAAG;AACR,WAAO,KAAK,OAAO,IAAIA,EAAC,GAAG,IAAI,CAAC;AAAA,EAClC;AAAA,EACA,IAAIA,IAAG,GAAG,GAAG;AACX,UAAM,IAAI,KAAK,OAAO,IAAIA,EAAC;AAC3B,QAAI,EAAE,IAAI,GAAG,CAAC,IAAI,KAAK,OAAO,IAAIA,IAAG,oBAAI,IAAI,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC,CAAC;AAAA,EACxD;AAAA,EACA,OAAOA,IAAG,GAAG;AACX,UAAM,IAAI,KAAK,OAAO,IAAIA,EAAC;AAC3B,UAAM,EAAE,OAAO,CAAC,GAAG,MAAM,EAAE,QAAQ,KAAK,OAAO,OAAOA,EAAC;AAAA,EACzD;AAAA,EACA,QAAQA,IAAG;AACT,SAAK,OAAO,QAAQ,CAAC,GAAG,MAAMA,GAAE,GAAG,CAAC,CAAC;AAAA,EACvC;AACF;",
+  "names": ["t"]
+}

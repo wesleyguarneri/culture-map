@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/rest/query/executeForCount.js", "../../../../../../node_modules/@arcgis/core/rest/query/executeForIds.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { parseUrl as o } from \"../utils.js\";\nimport { executeQueryForCount as r } from \"./operations/query.js\";\nimport t from \"../support/Query.js\";\nasync function s(s, i, m) {\n  const n = o(s),\n    {\n      data: p\n    } = await r(n, t.from(i), m);\n  return p.count;\n}\nexport { s as executeForCount };", "/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { parseUrl as o } from \"../utils.js\";\nimport { executeQueryForIds as r } from \"./operations/query.js\";\nimport t from \"../support/Query.js\";\nasync function s(s, i, m) {\n  const p = o(s),\n    {\n      data: a\n    } = await r(p, t.from(i), m);\n  return a.objectIds;\n}\nexport { s as executeForIds };"],
+  "mappings": ";;;;;;;;;;;;;;;;AAOA,SAAe,EAAEA,IAAG,GAAG,GAAG;AAAA;AACxB,UAAM,IAAI,EAAEA,EAAC,GACX;AAAA,MACE,MAAMC;AAAA,IACR,IAAI,MAAM,EAAE,GAAG,EAAE,KAAK,CAAC,GAAG,CAAC;AAC7B,WAAOA,GAAE;AAAA,EACX;AAAA;;;ACNA,SAAeC,GAAEA,IAAG,GAAG,GAAG;AAAA;AACxB,UAAMC,KAAI,EAAED,EAAC,GACX;AAAA,MACE,MAAM;AAAA,IACR,IAAI,MAAM,EAAEC,IAAG,EAAE,KAAK,CAAC,GAAG,CAAC;AAC7B,WAAO,EAAE;AAAA,EACX;AAAA;",
+  "names": ["s", "p", "s", "p"]
+}

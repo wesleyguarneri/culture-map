@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/rest/geometryService/utils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { getJsonType as e, getGeometryType as t } from \"../../geometry/support/jsonUtils.js\";\nfunction r(t) {\n  return {\n    geometryType: e(t[0]),\n    geometries: t.map(e => e.toJSON())\n  };\n}\nfunction o(e, r, o) {\n  const n = t(r);\n  return e.map(e => {\n    const t = n.fromJSON(e);\n    return t.spatialReference = o, t;\n  });\n}\nexport { o as decodeGeometries, r as encodeGeometries };"],
+  "mappings": ";;;;;;;AAKA,SAAS,EAAE,GAAG;AACZ,SAAO;AAAA,IACL,cAAc,EAAE,EAAE,CAAC,CAAC;AAAA,IACpB,YAAY,EAAE,IAAI,OAAK,EAAE,OAAO,CAAC;AAAA,EACnC;AACF;AACA,SAAS,EAAE,GAAGA,IAAGC,IAAG;AAClB,QAAM,IAAI,EAAED,EAAC;AACb,SAAO,EAAE,IAAI,CAAAE,OAAK;AAChB,UAAM,IAAI,EAAE,SAASA,EAAC;AACtB,WAAO,EAAE,mBAAmBD,IAAG;AAAA,EACjC,CAAC;AACH;",
+  "names": ["r", "o", "e"]
+}

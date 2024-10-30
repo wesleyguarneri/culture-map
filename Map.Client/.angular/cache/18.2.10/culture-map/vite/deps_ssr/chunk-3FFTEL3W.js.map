@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/lib/Object3DStateID.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { generateUID as o } from \"../../../../core/uid.js\";\nclass r {\n  constructor(r) {\n    this.channel = r, this.id = o();\n  }\n}\nexport { r as Object3DStateID };"],
+  "mappings": ";;;;;;AAKA,IAAM,IAAN,MAAQ;AAAA,EACN,YAAYA,IAAG;AACb,SAAK,UAAUA,IAAG,KAAK,KAAK,EAAE;AAAA,EAChC;AACF;",
+  "names": ["r"]
+}

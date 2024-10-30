@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/geometry/projection/projectVectorToPoint.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { create as r } from \"../../core/libs/gl-matrix-2/factories/vec3f64.js\";\nimport { initializeProjection as e } from \"../projection.js\";\nimport { projectVectorToVector as o } from \"./projectVectorToVector.js\";\nfunction t(r, e, t) {\n  return !!o(r, e, i, t.spatialReference) && (t.x = i[0], t.y = i[1], t.z = i[2], !0);\n}\nasync function c(r, o, c, i) {\n  return await e(o, c.spatialReference, null, i), t(r, o, c);\n}\nconst i = r();\nexport { t as projectVectorToPoint, c as projectVectorToPointAsync };"],
+  "mappings": ";;;;;;;;;;;;;;AAOA,SAAS,EAAE,GAAG,GAAGA,IAAG;AAClB,SAAO,CAAC,CAACC,GAAE,GAAG,GAAG,GAAGD,GAAE,gBAAgB,MAAMA,GAAE,IAAI,EAAE,CAAC,GAAGA,GAAE,IAAI,EAAE,CAAC,GAAGA,GAAE,IAAI,EAAE,CAAC,GAAG;AAClF;AACA,SAAe,EAAE,GAAG,GAAGE,IAAGC,IAAG;AAAA;AAC3B,WAAO,MAAM,EAAE,GAAGD,GAAE,kBAAkB,MAAMC,EAAC,GAAG,EAAE,GAAG,GAAGD,EAAC;AAAA,EAC3D;AAAA;AACA,IAAM,IAAI,EAAE;",
+  "names": ["t", "n", "c", "i"]
+}

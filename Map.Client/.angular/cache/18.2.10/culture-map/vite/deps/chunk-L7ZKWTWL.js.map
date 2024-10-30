@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/geometry/projection/projectVectorToVector.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { initializeProjection as r } from \"../projection.js\";\nimport t from \"../SpatialReference.js\";\nimport { projectPointToVector as o } from \"./projectPointToVector.js\";\nimport { makeDehydratedPoint as e } from \"../../layers/graphics/dehydratedPoint.js\";\nfunction n(r, t, e, n, i) {\n  return !(null == t || null == n || r.length < 2) && (a.x = r[0], a.y = r[1], a.z = r[2], a.spatialReference = t, o(a, e, n, i));\n}\nasync function i(t, o, e, i, a, c) {\n  return await r(o, i, null, c), n(t, o, e, i, a);\n}\nconst a = e(0, 0, 0, t.WGS84);\nexport { n as projectVectorToVector, i as projectVectorToVectorAsync };"],
+  "mappings": ";;;;;;;;;;;AAQA,SAAS,EAAE,GAAG,GAAGA,IAAGC,IAAG,GAAG;AACxB,SAAO,EAAE,QAAQ,KAAK,QAAQA,MAAK,EAAE,SAAS,OAAO,EAAE,IAAI,EAAE,CAAC,GAAG,EAAE,IAAI,EAAE,CAAC,GAAG,EAAE,IAAI,EAAE,CAAC,GAAG,EAAE,mBAAmB,GAAG,EAAE,GAAGD,IAAGC,IAAG,CAAC;AAC/H;AAIA,IAAM,IAAI,EAAE,GAAG,GAAG,GAAG,EAAE,KAAK;",
+  "names": ["e", "n"]
+}

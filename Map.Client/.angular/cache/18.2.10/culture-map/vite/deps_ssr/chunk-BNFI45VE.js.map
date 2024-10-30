@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/webgl/ProgramTemplate.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { Program as r } from \"./Program.js\";\nfunction e(e, t, a = \"\") {\n  return new r(e, a + t.shaders.vertexShader, a + t.shaders.fragmentShader, t.attributes);\n}\nexport { e as createProgram };"],
+  "mappings": ";;;;;;AAKA,SAAS,EAAEA,IAAG,GAAG,IAAI,IAAI;AACvB,SAAO,IAAI,EAAEA,IAAG,IAAI,EAAE,QAAQ,cAAc,IAAI,EAAE,QAAQ,gBAAgB,EAAE,UAAU;AACxF;",
+  "names": ["e"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/terrain/interfaces.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nvar E, O, A, H;\n!function (E) {\n  E[E.INNER = 0] = \"INNER\", E[E.OUTER = 1] = \"OUTER\";\n}(E || (E = {})), function (E) {\n  E[E.REGULAR = 0] = \"REGULAR\", E[E.HAS_NORTH_POLE = 1] = \"HAS_NORTH_POLE\", E[E.HAS_SOUTH_POLE = 2] = \"HAS_SOUTH_POLE\", E[E.HAS_BOTH_POLES = 3] = \"HAS_BOTH_POLES\";\n}(O || (O = {})), function (E) {\n  E[E.OFF = 0] = \"OFF\", E[E.ON = 1] = \"ON\";\n}(A || (A = {})), function (E) {\n  E[E.FADING = 0] = \"FADING\", E[E.IMMEDIATE = 1] = \"IMMEDIATE\", E[E.UNFADED = 2] = \"UNFADED\";\n}(H || (H = {}));\nexport { A as LODSnapping, E as OverlayIndex, O as PatchType, H as TextureUpdate };"],
+  "mappings": ";;;AAIA,IAAI;AAAJ,IAAO;AAAP,IAAU;AAAV,IAAa;AACb,CAAC,SAAUA,IAAG;AACZ,EAAAA,GAAEA,GAAE,QAAQ,CAAC,IAAI,SAASA,GAAEA,GAAE,QAAQ,CAAC,IAAI;AAC7C,EAAE,MAAM,IAAI,CAAC,EAAE,GAAG,SAAUA,IAAG;AAC7B,EAAAA,GAAEA,GAAE,UAAU,CAAC,IAAI,WAAWA,GAAEA,GAAE,iBAAiB,CAAC,IAAI,kBAAkBA,GAAEA,GAAE,iBAAiB,CAAC,IAAI,kBAAkBA,GAAEA,GAAE,iBAAiB,CAAC,IAAI;AAClJ,EAAE,MAAM,IAAI,CAAC,EAAE,GAAG,SAAUA,IAAG;AAC7B,EAAAA,GAAEA,GAAE,MAAM,CAAC,IAAI,OAAOA,GAAEA,GAAE,KAAK,CAAC,IAAI;AACtC,EAAE,MAAM,IAAI,CAAC,EAAE,GAAG,SAAUA,IAAG;AAC7B,EAAAA,GAAEA,GAAE,SAAS,CAAC,IAAI,UAAUA,GAAEA,GAAE,YAAY,CAAC,IAAI,aAAaA,GAAEA,GAAE,UAAU,CAAC,IAAI;AACnF,EAAE,MAAM,IAAI,CAAC,EAAE;",
+  "names": ["E"]
+}

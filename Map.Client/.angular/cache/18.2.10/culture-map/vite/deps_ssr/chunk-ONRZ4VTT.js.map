@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/layers/support/TileKey.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nclass t {\n  constructor(t, s, i, o, e = void 0) {\n    this.id = t, this.level = s, this.row = i, this.col = o, this.extent = e;\n  }\n}\nexport { t as TileKey };"],
+  "mappings": ";;;AAIA,IAAM,IAAN,MAAQ;AAAA,EACN,YAAYA,IAAG,GAAG,GAAG,GAAG,IAAI,QAAQ;AAClC,SAAK,KAAKA,IAAG,KAAK,QAAQ,GAAG,KAAK,MAAM,GAAG,KAAK,MAAM,GAAG,KAAK,SAAS;AAAA,EACzE;AACF;",
+  "names": ["t"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/2d/layers/features/support/tileUtils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction o(o, l, c, r) {\n  const e = o.clone(),\n    n = 1 << e.level,\n    t = e.col + l,\n    w = e.row + c;\n  return r && t < 0 ? (e.col = t + n, e.world -= 1) : t >= n ? (e.col = t - n, e.world += 1) : e.col = t, e.row = w, e;\n}\nexport { o as getPow2NeighborKey };"],
+  "mappings": ";;;AAIA,SAAS,EAAEA,IAAG,GAAG,GAAG,GAAG;AACrB,QAAM,IAAIA,GAAE,MAAM,GAChB,IAAI,KAAK,EAAE,OACX,IAAI,EAAE,MAAM,GACZ,IAAI,EAAE,MAAM;AACd,SAAO,KAAK,IAAI,KAAK,EAAE,MAAM,IAAI,GAAG,EAAE,SAAS,KAAK,KAAK,KAAK,EAAE,MAAM,IAAI,GAAG,EAAE,SAAS,KAAK,EAAE,MAAM,GAAG,EAAE,MAAM,GAAG;AACrH;",
+  "names": ["o"]
+}

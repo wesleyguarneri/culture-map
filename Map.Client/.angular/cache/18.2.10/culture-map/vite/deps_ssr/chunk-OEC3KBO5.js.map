@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/rest/query/executeQueryJSON.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { parseUrl as r } from \"../utils.js\";\nimport { executeQuery as t } from \"./operations/query.js\";\nimport o from \"../support/FeatureSet.js\";\nimport e from \"../support/Query.js\";\nasync function s(r, t, e) {\n  const s = await a(r, t, e);\n  return o.fromJSON(s);\n}\nasync function a(o, s, a) {\n  const n = r(o),\n    i = {\n      ...a\n    },\n    p = e.from(s),\n    {\n      data: u\n    } = await t(n, p, p.sourceSpatialReference, i);\n  return u;\n}\nexport { s as executeQueryJSON, a as executeRawQueryJSON };"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;AAQA,SAAe,EAAE,GAAG,GAAG,GAAG;AAAA;AACxB,UAAMA,KAAI,MAAM,EAAE,GAAG,GAAG,CAAC;AACzB,WAAO,EAAE,SAASA,EAAC;AAAA,EACrB;AAAA;AACA,SAAe,EAAE,GAAGA,IAAGC,IAAG;AAAA;AACxB,UAAM,IAAI,EAAE,CAAC,GACX,IAAI,mBACCA,KAEL,IAAI,EAAE,KAAKD,EAAC,GACZ;AAAA,MACE,MAAM;AAAA,IACR,IAAI,MAAM,EAAE,GAAG,GAAG,EAAE,wBAAwB,CAAC;AAC/C,WAAO;AAAA,EACT;AAAA;",
+  "names": ["s", "a"]
+}

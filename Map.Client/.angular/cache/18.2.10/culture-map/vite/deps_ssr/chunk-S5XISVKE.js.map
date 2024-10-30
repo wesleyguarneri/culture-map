@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/webgl/ProgramCache.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport \"../../core/has.js\";\nimport { NestedMap as t } from \"../../core/NestedMap.js\";\nimport { Program as r } from \"./Program.js\";\nclass s {\n  constructor(r) {\n    this._rctx = r, this._store = new t();\n  }\n  dispose() {\n    this._store.forEach(t => t.forEach(t => t.dispose())), this._store.clear();\n  }\n  acquire(t, s, e, o) {\n    const i = this._store.get(t, s);\n    if (null != i) return i.ref(), i;\n    const c = new r(this._rctx, t, s, e, o);\n    return c.ref(), this._store.set(t, s, c), c;\n  }\n  get test() {}\n}\nexport { s as ProgramCache };"],
+  "mappings": ";;;;;;;;;AAOA,IAAM,IAAN,MAAQ;AAAA,EACN,YAAYA,IAAG;AACb,SAAK,QAAQA,IAAG,KAAK,SAAS,IAAI,EAAE;AAAA,EACtC;AAAA,EACA,UAAU;AACR,SAAK,OAAO,QAAQ,CAAAC,OAAKA,GAAE,QAAQ,CAAAA,OAAKA,GAAE,QAAQ,CAAC,CAAC,GAAG,KAAK,OAAO,MAAM;AAAA,EAC3E;AAAA,EACA,QAAQA,IAAGC,IAAG,GAAG,GAAG;AAClB,UAAM,IAAI,KAAK,OAAO,IAAID,IAAGC,EAAC;AAC9B,QAAI,QAAQ,EAAG,QAAO,EAAE,IAAI,GAAG;AAC/B,UAAM,IAAI,IAAI,EAAE,KAAK,OAAOD,IAAGC,IAAG,GAAG,CAAC;AACtC,WAAO,EAAE,IAAI,GAAG,KAAK,OAAO,IAAID,IAAGC,IAAG,CAAC,GAAG;AAAA,EAC5C;AAAA,EACA,IAAI,OAAO;AAAA,EAAC;AACd;",
+  "names": ["r", "t", "s"]
+}

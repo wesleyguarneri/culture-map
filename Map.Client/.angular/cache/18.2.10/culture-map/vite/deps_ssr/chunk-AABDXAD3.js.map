@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/core/shaderModules/Uniform.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { BindType as s } from \"../shaderTechnique/BindType.js\";\nclass a {\n  constructor(a, i, e, r, t = null) {\n    if (this.name = a, this.type = i, this.arraySize = t, this.bind = {\n      [s.Pass]: null,\n      [s.Draw]: null\n    }, r) switch (e) {\n      case s.Pass:\n        this.bind[s.Pass] = r;\n        break;\n      case s.Draw:\n        this.bind[s.Draw] = r;\n    }\n  }\n  equals(s) {\n    return this.type === s.type && this.name === s.name && this.arraySize === s.arraySize;\n  }\n}\nexport { a as Uniform };"],
+  "mappings": ";;;;;;AAKA,IAAMA,KAAN,MAAQ;AAAA,EACN,YAAYA,IAAG,GAAG,GAAG,GAAG,IAAI,MAAM;AAChC,QAAI,KAAK,OAAOA,IAAG,KAAK,OAAO,GAAG,KAAK,YAAY,GAAG,KAAK,OAAO;AAAA,MAChE,CAAC,EAAE,IAAI,GAAG;AAAA,MACV,CAAC,EAAE,IAAI,GAAG;AAAA,IACZ,GAAG,EAAG,SAAQ,GAAG;AAAA,MACf,KAAK,EAAE;AACL,aAAK,KAAK,EAAE,IAAI,IAAI;AACpB;AAAA,MACF,KAAK,EAAE;AACL,aAAK,KAAK,EAAE,IAAI,IAAI;AAAA,IACxB;AAAA,EACF;AAAA,EACA,OAAO,GAAG;AACR,WAAO,KAAK,SAAS,EAAE,QAAQ,KAAK,SAAS,EAAE,QAAQ,KAAK,cAAc,EAAE;AAAA,EAC9E;AACF;",
+  "names": ["a"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/materials/TriangleMaterial.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { Material as r } from \"../lib/Material.js\";\nimport { intersectTriangleGeometry as t } from \"../lib/RayIntersections.js\";\nclass e extends r {\n  intersect(r, e, i, s, o, n) {\n    return t(r, i, s, o, void 0, n);\n  }\n}\nexport { e as TriangleMaterial };"],
+  "mappings": ";;;;;;;;;AAMA,IAAM,IAAN,cAAgB,EAAE;AAAA,EAChB,UAAU,GAAGA,IAAG,GAAG,GAAG,GAAG,GAAG;AAC1B,WAAO,EAAE,GAAG,GAAG,GAAG,GAAG,QAAQ,CAAC;AAAA,EAChC;AACF;",
+  "names": ["e"]
+}

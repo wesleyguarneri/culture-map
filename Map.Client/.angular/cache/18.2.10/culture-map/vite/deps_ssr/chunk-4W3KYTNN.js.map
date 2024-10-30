@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/layers/support/makeScheduleFunction.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction e(e) {\n  return r => {\n    if (e.immediate) return e.immediate.schedule(r);\n    const o = \"No immediate scheduler\";\n    throw console.error(o), new Error(o);\n  };\n}\nexport { e as makeScheduleFunction };"],
+  "mappings": ";;;AAIA,SAAS,EAAEA,IAAG;AACZ,SAAO,OAAK;AACV,QAAIA,GAAE,UAAW,QAAOA,GAAE,UAAU,SAAS,CAAC;AAC9C,UAAM,IAAI;AACV,UAAM,QAAQ,MAAM,CAAC,GAAG,IAAI,MAAM,CAAC;AAAA,EACrC;AACF;",
+  "names": ["e"]
+}

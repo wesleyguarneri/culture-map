@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/layers/support/floorFilterUtils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction o(o) {\n  const n = o.layer;\n  if (\"floorInfo\" in n && n.floorInfo?.floorField && \"floors\" in o.view) {\n    return l(o.view.floors, n.floorInfo.floorField);\n  }\n  return null;\n}\nfunction n(o, n) {\n  return \"floorInfo\" in n && n.floorInfo?.floorField ? l(o, n.floorInfo.floorField) : null;\n}\nfunction l(o, n) {\n  if (!o?.length) return null;\n  const l = o.filter(o => \"\" !== o).map(o => `'${o}'`);\n  return l.push(\"''\"), `${n} IN (${l.join(\",\")}) OR ${n} IS NULL`;\n}\nexport { o as getFloorFilterClause, n as getLayerFloorFilterClause };"],
+  "mappings": ";AAIA,SAAS,EAAEA,IAAG;AACZ,QAAMC,KAAID,GAAE;AACZ,MAAI,eAAeC,MAAKA,GAAE,WAAW,cAAc,YAAYD,GAAE,MAAM;AACrE,WAAO,EAAEA,GAAE,KAAK,QAAQC,GAAE,UAAU,UAAU;AAAA,EAChD;AACA,SAAO;AACT;AACA,SAAS,EAAED,IAAGC,IAAG;AACf,SAAO,eAAeA,MAAKA,GAAE,WAAW,aAAa,EAAED,IAAGC,GAAE,UAAU,UAAU,IAAI;AACtF;AACA,SAAS,EAAED,IAAGC,IAAG;AACf,MAAI,CAACD,IAAG,OAAQ,QAAO;AACvB,QAAME,KAAIF,GAAE,OAAO,CAAAA,OAAK,OAAOA,EAAC,EAAE,IAAI,CAAAA,OAAK,IAAIA,EAAC,GAAG;AACnD,SAAOE,GAAE,KAAK,IAAI,GAAG,GAAGD,EAAC,QAAQC,GAAE,KAAK,GAAG,CAAC,QAAQD,EAAC;AACvD;",
+  "names": ["o", "n", "l"]
+}

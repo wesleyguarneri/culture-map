@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/core/libs/gl-matrix-2/factories/mat2df64.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction e() {\n  return [1, 0, 0, 1, 0, 0];\n}\nfunction r(e) {\n  return [e[0], e[1], e[2], e[3], e[4], e[5]];\n}\nfunction t(e, r, t, n, o, u) {\n  return [e, r, t, n, o, u];\n}\nfunction n(e, r) {\n  return new Float64Array(e, r, 6);\n}\nconst o = e(),\n  u = Object.freeze(Object.defineProperty({\n    __proto__: null,\n    IDENTITY: o,\n    clone: r,\n    create: e,\n    createView: n,\n    fromValues: t\n  }, Symbol.toStringTag, {\n    value: \"Module\"\n  }));\nexport { o as IDENTITY, r as clone, e as create, n as createView, t as fromValues, u as m };"],
+  "mappings": ";AAIA,SAAS,IAAI;AACX,SAAO,CAAC,GAAG,GAAG,GAAG,GAAG,GAAG,CAAC;AAC1B;AACA,SAAS,EAAEA,IAAG;AACZ,SAAO,CAACA,GAAE,CAAC,GAAGA,GAAE,CAAC,GAAGA,GAAE,CAAC,GAAGA,GAAE,CAAC,GAAGA,GAAE,CAAC,GAAGA,GAAE,CAAC,CAAC;AAC5C;AACA,SAAS,EAAEA,IAAGC,IAAGC,IAAGC,IAAGC,IAAGC,IAAG;AAC3B,SAAO,CAACL,IAAGC,IAAGC,IAAGC,IAAGC,IAAGC,EAAC;AAC1B;AACA,SAAS,EAAEL,IAAGC,IAAG;AACf,SAAO,IAAI,aAAaD,IAAGC,IAAG,CAAC;AACjC;AACA,IAAM,IAAI,EAAE;AAAZ,IACE,IAAI,OAAO,OAAO,OAAO,eAAe;AAAA,EACtC,WAAW;AAAA,EACX,UAAU;AAAA,EACV,OAAO;AAAA,EACP,QAAQ;AAAA,EACR,YAAY;AAAA,EACZ,YAAY;AACd,GAAG,OAAO,aAAa;AAAA,EACrB,OAAO;AACT,CAAC,CAAC;",
+  "names": ["e", "r", "t", "n", "o", "u"]
+}

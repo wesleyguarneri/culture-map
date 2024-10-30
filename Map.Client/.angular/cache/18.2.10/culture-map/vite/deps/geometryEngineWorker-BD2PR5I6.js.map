@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/geometry/geometryEngineWorker.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { g as r } from \"../chunks/geometryEngineJSON.js\";\nfunction e(e) {\n  return (0, r[e.operation])(...e.parameters);\n}\nexport { e as executeGEOperation };"],
+  "mappings": ";;;;;;;;;AAKA,SAAS,EAAEA,IAAG;AACZ,UAAQ,GAAG,EAAEA,GAAE,SAAS,GAAG,GAAGA,GAAE,UAAU;AAC5C;",
+  "names": ["e"]
+}

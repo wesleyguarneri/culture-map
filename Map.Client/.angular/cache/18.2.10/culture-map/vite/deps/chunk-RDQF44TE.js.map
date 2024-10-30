@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/lib/Attribute.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nclass s {\n  constructor(s, t, i = t) {\n    this.data = s, this.size = t, this.stride = i;\n  }\n}\nclass t extends s {\n  constructor(s, t, i, e = !1, c = i) {\n    super(s, i, c), this.indices = t, this.exclusive = e;\n  }\n}\nexport { t as Attribute, s as Vertices };"],
+  "mappings": ";AAIA,IAAM,IAAN,MAAQ;AAAA,EACN,YAAYA,IAAGC,IAAG,IAAIA,IAAG;AACvB,SAAK,OAAOD,IAAG,KAAK,OAAOC,IAAG,KAAK,SAAS;AAAA,EAC9C;AACF;AACA,IAAM,IAAN,cAAgB,EAAE;AAAA,EAChB,YAAYD,IAAGC,IAAG,GAAG,IAAI,OAAI,IAAI,GAAG;AAClC,UAAMD,IAAG,GAAG,CAAC,GAAG,KAAK,UAAUC,IAAG,KAAK,YAAY;AAAA,EACrD;AACF;",
+  "names": ["s", "t"]
+}

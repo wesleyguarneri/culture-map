@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@esri/calcite-components/dist/components/calcite-tabs.js"],
+  "sourcesContent": ["/*!\n * All material copyright ESRI, All Rights Reserved, unless otherwise specified.\n * See https://github.com/Esri/calcite-design-system/blob/dev/LICENSE.md for details.\n * v2.13.2\n */\nimport { T as Tabs, d as defineCustomElement$1 } from './tabs.js';\nconst CalciteTabs = Tabs;\nconst defineCustomElement = defineCustomElement$1;\nexport { CalciteTabs, defineCustomElement };\n\n"],
+  "mappings": ";;;;;;;;;;;AAMA,IAAM,cAAc;AACpB,IAAMA,uBAAsB;",
+  "names": ["defineCustomElement"]
+}

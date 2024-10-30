@@ -1,0 +1,83 @@
+import {
+  m
+} from "./chunk-WRHEXEG3.js";
+import {
+  f
+} from "./chunk-QZVEEM53.js";
+import {
+  o as o2
+} from "./chunk-JXVDTUGR.js";
+import {
+  c
+} from "./chunk-HAO4WCNW.js";
+import {
+  s
+} from "./chunk-UCPBGEQD.js";
+import {
+  o as o3
+} from "./chunk-SIZK72CP.js";
+import {
+  e as e2
+} from "./chunk-GAYJ4YPJ.js";
+import {
+  a
+} from "./chunk-MFZTGYUJ.js";
+import {
+  o
+} from "./chunk-SZWWBMQN.js";
+import {
+  e
+} from "./chunk-BQZBOYBD.js";
+import {
+  h,
+  i
+} from "./chunk-XTVPEVHA.js";
+
+// ../../../node_modules/@arcgis/core/chunks/ShadowCastAccumulate.glsl.js
+var h2 = 255;
+var m2 = 1 / h2;
+function w(r) {
+  const h3 = new o3(), w2 = h3.fragment;
+  return w2.include(a), w2.include(c), h3.include(f), h3.include(o2), h3.include(m, r), w2.uniforms.add(new s("shadowMap", (e3, a2) => a2.shadowMap.depthTexture), new s("depthMap", (e3, a2) => a2.depth?.attachment), new e2("inverseViewMatrix", (r2, o4) => h(u, i(u, o4.camera.viewMatrix, o4.camera.center)))), w2.constants.add("sampleValue", "float", m2), h3.outputs.add("sampleCount", "float"), w2.code.add(o`void main(void) {
+float depth = depthFromTexture(depthMap, uv);
+if (depth >= 1.0 || depth <= 0.0) {
+discard;
+}
+float currentPixelDepth = linearizeDepth(depth);
+vec4 currentPixelPos = vec4(reconstructPosition(gl_FragCoord.xy, currentPixelDepth), 1.0);
+vec4 worldSpacePos = inverseViewMatrix * currentPixelPos;
+mat4 shadowMatrix;
+float linearDepth = -currentPixelDepth;
+int i = chooseCascade(linearDepth, shadowMatrix);
+if (i >= numCascades) {
+discard;
+}
+vec3 lvpos = lightSpacePosition(worldSpacePos.xyz, shadowMatrix);
+if (lvpos.z >= 1.0 || lvpos.x < 0.0 || lvpos.x > 1.0 || lvpos.y < 0.0 || lvpos.y > 1.0) {
+discard;
+}
+ivec2 texSize = textureSize(shadowMap, 0);
+ivec2 uvShadow = ivec2(cascadeCoordinates(i, texSize, lvpos) * vec2(texSize));
+float depthShadow = readShadowMapDepth(uvShadow, shadowMap);
+bool shadow = depthShadow < lvpos.z;
+if (!shadow) {
+discard;
+}
+sampleCount = sampleValue;
+}`), h3;
+}
+var u = e();
+var g = Object.freeze(Object.defineProperty({
+  __proto__: null,
+  ShadowCastMaxSamples: h2,
+  build: w
+}, Symbol.toStringTag, {
+  value: "Module"
+}));
+
+export {
+  h2 as h,
+  w,
+  g
+};
+//# sourceMappingURL=chunk-GICNYLA4.js.map

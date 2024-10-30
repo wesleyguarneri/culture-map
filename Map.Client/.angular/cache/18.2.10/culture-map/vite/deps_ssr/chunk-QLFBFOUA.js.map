@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/interactive/editingTools/manipulatorUtils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { makeHandle as e } from \"../../../../core/handleUtils.js\";\nimport { hasFeatureExpressionInfo as n } from \"../../../../support/elevationInfoUtils.js\";\nfunction o(e, n) {\n  return t(e?.data.coordinateHelper.hasZ(), n);\n}\nfunction t(e, o) {\n  return !!e && \"on-the-ground\" !== o.mode && !n(o);\n}\nfunction r(n, o) {\n  let t = null;\n  const r = n.events.on(\"grab-changed\", e => {\n    null != t && (t.remove(), t = null), \"start\" === e.action ? (t = n.disableDisplay(), o && o(e)) : o && o(e);\n  });\n  return e(() => {\n    t?.remove(), r.remove();\n  });\n}\nexport { o as canMoveZOperations, r as disableDisplayOnGrab };"],
+  "mappings": ";;;;;;;;;AAMA,SAAS,EAAEA,IAAG,GAAG;AACf,SAAO,EAAEA,IAAG,KAAK,iBAAiB,KAAK,GAAG,CAAC;AAC7C;AACA,SAAS,EAAEA,IAAGC,IAAG;AACf,SAAO,CAAC,CAACD,MAAK,oBAAoBC,GAAE,QAAQ,CAAC,EAAEA,EAAC;AAClD;AACA,SAAS,EAAE,GAAGA,IAAG;AACf,MAAIC,KAAI;AACR,QAAMC,KAAI,EAAE,OAAO,GAAG,gBAAgB,CAAAH,OAAK;AACzC,YAAQE,OAAMA,GAAE,OAAO,GAAGA,KAAI,OAAO,YAAYF,GAAE,UAAUE,KAAI,EAAE,eAAe,GAAGD,MAAKA,GAAED,EAAC,KAAKC,MAAKA,GAAED,EAAC;AAAA,EAC5G,CAAC;AACD,SAAO,EAAE,MAAM;AACb,IAAAE,IAAG,OAAO,GAAGC,GAAE,OAAO;AAAA,EACxB,CAAC;AACH;",
+  "names": ["e", "o", "t", "r"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/geometry/support/meshUtils/convertMeshVertexSpace.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport r from \"../../../core/Error.js\";\nimport { clone as e } from \"../../../core/lang.js\";\nimport { throwIfAborted as o } from \"../../../core/promiseUtils.js\";\nimport { MeshVertexAttributes as t } from \"../MeshVertexAttributes.js\";\nimport { convertVertexSpace as s } from \"./vertexSpaceConversion.js\";\nasync function i(i, n, c) {\n  await Promise.resolve(), o(c);\n  const m = s(i, n);\n  if (!m) throw new r(\"meshUtils:convertVertexSpace()\", \"Failed to convert to provided vertex space due to projection errors\");\n  const p = i.cloneAndModifyVertexAttributes(new t({\n    ...m,\n    uv: e(i.vertexAttributes.uv),\n    color: e(i.vertexAttributes.color)\n  }), n);\n  return p.transform = null, p;\n}\nexport { i as convertMeshVertexSpace };"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AASA,SAAe,EAAEA,IAAG,GAAG,GAAG;AAAA;AACxB,UAAM,QAAQ,QAAQ,GAAGC,GAAE,CAAC;AAC5B,UAAM,IAAI,EAAED,IAAG,CAAC;AAChB,QAAI,CAAC,EAAG,OAAM,IAAI,EAAE,kCAAkC,qEAAqE;AAC3H,UAAM,IAAIA,GAAE,+BAA+B,IAAI,EAAE,iCAC5C,IAD4C;AAAA,MAE/C,IAAI,EAAEA,GAAE,iBAAiB,EAAE;AAAA,MAC3B,OAAO,EAAEA,GAAE,iBAAiB,KAAK;AAAA,IACnC,EAAC,GAAG,CAAC;AACL,WAAO,EAAE,YAAY,MAAM;AAAA,EAC7B;AAAA;",
+  "names": ["i", "s"]
+}

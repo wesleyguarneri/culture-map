@@ -7,7 +7,7 @@ import {
   PathLocationStrategy,
   Title,
   ViewportScroller
-} from "./chunk-EK6OQREH.js";
+} from "./chunk-WXZSBBLA.js";
 import {
   APP_BOOTSTRAP_LISTENER,
   APP_INITIALIZER,
@@ -48,8 +48,6 @@ import {
   Subscription,
   Version,
   ViewContainerRef,
-  __spreadProps,
-  __spreadValues,
   afterNextRender,
   booleanAttribute,
   catchError,
@@ -109,9 +107,13 @@ import {
   ɵɵloadQuery,
   ɵɵqueryRefresh,
   ɵɵsanitizeUrlOrResourceUrl
-} from "./chunk-HCNZ5MW6.js";
+} from "./chunk-62NRND7R.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-JWIQHGQB.js";
 
-// node_modules/@angular/router/fesm2022/router.mjs
+// ../../../node_modules/@angular/router/fesm2022/router.mjs
 var PRIMARY_OUTLET = "primary";
 var RouteTitleKey = Symbol("RouteTitle");
 var ParamsAsMap = class {

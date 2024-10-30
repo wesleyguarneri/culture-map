@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/core/shaderTechnique/BindType.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nvar a;\n!function (a) {\n  a[a.Pass = 0] = \"Pass\", a[a.Draw = 1] = \"Draw\";\n}(a || (a = {}));\nexport { a as BindType };"],
+  "mappings": ";AAIA,IAAI;AACJ,CAAC,SAAUA,IAAG;AACZ,EAAAA,GAAEA,GAAE,OAAO,CAAC,IAAI,QAAQA,GAAEA,GAAE,OAAO,CAAC,IAAI;AAC1C,EAAE,MAAM,IAAI,CAAC,EAAE;",
+  "names": ["a"]
+}

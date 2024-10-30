@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/layers/support/LayerViewPerformanceInfo.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nclass t {\n  constructor(t, e = 0, s = 0, r = 0, i = 0, o = null) {\n    this.usedMemory = t, this.displayedFeatures = e, this.totalFeatures = s, this.maximumFeatures = r, this.nodes = i, this.core = o;\n  }\n}\nfunction e(t) {\n  return \"performanceInfo\" in t;\n}\nexport { t as LayerViewPerformanceInfo, e as isPerformanceInfoLayerView };"],
+  "mappings": ";;;AAIA,IAAM,IAAN,MAAQ;AAAA,EACN,YAAYA,IAAGC,KAAI,GAAG,IAAI,GAAG,IAAI,GAAG,IAAI,GAAG,IAAI,MAAM;AACnD,SAAK,aAAaD,IAAG,KAAK,oBAAoBC,IAAG,KAAK,gBAAgB,GAAG,KAAK,kBAAkB,GAAG,KAAK,QAAQ,GAAG,KAAK,OAAO;AAAA,EACjI;AACF;AACA,SAAS,EAAED,IAAG;AACZ,SAAO,qBAAqBA;AAC9B;",
+  "names": ["t", "e"]
+}

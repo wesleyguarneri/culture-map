@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/webdoc/support/saveAPIKeyUtils.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport o from \"../../config.js\";\nimport r from \"../../core/Error.js\";\nimport { supportsApiKey as p } from \"../../support/apiKeyUtils.js\";\nfunction i(i) {\n  if (o.apiKey && p(i.portal.url)) throw new r(\"save-api-key-utils:api-key-not-supported\", `Saving is not supported on ${i.portal.url} when using an api key`);\n}\nexport { i as validateSaveAPIKey };"],
+  "mappings": ";;;;;;;;;;AAOA,SAAS,EAAEA,IAAG;AACZ,MAAI,EAAE,UAAU,EAAEA,GAAE,OAAO,GAAG,EAAG,OAAM,IAAIC,GAAE,4CAA4C,8BAA8BD,GAAE,OAAO,GAAG,wBAAwB;AAC7J;",
+  "names": ["i", "s"]
+}

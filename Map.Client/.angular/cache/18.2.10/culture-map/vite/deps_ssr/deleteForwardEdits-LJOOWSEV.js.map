@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/rest/versionManagement/gdbVersion/deleteForwardEdits.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport r from \"../../../request.js\";\nimport s from \"../../../core/Error.js\";\nimport { parseUrl as t, asValidOptions as o, encode as i } from \"../../utils.js\";\nasync function e(e, n, m, a) {\n  if (!n) throw new s(\"post:missing-guid\", \"guid for version is missing\");\n  const u = t(e),\n    d = m.toJSON(),\n    f = o(u.query, {\n      query: i({\n        ...d,\n        f: \"json\"\n      }),\n      ...a,\n      method: \"post\"\n    });\n  n.startsWith(\"{\") && (n = n.slice(1, -1));\n  const p = `${u.path}/versions/${n}/deleteForwardEdits`,\n    {\n      data: c\n    } = await r(p, f);\n  return c;\n}\nexport { e as deleteForwardEdits };"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAOA,SAAe,EAAEA,IAAG,GAAG,GAAG,GAAG;AAAA;AAC3B,QAAI,CAAC,EAAG,OAAM,IAAI,EAAE,qBAAqB,6BAA6B;AACtE,UAAM,IAAI,EAAEA,EAAC,GACX,IAAI,EAAE,OAAO,GACbC,KAAI,EAAE,EAAE,OAAO;AAAA,MACb,OAAOC,GAAE,iCACJ,IADI;AAAA,QAEP,GAAG;AAAA,MACL,EAAC;AAAA,OACE,IALU;AAAA,MAMb,QAAQ;AAAA,IACV,EAAC;AACH,MAAE,WAAW,GAAG,MAAM,IAAI,EAAE,MAAM,GAAG,EAAE;AACvC,UAAM,IAAI,GAAG,EAAE,IAAI,aAAa,CAAC,uBAC/B;AAAA,MACE,MAAM;AAAA,IACR,IAAI,MAAM,EAAE,GAAGD,EAAC;AAClB,WAAO;AAAA,EACT;AAAA;",
+  "names": ["e", "f", "s"]
+}

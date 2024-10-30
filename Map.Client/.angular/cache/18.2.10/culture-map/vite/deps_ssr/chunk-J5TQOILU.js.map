@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/environment/NoiseTextureAtlasDimensions.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport has from \"../../../core/has.js\";\nconst e = has(\"esri-mobile\") ? 64 : 128,\n  o = e / 128,\n  r = Math.ceil(Math.sqrt(e)),\n  t = (e + 2) * r,\n  s = 1e5,\n  i = 128,\n  a = t / 1560;\nexport { t as atlasSize, o as textureScale, r as tileRows, e as tileSize, a as weatherMapScale, s as weatherMapSize, i as weatherTileSize };"],
+  "mappings": ";;;;;;AAKA,IAAM,IAAI,IAAI,aAAa,IAAI,KAAK;AAApC,IACE,IAAI,IAAI;AADV,IAEE,IAAI,KAAK,KAAK,KAAK,KAAK,CAAC,CAAC;AAF5B,IAGE,KAAK,IAAI,KAAK;AAHhB,IAIE,IAAI;AAJN,IAKE,IAAI;AALN,IAME,IAAI,IAAI;",
+  "names": []
+}

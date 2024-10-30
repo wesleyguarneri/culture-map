@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/widgets/support/decorators/accessibleHandler.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { isActivationKey as n } from \"../widgetUtils.js\";\nfunction t() {\n  return function (n, t) {\n    if (!n[t]) throw new TypeError(`Cannot auto bind undefined function '${String(t)}'`);\n    return {\n      value: r(n[t])\n    };\n  };\n}\nfunction e(n) {\n  const t = n?.type;\n  return n instanceof KeyboardEvent || \"keyup\" === t || \"keydown\" === t || \"keypress\" === t;\n}\nfunction r(t) {\n  return function (r, ...o) {\n    e(r) ? n(r.key) && (r.preventDefault(), r.stopPropagation(), r.target.click()) : t.call(this, r, ...o);\n  };\n}\nexport { t as accessibleHandler };"],
+  "mappings": ";;;;;;AAKA,SAAS,IAAI;AACX,SAAO,SAAU,GAAGA,IAAG;AACrB,QAAI,CAAC,EAAEA,EAAC,EAAG,OAAM,IAAI,UAAU,wCAAwC,OAAOA,EAAC,CAAC,GAAG;AACnF,WAAO;AAAA,MACL,OAAO,EAAE,EAAEA,EAAC,CAAC;AAAA,IACf;AAAA,EACF;AACF;AACA,SAAS,EAAE,GAAG;AACZ,QAAMA,KAAI,GAAG;AACb,SAAO,aAAa,iBAAiB,YAAYA,MAAK,cAAcA,MAAK,eAAeA;AAC1F;AACA,SAAS,EAAEA,IAAG;AACZ,SAAO,SAAUC,OAAM,GAAG;AACxB,MAAEA,EAAC,IAAI,EAAEA,GAAE,GAAG,MAAMA,GAAE,eAAe,GAAGA,GAAE,gBAAgB,GAAGA,GAAE,OAAO,MAAM,KAAKD,GAAE,KAAK,MAAMC,IAAG,GAAG,CAAC;AAAA,EACvG;AACF;",
+  "names": ["t", "r"]
+}

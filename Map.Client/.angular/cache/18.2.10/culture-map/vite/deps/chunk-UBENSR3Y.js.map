@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/analysis/DirectLineMeasurement/interfaces.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nvar e, o;\n!function (e) {\n  e[e.None = 0] = \"None\", e[e.Direct = 1] = \"Direct\", e[e.Triangle = 2] = \"Triangle\", e[e.ProjectedGeodesic = 3] = \"ProjectedGeodesic\";\n}(e || (e = {})), function (e) {\n  e[e.Auto = 0] = \"Auto\", e[e.AboveSegment = 1] = \"AboveSegment\", e[e.BelowSegment = 2] = \"BelowSegment\";\n}(o || (o = {}));\nexport { e as ViewMode, o as VisualElementOrientation };"],
+  "mappings": ";AAIA,IAAI;AAAJ,IAAO;AACP,CAAC,SAAUA,IAAG;AACZ,EAAAA,GAAEA,GAAE,OAAO,CAAC,IAAI,QAAQA,GAAEA,GAAE,SAAS,CAAC,IAAI,UAAUA,GAAEA,GAAE,WAAW,CAAC,IAAI,YAAYA,GAAEA,GAAE,oBAAoB,CAAC,IAAI;AACnH,EAAE,MAAM,IAAI,CAAC,EAAE,GAAG,SAAUA,IAAG;AAC7B,EAAAA,GAAEA,GAAE,OAAO,CAAC,IAAI,QAAQA,GAAEA,GAAE,eAAe,CAAC,IAAI,gBAAgBA,GAAEA,GAAE,eAAe,CAAC,IAAI;AAC1F,EAAE,MAAM,IAAI,CAAC,EAAE;",
+  "names": ["e"]
+}

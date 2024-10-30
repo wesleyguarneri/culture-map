@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/core/accessorSupport/layerContainerType.js"],
+  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nconst a = (a => a)([\"operational-layers\", \"basemap\", \"ground\"]);\nexport { a as excludeTables };"],
+  "mappings": ";AAIA,IAAM,IAAK,kBAAAA,OAAKA,IAAG,CAAC,sBAAsB,WAAW,QAAQ,CAAC;",
+  "names": ["a"]
+}
