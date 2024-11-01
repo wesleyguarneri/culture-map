@@ -1,0 +1,12 @@
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/bin/Debug/net8.0/server.deps.json
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/bin/Debug/net8.0/server.dll
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/bin/Debug/net8.0/server.pdb
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/server.GeneratedMSBuildEditorConfig.editorconfig
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/server.AssemblyInfoInputs.cache
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/server.AssemblyInfo.cs
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/server.csproj.CoreCompileInputs.cache
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/server.sourcelink.json
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/server.dll
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/refint/server.dll
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/server.pdb
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/ref/server.dll
