@@ -10,3 +10,12 @@
 /Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/refint/server.dll
 /Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/server.pdb
 /Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/ref/server.dll
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/bin/Debug/net8.0/server
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/bin/Debug/net8.0/server.runtimeconfig.json
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/server.genruntimeconfig.cache
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/server.csproj.AssemblyReference.cache
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/wesleyguarneri/Desktop/culture-map/Map.Server/server/server/obj/Debug/net8.0/server.csproj.Up2Date

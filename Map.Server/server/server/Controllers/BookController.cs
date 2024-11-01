@@ -20,6 +20,12 @@ public class BookController : Controller
             });
     }
     
+    [HttpGet()]
+    public ActionResult<Book> GetBooks()
+    {
+        return Ok(_books);
+    }
+    
     [HttpGet("{id}")]
     public ActionResult<Book> GetById(Guid id)
     {
