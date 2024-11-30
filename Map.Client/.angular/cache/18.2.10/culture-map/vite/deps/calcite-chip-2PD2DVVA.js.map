@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@esri/calcite-components/dist/components/calcite-chip.js"],
-  "sourcesContent": ["/*!\n * All material copyright ESRI, All Rights Reserved, unless otherwise specified.\n * See https://github.com/Esri/calcite-design-system/blob/dev/LICENSE.md for details.\n * v2.13.2\n */\nimport { C as Chip, d as defineCustomElement$1 } from './chip.js';\nconst CalciteChip = Chip;\nconst defineCustomElement = defineCustomElement$1;\nexport { CalciteChip, defineCustomElement };\n\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;AAMA,IAAM,cAAc;AACpB,IAAMA,uBAAsB;",
-  "names": ["defineCustomElement"]
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/rest/support/commonProperties.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nconst t = {\n  type: String,\n  json: {\n    read: {\n      source: \"token\"\n    },\n    write: {\n      target: \"token\"\n    }\n  }\n};\nexport { t as apiKey };"],
-  "mappings": ";;;AAIA,IAAM,IAAI;AAAA,EACR,MAAM;AAAA,EACN,MAAM;AAAA,IACJ,MAAM;AAAA,MACJ,QAAQ;AAAA,IACV;AAAA,IACA,OAAO;AAAA,MACL,QAAQ;AAAA,IACV;AAAA,EACF;AACF;",
-  "names": []
-}

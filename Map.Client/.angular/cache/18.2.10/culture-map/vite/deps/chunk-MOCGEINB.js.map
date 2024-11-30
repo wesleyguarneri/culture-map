@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/support/updatingProperties.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nconst e = {\n    value: .5,\n    readOnly: !0\n  },\n  t = {\n    readOnly: !0,\n    value: .5,\n    get() {\n      return this.updating ? this.updatingProgressValue : 1;\n    }\n  };\nexport { t as updatingProgress, e as updatingProgressValue };"],
-  "mappings": ";AAIA,IAAM,IAAI;AAAA,EACN,OAAO;AAAA,EACP,UAAU;AACZ;AAHF,IAIE,IAAI;AAAA,EACF,UAAU;AAAA,EACV,OAAO;AAAA,EACP,MAAM;AACJ,WAAO,KAAK,WAAW,KAAK,wBAAwB;AAAA,EACtD;AACF;",
-  "names": []
-}

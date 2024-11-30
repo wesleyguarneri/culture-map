@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/core/accessorSupport/decorators/shared.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction n(n) {\n  return (r, t) => {\n    r[t] = n;\n  };\n}\nexport { n as shared };"],
-  "mappings": ";AAIA,SAAS,EAAEA,IAAG;AACZ,SAAO,CAAC,GAAG,MAAM;AACf,MAAE,CAAC,IAAIA;AAAA,EACT;AACF;",
-  "names": ["n"]
-}

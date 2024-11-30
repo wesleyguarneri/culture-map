@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/terrain/Intersector.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { IntersectorType as e } from \"../webgl-engine/lib/IntersectorInterfaces.js\";\nimport { Graphic3DTarget as r } from \"../webgl-engine/lib/IntersectorTarget.js\";\nimport { isValidIntersectorResult as t } from \"../webgl-engine/lib/intersectorUtils.js\";\nfunction n(r) {\n  return t(r) && r.intersector === e.TERRAIN && !!r.target;\n}\nclass i extends r {\n  constructor(e, r, t) {\n    super(e, r), this.triangleNr = t;\n  }\n}\nfunction o(r) {\n  return t(r) && r.intersector === e.OVERLAY && !!r.target;\n}\nexport { i as OverlayTarget, o as isOverlayIntersectorResult, n as isTerrainIntersectorResult };"],
-  "mappings": ";;;;;;;;AAOA,SAAS,EAAE,GAAG;AACZ,SAAOA,GAAE,CAAC,KAAK,EAAE,gBAAgB,EAAE,WAAW,CAAC,CAAC,EAAE;AACpD;AACA,IAAMC,KAAN,cAAgB,EAAE;AAAA,EAChB,YAAY,GAAG,GAAG,GAAG;AACnB,UAAM,GAAG,CAAC,GAAG,KAAK,aAAa;AAAA,EACjC;AACF;AACA,SAASD,GAAE,GAAG;AACZ,SAAOA,GAAE,CAAC,KAAK,EAAE,gBAAgB,EAAE,WAAW,CAAC,CAAC,EAAE;AACpD;",
-  "names": ["o", "i"]
-}

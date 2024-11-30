@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/core/sql/UnknownTimeZone.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { IANAZone as n, Zone as o, DateTime as e } from \"luxon\";\nclass t {}\nfunction r(n) {\n  return n instanceof o ? n === t.instance : \"unknown\" === n?.toString().toLowerCase();\n}\nfunction i(n) {\n  return r(n) ? t.instance : n;\n}\nfunction c(n, o) {\n  return e.fromObject({\n    day: n.day,\n    year: n.year,\n    month: n.month,\n    hour: n.hour,\n    minute: n.minute,\n    second: n.second,\n    millisecond: n.millisecond\n  }, {\n    zone: o\n  });\n}\nt.instance = new n(\"Etc/UTC\");\nexport { t as UnknownTimeZone, c as adoptTimeZone, r as isUnknownTimeZone, i as substituteUnknownTimezone };"],
-  "mappings": ";;;;;;AAKA,IAAM,IAAN,MAAQ;AAAC;AACT,SAAS,EAAE,GAAG;AACZ,SAAO,aAAa,OAAI,MAAM,EAAE,WAAW,cAAc,GAAG,SAAS,EAAE,YAAY;AACrF;AACA,SAAS,EAAE,GAAG;AACZ,SAAO,EAAE,CAAC,IAAI,EAAE,WAAW;AAC7B;AAcA,EAAE,WAAW,IAAI,SAAE,SAAS;",
-  "names": []
-}

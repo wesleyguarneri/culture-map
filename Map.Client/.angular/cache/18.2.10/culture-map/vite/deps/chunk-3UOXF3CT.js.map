@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/core/floatRGBA.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { clamp as t } from \"./mathUtils.js\";\nfunction o(o, r, e = 0) {\n  const i = t(o, 0, f);\n  for (let t = 0; t < 4; t++) r[e + t] = Math.floor(256 * l(i * n[t]));\n}\nfunction r(t, o = 0) {\n  let r = 0;\n  for (let n = 0; n < 4; n++) r += t[o + n] * e[n];\n  return r;\n}\nconst n = [1, 256, 65536, 16777216],\n  e = [1 / 256, 1 / 65536, 1 / 16777216, 1 / 4294967296],\n  f = r(new Uint8ClampedArray([255, 255, 255, 255]));\nfunction l(t) {\n  return t - Math.floor(t);\n}\nexport { o as packFloatRGBA, r as unpackFloatRGBA };"],
-  "mappings": ";;;;;AAKA,SAAS,EAAEA,IAAGC,IAAGC,KAAI,GAAG;AACtB,QAAM,IAAI,EAAEF,IAAG,GAAG,CAAC;AACnB,WAAS,IAAI,GAAG,IAAI,GAAG,IAAK,CAAAC,GAAEC,KAAI,CAAC,IAAI,KAAK,MAAM,MAAM,EAAE,IAAI,EAAE,CAAC,CAAC,CAAC;AACrE;AACA,SAAS,EAAE,GAAGF,KAAI,GAAG;AACnB,MAAIC,KAAI;AACR,WAASE,KAAI,GAAGA,KAAI,GAAGA,KAAK,CAAAF,MAAK,EAAED,KAAIG,EAAC,IAAID,GAAEC,EAAC;AAC/C,SAAOF;AACT;AACA,IAAM,IAAI,CAAC,GAAG,KAAK,OAAO,QAAQ;AAAlC,IACEC,KAAI,CAAC,IAAI,KAAK,IAAI,OAAO,IAAI,UAAU,IAAI,UAAU;AADvD,IAEE,IAAI,EAAE,IAAI,kBAAkB,CAAC,KAAK,KAAK,KAAK,GAAG,CAAC,CAAC;AACnD,SAAS,EAAE,GAAG;AACZ,SAAO,IAAI,KAAK,MAAM,CAAC;AACzB;",
-  "names": ["o", "r", "e", "n"]
-}

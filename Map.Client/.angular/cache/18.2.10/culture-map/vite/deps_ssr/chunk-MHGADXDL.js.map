@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/core/shaderLibrary/util/TextureAtlasLookup.glsl.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { glsl as a } from \"../../shaderModules/interfaces.js\";\nfunction e(e) {\n  e.fragment.code.add(a`vec4 textureAtlasLookup(sampler2D tex, vec2 textureCoordinates, vec4 atlasRegion) {\nvec2 atlasScale = atlasRegion.zw - atlasRegion.xy;\nvec2 uvAtlas = fract(textureCoordinates) * atlasScale + atlasRegion.xy;\nfloat maxdUV = 0.125;\nvec2 dUVdx = clamp(dFdx(textureCoordinates), -maxdUV, maxdUV) * atlasScale;\nvec2 dUVdy = clamp(dFdy(textureCoordinates), -maxdUV, maxdUV) * atlasScale;\nreturn textureGrad(tex, uvAtlas, dUVdx, dUVdy);\n}`);\n}\nexport { e as TextureAtlasLookup };"],
-  "mappings": ";;;;;;AAKA,SAAS,EAAEA,IAAG;AACZ,EAAAA,GAAE,SAAS,KAAK,IAAI;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,EAOpB;AACF;",
-  "names": ["e"]
-}

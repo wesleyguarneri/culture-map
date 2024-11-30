@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/layers/catalog/catalogUtils.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { makeHandle as e } from \"../../core/handleUtils.js\";\nimport { watch as t, syncAndInitial as n } from \"../../core/reactiveUtils.js\";\nconst r = new WeakMap();\nfunction a(o) {\n  return !o.destroyed && (r.has(o) || o.addHandles([t(() => {\n    const e = o.parent;\n    return !(!e || !(\"type\" in e)) && (\"catalog-dynamic-group\" === e.type || a(e));\n  }, e => r.set(o, e), n), e(() => r.delete(o))]), r.get(o));\n}\nfunction o(e) {\n  return e.parent && \"type\" in e.parent && \"catalog-dynamic-group\" === e.parent.type ? e.parent.parent : null;\n}\nexport { o as getCatalogLayerForLayer, a as isLayerFromCatalog };"],
-  "mappings": ";;;;;;;;;AAMA,IAAM,IAAI,oBAAI,QAAQ;AACtB,SAAS,EAAE,GAAG;AACZ,SAAO,CAAC,EAAE,cAAc,EAAE,IAAI,CAAC,KAAK,EAAE,WAAW,CAAC,EAAE,MAAM;AACxD,UAAMA,KAAI,EAAE;AACZ,WAAO,EAAE,CAACA,MAAK,EAAE,UAAUA,SAAQ,4BAA4BA,GAAE,QAAQ,EAAEA,EAAC;AAAA,EAC9E,GAAG,CAAAA,OAAK,EAAE,IAAI,GAAGA,EAAC,GAAG,CAAC,GAAG,EAAE,MAAM,EAAE,OAAO,CAAC,CAAC,CAAC,CAAC,GAAG,EAAE,IAAI,CAAC;AAC1D;",
-  "names": ["e"]
-}

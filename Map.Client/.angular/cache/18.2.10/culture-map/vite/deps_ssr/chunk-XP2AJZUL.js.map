@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/layers/graphics/dehydratedPoint.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction e(e, n, t, a) {\n  return {\n    x: e,\n    y: n,\n    z: t,\n    hasZ: null != t,\n    hasM: !1,\n    spatialReference: a,\n    type: \"point\"\n  };\n}\nfunction n(e, n, t, a, l) {\n  e.x = n, e.y = t, e.z = a, e.hasZ = null != a, e.spatialReference = l;\n}\nexport { e as makeDehydratedPoint, n as setDehydratedPoint };"],
-  "mappings": ";;;AAIA,SAAS,EAAEA,IAAGC,IAAG,GAAG,GAAG;AACrB,SAAO;AAAA,IACL,GAAGD;AAAA,IACH,GAAGC;AAAA,IACH,GAAG;AAAA,IACH,MAAM,QAAQ;AAAA,IACd,MAAM;AAAA,IACN,kBAAkB;AAAA,IAClB,MAAM;AAAA,EACR;AACF;AACA,SAAS,EAAED,IAAGC,IAAG,GAAG,GAAG,GAAG;AACxB,EAAAD,GAAE,IAAIC,IAAGD,GAAE,IAAI,GAAGA,GAAE,IAAI,GAAGA,GAAE,OAAO,QAAQ,GAAGA,GAAE,mBAAmB;AACtE;",
-  "names": ["e", "n"]
-}

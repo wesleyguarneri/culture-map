@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/widgets/support/decorators/vmEvent.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction e(e) {\n  return a => {\n    a.hasOwnProperty(\"_delegatedEventNames\") || (a._delegatedEventNames = a._delegatedEventNames ? a._delegatedEventNames.slice() : []);\n    const n = a._delegatedEventNames,\n      r = Array.isArray(e) ? e : t(e);\n    n.push(...r);\n  };\n}\nfunction t(e) {\n  return e.split(\",\").map(e => e.trim());\n}\nexport { e as vmEvent };"],
-  "mappings": ";AAIA,SAAS,EAAEA,IAAG;AACZ,SAAO,OAAK;AACV,MAAE,eAAe,sBAAsB,MAAM,EAAE,uBAAuB,EAAE,uBAAuB,EAAE,qBAAqB,MAAM,IAAI,CAAC;AACjI,UAAM,IAAI,EAAE,sBACV,IAAI,MAAM,QAAQA,EAAC,IAAIA,KAAI,EAAEA,EAAC;AAChC,MAAE,KAAK,GAAG,CAAC;AAAA,EACb;AACF;AACA,SAAS,EAAEA,IAAG;AACZ,SAAOA,GAAE,MAAM,GAAG,EAAE,IAAI,CAAAA,OAAKA,GAAE,KAAK,CAAC;AACvC;",
-  "names": ["e"]
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/materials/DefaultLayouts.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { newLayout as e } from \"../../support/buffer/InterleavedLayout.js\";\nimport { VertexAttribute as O } from \"../lib/VertexAttribute.js\";\nconst t = e().vec3f(O.POSITION),\n  f = e().vec3f(O.POSITION).vec2f(O.UV0),\n  r = e().vec3f(O.POSITION).vec4u8(O.COLOR),\n  I = e().vec3f(O.POSITION).vec2f(O.UV0).vec4u8(O.OBJECTANDLAYERIDCOLOR);\nexport { r as PositionColorLayout, t as PositionLayout, f as PositionUVLayout, I as PositionUVLayoutObjectAndLayerId };"],
-  "mappings": ";;;;;;;;;AAMA,IAAM,IAAI,EAAE,EAAE,MAAM,EAAE,QAAQ;AAA9B,IACE,IAAI,EAAE,EAAE,MAAM,EAAE,QAAQ,EAAE,MAAM,EAAE,GAAG;AADvC,IAEE,IAAI,EAAE,EAAE,MAAM,EAAE,QAAQ,EAAE,OAAO,EAAE,KAAK;AAF1C,IAGE,IAAI,EAAE,EAAE,MAAM,EAAE,QAAQ,EAAE,MAAM,EAAE,GAAG,EAAE,OAAO,EAAE,qBAAqB;",
-  "names": []
-}

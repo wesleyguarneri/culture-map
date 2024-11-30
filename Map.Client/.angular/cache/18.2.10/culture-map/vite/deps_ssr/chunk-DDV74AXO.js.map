@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/2d/engine/vectorTiles/decluttering/config.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nconst o = !0,\n  t = 32,\n  c = 1.5,\n  e = 200;\nexport { t as collisionGridCellSize, c as declutterBudget, o as declutterTiles, e as fadeDuration };"],
-  "mappings": ";;;AAIA,IAAM,IAAI;AAAV,IACE,IAAI;AADN,IAEE,IAAI;AAFN,IAGE,IAAI;",
-  "names": []
-}

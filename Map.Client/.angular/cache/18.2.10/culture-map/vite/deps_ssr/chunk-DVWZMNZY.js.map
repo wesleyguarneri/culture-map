@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/analysis/support/projectionUtils.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { tryProjectWithZConversion as o } from \"../../../../geometry/projection.js\";\nimport { getElevationAtPoint as e } from \"../../support/ElevationProvider.js\";\nfunction r(r, t, i, n = !1) {\n  const l = o(r, t);\n  return null == l ? null : (l.hasZ && !n || null == i || (l.z = e(i, l) ?? 0), l);\n}\nfunction t(o, e, r) {\n  r.warnOnce(`Failed to project analysis geometry (id: '${o.id}'), projection from spatial reference (wkid: '${e.wkid}') to view spatial reference is not supported. Projection may be possible after calling projection.load().`);\n}\nexport { r as applyProjectionAndElevationAlignment, t as logFailedGeometryProjectionError };"],
-  "mappings": ";;;;;;;;;AAMA,SAAS,EAAEA,IAAGC,IAAG,GAAG,IAAI,OAAI;AAC1B,QAAM,IAAI,EAAED,IAAGC,EAAC;AAChB,SAAO,QAAQ,IAAI,QAAQ,EAAE,QAAQ,CAAC,KAAK,QAAQ,MAAM,EAAE,IAAI,EAAE,GAAG,CAAC,KAAK,IAAI;AAChF;AACA,SAAS,EAAE,GAAG,GAAGD,IAAG;AAClB,EAAAA,GAAE,SAAS,6CAA6C,EAAE,EAAE,iDAAiD,EAAE,IAAI,4GAA4G;AACjO;",
-  "names": ["r", "t"]
-}

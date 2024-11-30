@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/layers/graphics/sources/interfaces.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nvar a;\n!function (a) {\n  a[a.EnableFastUpdates = 0] = \"EnableFastUpdates\", a[a.DisableFastUpdates = 1] = \"DisableFastUpdates\", a[a.UpdateFastLocalOrigin = 2] = \"UpdateFastLocalOrigin\";\n}(a || (a = {}));\nexport { a as MeshTransformUpdateAction };"],
-  "mappings": ";;;AAIA,IAAI;AACJ,CAAC,SAAUA,IAAG;AACZ,EAAAA,GAAEA,GAAE,oBAAoB,CAAC,IAAI,qBAAqBA,GAAEA,GAAE,qBAAqB,CAAC,IAAI,sBAAsBA,GAAEA,GAAE,wBAAwB,CAAC,IAAI;AACzI,EAAE,MAAM,IAAI,CAAC,EAAE;",
-  "names": ["a"]
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/core/shaderModules/interfaces.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nclass t {}\nconst n = t;\nfunction o(t, ...n) {\n  let o = \"\";\n  for (let r = 0; r < n.length; r++) o += t[r] + n[r];\n  return o += t[t.length - 1], o;\n}\n!function (t) {\n  function n(t) {\n    return Math.round(t).toString();\n  }\n  function o(t) {\n    return t.toPrecision(8);\n  }\n  t.int = n, t.float = o;\n}(o || (o = {}));\nexport { n as NoParameters, o as glsl };"],
-  "mappings": ";AAIA,IAAM,IAAN,MAAQ;AAAC;AACT,IAAM,IAAI;AACV,SAAS,EAAEA,OAAMC,IAAG;AAClB,MAAIC,KAAI;AACR,WAAS,IAAI,GAAG,IAAID,GAAE,QAAQ,IAAK,CAAAC,MAAKF,GAAE,CAAC,IAAIC,GAAE,CAAC;AAClD,SAAOC,MAAKF,GAAEA,GAAE,SAAS,CAAC,GAAGE;AAC/B;AACA,CAAC,SAAUF,IAAG;AACZ,WAASC,GAAED,IAAG;AACZ,WAAO,KAAK,MAAMA,EAAC,EAAE,SAAS;AAAA,EAChC;AACA,WAASE,GAAEF,IAAG;AACZ,WAAOA,GAAE,YAAY,CAAC;AAAA,EACxB;AACA,EAAAA,GAAE,MAAMC,IAAGD,GAAE,QAAQE;AACvB,EAAE,MAAM,IAAI,CAAC,EAAE;",
-  "names": ["t", "n", "o"]
-}

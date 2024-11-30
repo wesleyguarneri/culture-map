@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/geometry/support/Axis.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nvar n;\n!function (n) {\n  n[n.X = 0] = \"X\", n[n.Y = 1] = \"Y\", n[n.Z = 2] = \"Z\";\n}(n || (n = {}));\nexport { n as Axis };"],
-  "mappings": ";;;AAIA,IAAI;AACJ,CAAC,SAAUA,IAAG;AACZ,EAAAA,GAAEA,GAAE,IAAI,CAAC,IAAI,KAAKA,GAAEA,GAAE,IAAI,CAAC,IAAI,KAAKA,GAAEA,GAAE,IAAI,CAAC,IAAI;AACnD,EAAE,MAAM,IAAI,CAAC,EAAE;",
-  "names": ["n"]
-}

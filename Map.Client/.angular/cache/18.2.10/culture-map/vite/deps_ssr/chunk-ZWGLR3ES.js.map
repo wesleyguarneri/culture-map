@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/core/throttle.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction e(e, t, l, n) {\n  let o = null,\n    p = 1e3;\n  \"number\" == typeof t ? (p = t, n = l) : (o = t ?? null, p = l);\n  let r,\n    u = 0;\n  const a = () => {\n      u = 0, e.apply(n, r);\n    },\n    c = (...e) => {\n      o && o.apply(n, e), r = e, p ? u || (u = setTimeout(a, p)) : a();\n    };\n  return c.remove = () => {\n    u && (clearTimeout(u), u = 0);\n  }, c.forceUpdate = () => {\n    u && (clearTimeout(u), a());\n  }, c.hasPendingUpdates = () => !!u, c;\n}\nexport { e as throttle };"],
-  "mappings": ";;;AAIA,SAAS,EAAEA,IAAG,GAAG,GAAG,GAAG;AACrB,MAAI,IAAI,MACN,IAAI;AACN,cAAY,OAAO,KAAK,IAAI,GAAG,IAAI,MAAM,IAAI,KAAK,MAAM,IAAI;AAC5D,MAAI,GACF,IAAI;AACN,QAAM,IAAI,MAAM;AACZ,QAAI,GAAGA,GAAE,MAAM,GAAG,CAAC;AAAA,EACrB,GACA,IAAI,IAAIA,OAAM;AACZ,SAAK,EAAE,MAAM,GAAGA,EAAC,GAAG,IAAIA,IAAG,IAAI,MAAM,IAAI,WAAW,GAAG,CAAC,KAAK,EAAE;AAAA,EACjE;AACF,SAAO,EAAE,SAAS,MAAM;AACtB,UAAM,aAAa,CAAC,GAAG,IAAI;AAAA,EAC7B,GAAG,EAAE,cAAc,MAAM;AACvB,UAAM,aAAa,CAAC,GAAG,EAAE;AAAA,EAC3B,GAAG,EAAE,oBAAoB,MAAM,CAAC,CAAC,GAAG;AACtC;",
-  "names": ["e"]
-}

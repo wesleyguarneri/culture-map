@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/support/themeUtils.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nconst t = \"calcite-mode-\";\nfunction e() {\n  return getComputedStyle(document.body).getPropertyValue(\"--esri-calcite-mode-name\").replaceAll(/\\s|'|\"/g, \"\");\n}\nfunction r() {\n  return e().startsWith(\"dark\");\n}\nfunction c() {\n  return `${t}${r() ? \"dark\" : \"light\"}`;\n}\nfunction n(t) {\n  o(t), t.classList.add(c());\n}\nfunction o(e) {\n  Array.from(e.classList).forEach(r => {\n    r.startsWith(t) && e.classList.remove(r);\n  });\n}\nexport { c as getCalciteThemeClass, r as isDarkTheme, n as setCalciteThemeClass };"],
-  "mappings": ";AAIA,IAAM,IAAI;AACV,SAAS,IAAI;AACX,SAAO,iBAAiB,SAAS,IAAI,EAAE,iBAAiB,0BAA0B,EAAE,WAAW,WAAW,EAAE;AAC9G;AACA,SAAS,IAAI;AACX,SAAO,EAAE,EAAE,WAAW,MAAM;AAC9B;AACA,SAAS,IAAI;AACX,SAAO,GAAG,CAAC,GAAG,EAAE,IAAI,SAAS,OAAO;AACtC;AACA,SAAS,EAAEA,IAAG;AACZ,IAAEA,EAAC,GAAGA,GAAE,UAAU,IAAI,EAAE,CAAC;AAC3B;AACA,SAAS,EAAEC,IAAG;AACZ,QAAM,KAAKA,GAAE,SAAS,EAAE,QAAQ,CAAAC,OAAK;AACnC,IAAAA,GAAE,WAAW,CAAC,KAAKD,GAAE,UAAU,OAAOC,EAAC;AAAA,EACzC,CAAC;AACH;",
-  "names": ["t", "e", "r"]
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/2d/engine/webgl/Rect.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nclass t {\n  constructor(t = 0, h = 0, i = 0, s = 0) {\n    this.x = t, this.y = h, this.width = i, this.height = s;\n  }\n  get isEmpty() {\n    return this.width <= 0 || this.height <= 0;\n  }\n  union(t) {\n    this.x = Math.min(this.x, t.x), this.y = Math.min(this.y, t.y), this.width = Math.max(this.width, t.width), this.height = Math.max(this.height, t.height);\n  }\n}\nexport { t as default };"],
-  "mappings": ";;;AAIA,IAAM,IAAN,MAAQ;AAAA,EACN,YAAYA,KAAI,GAAG,IAAI,GAAG,IAAI,GAAG,IAAI,GAAG;AACtC,SAAK,IAAIA,IAAG,KAAK,IAAI,GAAG,KAAK,QAAQ,GAAG,KAAK,SAAS;AAAA,EACxD;AAAA,EACA,IAAI,UAAU;AACZ,WAAO,KAAK,SAAS,KAAK,KAAK,UAAU;AAAA,EAC3C;AAAA,EACA,MAAMA,IAAG;AACP,SAAK,IAAI,KAAK,IAAI,KAAK,GAAGA,GAAE,CAAC,GAAG,KAAK,IAAI,KAAK,IAAI,KAAK,GAAGA,GAAE,CAAC,GAAG,KAAK,QAAQ,KAAK,IAAI,KAAK,OAAOA,GAAE,KAAK,GAAG,KAAK,SAAS,KAAK,IAAI,KAAK,QAAQA,GAAE,MAAM;AAAA,EAC1J;AACF;",
-  "names": ["t"]
-}

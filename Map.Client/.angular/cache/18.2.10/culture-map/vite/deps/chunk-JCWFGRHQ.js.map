@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/core/sql.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nasync function e(e, n) {\n  const {\n    WhereClause: r\n  } = await import(\"./sql/WhereClause.js\");\n  return r.create(e, n);\n}\nfunction n(e, n) {\n  return \"1=1\" === e ? n ?? e : \"1=1\" === n ? e ?? n : null != e && \"\" !== e ? null != n && \"\" !== n ? `(${e}) AND (${n})` : e : n;\n}\nexport { e as parseWhereClause, n as sqlAnd };"],
-  "mappings": ";;;;;AAIA,SAAe,EAAEA,IAAGC,IAAG;AAAA;AACrB,UAAM;AAAA,MACJ,aAAa;AAAA,IACf,IAAI,MAAM,OAAO,2BAAsB;AACvC,WAAO,EAAE,OAAOD,IAAGC,EAAC;AAAA,EACtB;AAAA;AACA,SAAS,EAAED,IAAGC,IAAG;AACf,SAAO,UAAUD,KAAIC,MAAKD,KAAI,UAAUC,KAAID,MAAKC,KAAI,QAAQD,MAAK,OAAOA,KAAI,QAAQC,MAAK,OAAOA,KAAI,IAAID,EAAC,UAAUC,EAAC,MAAMD,KAAIC;AACjI;",
-  "names": ["e", "n"]
-}

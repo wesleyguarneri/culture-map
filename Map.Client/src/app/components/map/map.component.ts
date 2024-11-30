@@ -1,11 +1,10 @@
 import { Component, OnInit } from "@angular/core";
-import { ComponentLibraryModule } from "@arcgis/map-components-angular";
 
 
 @Component({
   selector: 'app-map',
   standalone: true,
-  imports: [ComponentLibraryModule],
+  imports: [],
   templateUrl: './map.component.html',
   styleUrl: './map.component.scss'
 })

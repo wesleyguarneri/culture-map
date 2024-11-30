@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/core/multiOriginJSONSupportUtils.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction i(i) {\n  return i && \"getAtOrigin\" in i && \"originOf\" in i;\n}\nexport { i as isMultiOriginJSONMixin };"],
-  "mappings": ";;;AAIA,SAAS,EAAEA,IAAG;AACZ,SAAOA,MAAK,iBAAiBA,MAAK,cAAcA;AAClD;",
-  "names": ["i"]
-}

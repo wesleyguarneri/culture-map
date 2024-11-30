@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/assets.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport s from \"./config.js\";\nimport t from \"./request.js\";\nimport r from \"./core/Error.js\";\nimport o from \"./core/Logger.js\";\nimport { join as e } from \"./core/urlUtils.js\";\nfunction i(s, r) {\n  return t(n(s), r);\n}\nfunction n(t) {\n  if (!s.assetsPath) throw o.getLogger(\"esri.assets\").errorOnce(\"The API assets location needs to be set using config.assetsPath. More information: https://arcg.is/1OzLe50\"), new r(\"assets:path-not-set\", \"config.assetsPath is not set\");\n  return e(s.assetsPath, t);\n}\nexport { i as fetchAsset, n as getAssetUrl };"],
-  "mappings": ";;;;;;;;;;;;AASA,SAAS,EAAEA,IAAG,GAAG;AACf,SAAO,EAAEC,GAAED,EAAC,GAAG,CAAC;AAClB;AACA,SAASC,GAAE,GAAG;AACZ,MAAI,CAAC,EAAE,WAAY,OAAM,EAAE,UAAU,aAAa,EAAE,UAAU,4GAA4G,GAAG,IAAID,GAAE,uBAAuB,8BAA8B;AACxO,SAAO,EAAE,EAAE,YAAY,CAAC;AAC1B;",
-  "names": ["s", "n"]
-}

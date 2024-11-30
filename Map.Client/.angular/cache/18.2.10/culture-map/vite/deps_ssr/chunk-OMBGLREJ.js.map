@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/layers/support/ElevationQueryTileCache.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nclass t {\n  constructor(t) {\n    this._store = t;\n  }\n  destroy() {\n    this._store.destroy();\n  }\n  get(t) {\n    return this._store.get(t);\n  }\n  put(t, s) {\n    this._store.put(t, s, s.values.byteLength + 256);\n  }\n}\nexport { t as ElevationQueryTileCache };"],
-  "mappings": ";;;AAIA,IAAM,IAAN,MAAQ;AAAA,EACN,YAAYA,IAAG;AACb,SAAK,SAASA;AAAA,EAChB;AAAA,EACA,UAAU;AACR,SAAK,OAAO,QAAQ;AAAA,EACtB;AAAA,EACA,IAAIA,IAAG;AACL,WAAO,KAAK,OAAO,IAAIA,EAAC;AAAA,EAC1B;AAAA,EACA,IAAIA,IAAG,GAAG;AACR,SAAK,OAAO,IAAIA,IAAG,GAAG,EAAE,OAAO,aAAa,GAAG;AAAA,EACjD;AACF;",
-  "names": ["t"]
-}

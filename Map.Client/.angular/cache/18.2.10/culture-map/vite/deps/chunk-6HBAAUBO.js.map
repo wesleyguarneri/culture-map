@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/webgl/VertexElementDescriptor.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nclass t {\n  constructor(t, s, i, h, o, e = !1, r = 0) {\n    this.name = t, this.count = s, this.type = i, this.offset = h, this.stride = o, this.normalized = e, this.divisor = r;\n  }\n}\nexport { t as VertexElementDescriptor };"],
-  "mappings": ";AAIA,IAAM,IAAN,MAAQ;AAAA,EACN,YAAYA,IAAG,GAAG,GAAG,GAAG,GAAG,IAAI,OAAI,IAAI,GAAG;AACxC,SAAK,OAAOA,IAAG,KAAK,QAAQ,GAAG,KAAK,OAAO,GAAG,KAAK,SAAS,GAAG,KAAK,SAAS,GAAG,KAAK,aAAa,GAAG,KAAK,UAAU;AAAA,EACtH;AACF;",
-  "names": ["t"]
-}

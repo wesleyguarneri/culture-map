@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/arcade/portalUtils.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport r from \"../portal/Portal.js\";\nfunction l(l, t) {\n  if (null === l) return t;\n  return new r({\n    url: l.field(\"url\")\n  });\n}\nexport { l as getPortal };"],
-  "mappings": ";;;;;AAKA,SAAS,EAAEA,IAAG,GAAG;AACf,MAAI,SAASA,GAAG,QAAO;AACvB,SAAO,IAAI,EAAE;AAAA,IACX,KAAKA,GAAE,MAAM,KAAK;AAAA,EACpB,CAAC;AACH;",
-  "names": ["l"]
-}

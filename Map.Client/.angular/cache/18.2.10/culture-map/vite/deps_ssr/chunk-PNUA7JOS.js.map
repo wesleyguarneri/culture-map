@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/core/time.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction n(n) {\n  return n;\n}\nfunction r(r) {\n  return n(1e3 * r);\n}\nfunction t(n) {\n  return n;\n}\nfunction u(n) {\n  return t(.001 * n);\n}\nfunction e() {\n  return n(performance.now());\n}\nexport { n as Milliseconds, t as Seconds, r as millisecondsFromSeconds, e as now, u as secondsFromMilliseconds };"],
-  "mappings": ";;;AAIA,SAAS,EAAEA,IAAG;AACZ,SAAOA;AACT;AACA,SAAS,EAAEC,IAAG;AACZ,SAAO,EAAE,MAAMA,EAAC;AAClB;AACA,SAAS,EAAED,IAAG;AACZ,SAAOA;AACT;AACA,SAAS,EAAEA,IAAG;AACZ,SAAO,EAAE,OAAOA,EAAC;AACnB;",
-  "names": ["n", "r"]
-}

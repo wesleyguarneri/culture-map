@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/properties/defaultUnit.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { getDefaultUnitForView as t } from \"../support/getDefaultUnitForView.js\";\nconst e = {\n  readOnly: !0,\n  get() {\n    return t(this.view);\n  }\n};\nexport { e as defaultUnitPropertyMetadata };"],
-  "mappings": ";;;;;;AAKA,IAAMA,KAAI;AAAA,EACR,UAAU;AAAA,EACV,MAAM;AACJ,WAAO,EAAE,KAAK,IAAI;AAAA,EACpB;AACF;",
-  "names": ["e"]
-}

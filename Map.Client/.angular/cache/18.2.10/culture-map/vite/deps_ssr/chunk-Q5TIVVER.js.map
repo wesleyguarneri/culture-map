@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/layers/support/fieldType.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { JSONMap as e } from \"../../core/jsonMap.js\";\nconst i = new e({\n  esriFieldTypeSmallInteger: \"small-integer\",\n  esriFieldTypeInteger: \"integer\",\n  esriFieldTypeSingle: \"single\",\n  esriFieldTypeDouble: \"double\",\n  esriFieldTypeLong: \"long\",\n  esriFieldTypeString: \"string\",\n  esriFieldTypeDate: \"date\",\n  esriFieldTypeOID: \"oid\",\n  esriFieldTypeGeometry: \"geometry\",\n  esriFieldTypeBlob: \"blob\",\n  esriFieldTypeRaster: \"raster\",\n  esriFieldTypeGUID: \"guid\",\n  esriFieldTypeGlobalID: \"global-id\",\n  esriFieldTypeXML: \"xml\",\n  esriFieldTypeBigInteger: \"big-integer\",\n  esriFieldTypeDateOnly: \"date-only\",\n  esriFieldTypeTimeOnly: \"time-only\",\n  esriFieldTypeTimestampOffset: \"timestamp-offset\"\n});\nexport { i as kebabDict };"],
-  "mappings": ";;;;;;AAKA,IAAM,IAAI,IAAI,EAAE;AAAA,EACd,2BAA2B;AAAA,EAC3B,sBAAsB;AAAA,EACtB,qBAAqB;AAAA,EACrB,qBAAqB;AAAA,EACrB,mBAAmB;AAAA,EACnB,qBAAqB;AAAA,EACrB,mBAAmB;AAAA,EACnB,kBAAkB;AAAA,EAClB,uBAAuB;AAAA,EACvB,mBAAmB;AAAA,EACnB,qBAAqB;AAAA,EACrB,mBAAmB;AAAA,EACnB,uBAAuB;AAAA,EACvB,kBAAkB;AAAA,EAClB,yBAAyB;AAAA,EACzB,uBAAuB;AAAA,EACvB,uBAAuB;AAAA,EACvB,8BAA8B;AAChC,CAAC;",
-  "names": []
-}

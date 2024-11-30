@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/core/devEnvironmentUtils.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction c(c) {\n  return c = c || globalThis.location.hostname, l.some(a => null != c?.match(a));\n}\nfunction a(c, a) {\n  return c && (a = a || globalThis.location.hostname) ? null != a.match(t) || null != a.match(s) ? c.replace(\"static.arcgis.com\", \"staticdev.arcgis.com\") : null != a.match(o) || null != a.match(i) ? c.replace(\"static.arcgis.com\", \"staticqa.arcgis.com\") : c : c;\n}\nconst t = /^devext\\.arcgis\\.com$/,\n  o = /^qaext\\.arcgis\\.com$/,\n  s = /^[\\w-]*\\.mapsdevext\\.arcgis\\.com$/,\n  i = /^[\\w-]*\\.mapsqa\\.arcgis\\.com$/,\n  l = [/^([\\w-]*\\.)?[\\w-]*\\.zrh-dev-local\\.esri\\.com$/, t, o, /^jsapps\\.esri\\.com$/, s, i];\nexport { a as adjustStaticAGOUrl, l as devHostnames, c as isDevEnvironment };"],
-  "mappings": ";;;AAIA,SAAS,EAAEA,IAAG;AACZ,SAAOA,KAAIA,MAAK,WAAW,SAAS,UAAU,EAAE,KAAK,CAAAC,OAAK,QAAQD,IAAG,MAAMC,EAAC,CAAC;AAC/E;AACA,SAAS,EAAED,IAAGC,IAAG;AACf,SAAOD,OAAMC,KAAIA,MAAK,WAAW,SAAS,YAAY,QAAQA,GAAE,MAAM,CAAC,KAAK,QAAQA,GAAE,MAAM,CAAC,IAAID,GAAE,QAAQ,qBAAqB,sBAAsB,IAAI,QAAQC,GAAE,MAAM,CAAC,KAAK,QAAQA,GAAE,MAAM,CAAC,IAAID,GAAE,QAAQ,qBAAqB,qBAAqB,IAAIA,KAAIA;AACnQ;AACA,IAAM,IAAI;AAAV,IACE,IAAI;AADN,IAEE,IAAI;AAFN,IAGE,IAAI;AAHN,IAIE,IAAI,CAAC,iDAAiD,GAAG,GAAG,uBAAuB,GAAG,CAAC;",
-  "names": ["c", "a"]
-}

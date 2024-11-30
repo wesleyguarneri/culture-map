@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/materials/DefaultBufferWriter.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { VertexAttribute as t } from \"../lib/VertexAttribute.js\";\nimport { writeDefaultAttributes as e } from \"./internal/bufferWriterUtils.js\";\nclass r {\n  constructor(t) {\n    this.vertexBufferLayout = t;\n  }\n  elementCount(e) {\n    return e.attributes.get(t.POSITION).indices.length;\n  }\n  write(t, r, i, o, s) {\n    e(i, this.vertexBufferLayout, t, r, o, s);\n  }\n}\nexport { r as DefaultBufferWriter };"],
-  "mappings": ";;;;;;;;AAMA,IAAM,IAAN,MAAQ;AAAA,EACN,YAAY,GAAG;AACb,SAAK,qBAAqB;AAAA,EAC5B;AAAA,EACA,aAAaA,IAAG;AACd,WAAOA,GAAE,WAAW,IAAI,EAAE,QAAQ,EAAE,QAAQ;AAAA,EAC9C;AAAA,EACA,MAAM,GAAGC,IAAG,GAAG,GAAG,GAAG;AACnB,MAAE,GAAG,KAAK,oBAAoB,GAAGA,IAAG,GAAG,CAAC;AAAA,EAC1C;AACF;",
-  "names": ["e", "r"]
-}

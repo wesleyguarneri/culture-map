@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/2d/support/Timeline.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nconst s = s => s.includes(\"Brush\");\nclass e {\n  constructor() {\n    this._names = new Map();\n  }\n  begin(e) {\n    this._names.has(e) || (this._names.set(e, !1), s(e) && this.record(\"Esri.FirstDraw\"), performance.mark(`Esri.${e}.Start`));\n  }\n  end(s) {\n    this._names.has(s) && !this._names.get(s) && (this._names.set(s, !0), performance.mark(`Esri.${s}.End`));\n  }\n  record(s) {\n    this._names.has(s) || (this._names.set(s, !0), performance.mark(`Esri.${s}`));\n  }\n}\nexport { e as Timeline };"],
-  "mappings": ";AAIA,IAAM,IAAI,CAAAA,OAAKA,GAAE,SAAS,OAAO;AACjC,IAAM,IAAN,MAAQ;AAAA,EACN,cAAc;AACZ,SAAK,SAAS,oBAAI,IAAI;AAAA,EACxB;AAAA,EACA,MAAMC,IAAG;AACP,SAAK,OAAO,IAAIA,EAAC,MAAM,KAAK,OAAO,IAAIA,IAAG,KAAE,GAAG,EAAEA,EAAC,KAAK,KAAK,OAAO,gBAAgB,GAAG,YAAY,KAAK,QAAQA,EAAC,QAAQ;AAAA,EAC1H;AAAA,EACA,IAAID,IAAG;AACL,SAAK,OAAO,IAAIA,EAAC,KAAK,CAAC,KAAK,OAAO,IAAIA,EAAC,MAAM,KAAK,OAAO,IAAIA,IAAG,IAAE,GAAG,YAAY,KAAK,QAAQA,EAAC,MAAM;AAAA,EACxG;AAAA,EACA,OAAOA,IAAG;AACR,SAAK,OAAO,IAAIA,EAAC,MAAM,KAAK,OAAO,IAAIA,IAAG,IAAE,GAAG,YAAY,KAAK,QAAQA,EAAC,EAAE;AAAA,EAC7E;AACF;",
-  "names": ["s", "e"]
-}

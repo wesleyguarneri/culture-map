@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@esri/calcite-components/dist/components/index2.js"],
-  "sourcesContent": ["/*!\n * All material copyright ESRI, All Rights Reserved, unless otherwise specified.\n * See https://github.com/Esri/calcite-design-system/blob/dev/LICENSE.md for details.\n * v2.13.2\n */\nimport { timeZones } from './time-zones.js';\nasync function groupByName() {\n  return timeZones.sort().map(tz => ({\n    label: tz\n  }));\n}\nexport { groupByName };\n\n"],
-  "mappings": ";;;;;;;;;;AAMA,SAAe,cAAc;AAAA;AAC3B,WAAO,UAAU,KAAK,EAAE,IAAI,SAAO;AAAA,MACjC,OAAO;AAAA,IACT,EAAE;AAAA,EACJ;AAAA;",
-  "names": []
-}

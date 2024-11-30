@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/ViewingMode.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nvar l;\nfunction o(o) {\n  return \"global\" === o ? l.Global : l.Local;\n}\nfunction a(o) {\n  return o === l.Global ? \"global\" : \"local\";\n}\n!function (l) {\n  l[l.Global = 1] = \"Global\", l[l.Local = 2] = \"Local\";\n}(l || (l = {}));\nexport { l as ViewingMode, a as stringFromViewingMode, o as viewingModeFromString };"],
-  "mappings": ";;;AAIA,IAAI;AACJ,SAAS,EAAEA,IAAG;AACZ,SAAO,aAAaA,KAAI,EAAE,SAAS,EAAE;AACvC;AACA,SAAS,EAAEA,IAAG;AACZ,SAAOA,OAAM,EAAE,SAAS,WAAW;AACrC;AACA,CAAC,SAAUC,IAAG;AACZ,EAAAA,GAAEA,GAAE,SAAS,CAAC,IAAI,UAAUA,GAAEA,GAAE,QAAQ,CAAC,IAAI;AAC/C,EAAE,MAAM,IAAI,CAAC,EAAE;",
-  "names": ["o", "l"]
-}

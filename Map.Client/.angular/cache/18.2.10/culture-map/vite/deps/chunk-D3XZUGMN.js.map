@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/layers/graphics/data/SnappingCandidate.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction t(t, e, r) {\n  return {\n    objectId: t,\n    target: e,\n    distance: r,\n    type: \"vertex\"\n  };\n}\nfunction e(t, e, r, n, d, a = !1) {\n  return {\n    objectId: t,\n    target: e,\n    distance: r,\n    type: \"edge\",\n    start: n,\n    end: d,\n    draped: a\n  };\n}\nexport { e as makeEdgeCandidate, t as makeVertexCandidate };"],
-  "mappings": ";AAIA,SAAS,EAAEA,IAAGC,IAAG,GAAG;AAClB,SAAO;AAAA,IACL,UAAUD;AAAA,IACV,QAAQC;AAAA,IACR,UAAU;AAAA,IACV,MAAM;AAAA,EACR;AACF;AACA,SAAS,EAAED,IAAGC,IAAG,GAAG,GAAG,GAAG,IAAI,OAAI;AAChC,SAAO;AAAA,IACL,UAAUD;AAAA,IACV,QAAQC;AAAA,IACR,UAAU;AAAA,IACV,MAAM;AAAA,IACN,OAAO;AAAA,IACP,KAAK;AAAA,IACL,QAAQ;AAAA,EACV;AACF;",
-  "names": ["t", "e"]
-}

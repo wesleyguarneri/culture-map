@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/rest/versionManagement/gdbVersion/stopEditing.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport s from \"../../../request.js\";\nimport i from \"../../../core/Error.js\";\nimport { parseUrl as t, asValidOptions as o, encode as r } from \"../../utils.js\";\nasync function e(e, n, m, u, a) {\n  if (!n) throw new i(\"stop-editing:missing-guid\", \"guid for version is missing\");\n  const c = t(e),\n    d = o(c.query, {\n      query: r({\n        sessionId: m,\n        saveEdits: u,\n        f: \"json\"\n      }),\n      ...a,\n      method: \"post\"\n    });\n  n.startsWith(\"{\") && (n = n.slice(1, -1));\n  const p = `${c.path}/versions/${n}/stopEditing`,\n    {\n      data: f\n    } = await s(p, d);\n  return f || {\n    success: !1\n  };\n}\nexport { e as stopEditing };"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAOA,SAAe,EAAEA,IAAG,GAAG,GAAG,GAAG,GAAG;AAAA;AAC9B,QAAI,CAAC,EAAG,OAAM,IAAI,EAAE,6BAA6B,6BAA6B;AAC9E,UAAM,IAAI,EAAEA,EAAC,GACX,IAAI,EAAE,EAAE,OAAO;AAAA,MACb,OAAOC,GAAE;AAAA,QACP,WAAW;AAAA,QACX,WAAW;AAAA,QACX,GAAG;AAAA,MACL,CAAC;AAAA,OACE,IANU;AAAA,MAOb,QAAQ;AAAA,IACV,EAAC;AACH,MAAE,WAAW,GAAG,MAAM,IAAI,EAAE,MAAM,GAAG,EAAE;AACvC,UAAM,IAAI,GAAG,EAAE,IAAI,aAAa,CAAC,gBAC/B;AAAA,MACE,MAAMC;AAAA,IACR,IAAI,MAAM,EAAE,GAAG,CAAC;AAClB,WAAOA,MAAK;AAAA,MACV,SAAS;AAAA,IACX;AAAA,EACF;AAAA;",
-  "names": ["e", "s", "f"]
-}

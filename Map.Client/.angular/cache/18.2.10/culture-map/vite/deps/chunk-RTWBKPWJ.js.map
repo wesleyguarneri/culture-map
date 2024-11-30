@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/renderers/support/styleUtils.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { result as e } from \"../../core/asyncUtils.js\";\nimport { throwIfAborted as r } from \"../../core/promiseUtils.js\";\nimport o from \"../../core/Warning.js\";\nasync function t(t, i, n) {\n  const s = t && t.getAtOrigin && t.getAtOrigin(\"renderer\", i.origin);\n  if (s && \"unique-value\" === s.type && s.styleOrigin) {\n    const a = await e(s.populateFromStyle());\n    if (r(n), !1 === a.ok) {\n      const e = a.error;\n      i?.messages && i.messages.push(new o(\"renderer:style-reference\", `Failed to create unique value renderer from style reference: ${e.message}`, {\n        error: e,\n        context: i\n      })), t.clear(\"renderer\", i?.origin);\n    }\n  }\n}\nexport { t as loadStyleRenderer };"],
-  "mappings": ";;;;;;;;;;;;;;AAOA,SAAe,EAAEA,IAAG,GAAG,GAAG;AAAA;AACxB,UAAMC,KAAID,MAAKA,GAAE,eAAeA,GAAE,YAAY,YAAY,EAAE,MAAM;AAClE,QAAIC,MAAK,mBAAmBA,GAAE,QAAQA,GAAE,aAAa;AACnD,YAAM,IAAI,MAAM,EAAEA,GAAE,kBAAkB,CAAC;AACvC,UAAI,EAAE,CAAC,GAAG,UAAO,EAAE,IAAI;AACrB,cAAM,IAAI,EAAE;AACZ,WAAG,YAAY,EAAE,SAAS,KAAK,IAAIA,GAAE,4BAA4B,gEAAgE,EAAE,OAAO,IAAI;AAAA,UAC5I,OAAO;AAAA,UACP,SAAS;AAAA,QACX,CAAC,CAAC,GAAGD,GAAE,MAAM,YAAY,GAAG,MAAM;AAAA,MACpC;AAAA,IACF;AAAA,EACF;AAAA;",
-  "names": ["t", "s"]
-}

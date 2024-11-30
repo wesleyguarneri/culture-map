@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/symbols/support/unitConversionUtils.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { meterIn as t } from \"../../renderers/support/lengthUtils.js\";\nfunction n(n) {\n  return !!n && null != t[n];\n}\nfunction r(n) {\n  return 1 / (t[n] || 1);\n}\nfunction e() {\n  const n = Object.keys(t);\n  return n.sort(), n;\n}\nconst o = e();\nexport { r as getMetersPerUnit, o as supportedUnits, n as supportsUnit };"],
-  "mappings": ";;;;;;AAKA,SAAS,EAAEA,IAAG;AACZ,SAAO,CAAC,CAACA,MAAK,QAAQ,EAAEA,EAAC;AAC3B;AACA,SAAS,EAAEA,IAAG;AACZ,SAAO,KAAK,EAAEA,EAAC,KAAK;AACtB;AACA,SAAS,IAAI;AACX,QAAMA,KAAI,OAAO,KAAK,CAAC;AACvB,SAAOA,GAAE,KAAK,GAAGA;AACnB;AACA,IAAM,IAAI,EAAE;",
-  "names": ["n"]
-}

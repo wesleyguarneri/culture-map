@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/interactive/snapping/SnappingContext.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nclass e {\n  constructor(e) {\n    this.vertexHandle = null, this.excludeFeature = null, this.visualizer = null, this.selfSnappingZ = null, this.drawConstraints = null, this.editGeometryOperations = e.editGeometryOperations, this.elevationInfo = e.elevationInfo, this.pointer = e.pointer, this.vertexHandle = e.vertexHandle, this.excludeFeature = e.excludeFeature, this.feature = e.feature, this.visualizer = e.visualizer, this.selfSnappingZ = e.selfSnappingZ, this.drawConstraints = e.drawConstraints;\n  }\n  get coordinateHelper() {\n    return this.editGeometryOperations.data.coordinateHelper;\n  }\n  get spatialReference() {\n    return this.coordinateHelper.spatialReference;\n  }\n}\nexport { e as SnappingContext };"],
-  "mappings": ";AAIA,IAAM,IAAN,MAAQ;AAAA,EACN,YAAYA,IAAG;AACb,SAAK,eAAe,MAAM,KAAK,iBAAiB,MAAM,KAAK,aAAa,MAAM,KAAK,gBAAgB,MAAM,KAAK,kBAAkB,MAAM,KAAK,yBAAyBA,GAAE,wBAAwB,KAAK,gBAAgBA,GAAE,eAAe,KAAK,UAAUA,GAAE,SAAS,KAAK,eAAeA,GAAE,cAAc,KAAK,iBAAiBA,GAAE,gBAAgB,KAAK,UAAUA,GAAE,SAAS,KAAK,aAAaA,GAAE,YAAY,KAAK,gBAAgBA,GAAE,eAAe,KAAK,kBAAkBA,GAAE;AAAA,EACrc;AAAA,EACA,IAAI,mBAAmB;AACrB,WAAO,KAAK,uBAAuB,KAAK;AAAA,EAC1C;AAAA,EACA,IAAI,mBAAmB;AACrB,WAAO,KAAK,iBAAiB;AAAA,EAC/B;AACF;",
-  "names": ["e"]
-}

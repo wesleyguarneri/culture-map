@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/rest/versionManagement/createVersion.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport e from \"../../request.js\";\nimport { parseUrl as t, asValidOptions as o, encode as r } from \"../utils.js\";\nasync function i(i, n, s) {\n  const a = t(i),\n    m = n.toJSON(),\n    u = o(a.query, {\n      query: r({\n        ...m,\n        f: \"json\"\n      }),\n      ...s,\n      authMode: \"immediate\",\n      method: \"post\"\n    }),\n    d = `${a.path}/create`,\n    {\n      data: f\n    } = await e(d, u),\n    {\n      versionName: p,\n      versionGuid: c,\n      ...v\n    } = f.versionInfo;\n  return {\n    ...v,\n    versionIdentifier: {\n      name: p,\n      guid: c\n    }\n  };\n}\nexport { i as createVersion };"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAMA,SAAeA,GAAEA,IAAG,GAAGC,IAAG;AAAA;AACxB,UAAM,IAAI,EAAED,EAAC,GACX,IAAI,EAAE,OAAO,GACb,IAAI,EAAE,EAAE,OAAO;AAAA,MACb,OAAO,EAAE,iCACJ,IADI;AAAA,QAEP,GAAG;AAAA,MACL,EAAC;AAAA,OACEC,KALU;AAAA,MAMb,UAAU;AAAA,MACV,QAAQ;AAAA,IACV,EAAC,GACD,IAAI,GAAG,EAAE,IAAI,WACb;AAAA,MACE,MAAMC;AAAA,IACR,IAAI,MAAM,EAAE,GAAG,CAAC,GAKZ,KAAAA,GAAE,aAHJ;AAAA,mBAAa;AAAA,MACb,aAAa;AAAA,IAxBnB,IA0BQ,IADC,cACD,IADC;AAAA,MAFH;AAAA,MACA;AAAA;AAGJ,WAAO,iCACF,IADE;AAAA,MAEL,mBAAmB;AAAA,QACjB,MAAM;AAAA,QACN,MAAM;AAAA,MACR;AAAA,IACF;AAAA,EACF;AAAA;",
-  "names": ["i", "s", "f"]
-}

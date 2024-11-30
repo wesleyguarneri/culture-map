@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/layers/support/timeSupport.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { toLocalTimeExtent as e, toUTCTimeExtent as t } from \"../../support/timeUtils.js\";\nfunction i(i, n, s) {\n  if (null == i?.timeInfo) return null;\n  const {\n    datesInUnknownTimezone: l = !1,\n    timeOffset: o,\n    useViewTime: m\n  } = i;\n  let u = i.timeExtent;\n  l && (u = e(u));\n  let r = m ? n && u ? n.intersection(u) : n || u : u;\n  return !r || r.isEmpty || r.isAllTime ? r : (o && (r = r.offset(-o.value, o.unit)), l && (r = t(r)), r.equals(s) ? s : r);\n}\nexport { i as combineTimeExtent };"],
-  "mappings": ";;;;;;;AAKA,SAAS,EAAEA,IAAG,GAAG,GAAG;AAClB,MAAI,QAAQA,IAAG,SAAU,QAAO;AAChC,QAAM;AAAA,IACJ,wBAAwB,IAAI;AAAA,IAC5B,YAAY;AAAA,IACZ,aAAa;AAAA,EACf,IAAIA;AACJ,MAAI,IAAIA,GAAE;AACV,QAAM,IAAI,EAAE,CAAC;AACb,MAAI,IAAI,IAAI,KAAK,IAAI,EAAE,aAAa,CAAC,IAAI,KAAK,IAAI;AAClD,SAAO,CAAC,KAAK,EAAE,WAAW,EAAE,YAAY,KAAK,MAAM,IAAI,EAAE,OAAO,CAAC,EAAE,OAAO,EAAE,IAAI,IAAI,MAAM,IAAI,EAAE,CAAC,IAAI,EAAE,OAAO,CAAC,IAAI,IAAI;AACzH;",
-  "names": ["i"]
-}

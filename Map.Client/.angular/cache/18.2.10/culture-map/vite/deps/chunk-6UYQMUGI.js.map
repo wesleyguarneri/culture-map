@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/layers/graphics/data/optimizedFeatureQueryEngineAdapter.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { getCentroidOptimizedGeometry as t } from \"../centroid.js\";\nimport { OptimizedFeature as e } from \"../OptimizedFeature.js\";\nimport r from \"../OptimizedGeometry.js\";\nconst o = {\n  getObjectId: t => t.objectId,\n  getAttributes: t => t.attributes,\n  getAttribute: (t, e) => t.attributes[e],\n  cloneWithGeometry: (t, r) => new e(r, t.attributes, null, t.objectId),\n  getGeometry: t => t.geometry,\n  getCentroid: (e, o) => (null == e.centroid && (e.centroid = t(new r(), e.geometry, o.hasZ, o.hasM)), e.centroid)\n};\nexport { o as optimizedFeatureQueryEngineAdapter };"],
-  "mappings": ";;;;;;;;;;;AAOA,IAAM,IAAI;AAAA,EACR,aAAa,OAAK,EAAE;AAAA,EACpB,eAAe,OAAK,EAAE;AAAA,EACtB,cAAc,CAAC,GAAGA,OAAM,EAAE,WAAWA,EAAC;AAAA,EACtC,mBAAmB,CAAC,GAAG,MAAM,IAAIA,GAAE,GAAG,EAAE,YAAY,MAAM,EAAE,QAAQ;AAAA,EACpE,aAAa,OAAK,EAAE;AAAA,EACpB,aAAa,CAACA,IAAGC,QAAO,QAAQD,GAAE,aAAaA,GAAE,WAAW,EAAE,IAAI,EAAE,GAAGA,GAAE,UAAUC,GAAE,MAAMA,GAAE,IAAI,IAAID,GAAE;AACzG;",
-  "names": ["e", "o"]
-}

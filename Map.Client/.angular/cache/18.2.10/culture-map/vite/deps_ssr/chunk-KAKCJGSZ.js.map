@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/layers/interfaces.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nvar e, a, t;\n!function (e) {\n  e[e.RasterImage = 0] = \"RasterImage\", e[e.Features = 1] = \"Features\";\n}(e || (e = {})), function (e) {\n  e[e.MapLayer = 0] = \"MapLayer\", e[e.ViewLayer = 1] = \"ViewLayer\", e[e.Outline = 2] = \"Outline\", e[e.SnappingHint = 3] = \"SnappingHint\";\n}(a || (a = {})), function (e) {\n  e[e.WithRasterImage = 0] = \"WithRasterImage\", e[e.WithoutRasterImage = 1] = \"WithoutRasterImage\";\n}(t || (t = {}));\nexport { e as DrapeSourceType, t as DrapeTargetType, a as DrapedRenderGroup };"],
-  "mappings": ";;;AAIA,IAAI;AAAJ,IAAO;AAAP,IAAU;AACV,CAAC,SAAUA,IAAG;AACZ,EAAAA,GAAEA,GAAE,cAAc,CAAC,IAAI,eAAeA,GAAEA,GAAE,WAAW,CAAC,IAAI;AAC5D,EAAE,MAAM,IAAI,CAAC,EAAE,GAAG,SAAUA,IAAG;AAC7B,EAAAA,GAAEA,GAAE,WAAW,CAAC,IAAI,YAAYA,GAAEA,GAAE,YAAY,CAAC,IAAI,aAAaA,GAAEA,GAAE,UAAU,CAAC,IAAI,WAAWA,GAAEA,GAAE,eAAe,CAAC,IAAI;AAC1H,EAAE,MAAM,IAAI,CAAC,EAAE,GAAG,SAAUA,IAAG;AAC7B,EAAAA,GAAEA,GAAE,kBAAkB,CAAC,IAAI,mBAAmBA,GAAEA,GAAE,qBAAqB,CAAC,IAAI;AAC9E,EAAE,MAAM,IAAI,CAAC,EAAE;",
-  "names": ["e"]
-}

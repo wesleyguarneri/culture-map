@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@esri/calcite-components/dist/components/calcite-combobox-item-group.js"],
-  "sourcesContent": ["/*!\n * All material copyright ESRI, All Rights Reserved, unless otherwise specified.\n * See https://github.com/Esri/calcite-design-system/blob/dev/LICENSE.md for details.\n * v2.13.2\n */\nimport { C as ComboboxItemGroup, d as defineCustomElement$1 } from './combobox-item-group.js';\nconst CalciteComboboxItemGroup = ComboboxItemGroup;\nconst defineCustomElement = defineCustomElement$1;\nexport { CalciteComboboxItemGroup, defineCustomElement };\n\n"],
-  "mappings": ";;;;;;;;;;;;AAMA,IAAM,2BAA2B;AACjC,IAAMA,uBAAsB;",
-  "names": ["defineCustomElement"]
-}

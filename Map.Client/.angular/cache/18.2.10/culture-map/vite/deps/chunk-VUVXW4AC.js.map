@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/webgl/doublePrecisionUtils.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nfunction t(t, n, o) {\n  for (let r = 0; r < o; ++r) n[2 * r] = t[r], n[2 * r + 1] = t[r] - n[2 * r];\n}\nfunction n(t, n, o) {\n  for (let r = 0; r < o; ++r) n[r] = t[2 * r] + t[2 * r + 1];\n}\nfunction o(t, n) {\n  const o = t.length;\n  for (let r = 0; r < o; ++r) e[0] = t[r], n[r] = e[0];\n  return n;\n}\nfunction r(t, n) {\n  const o = t.length;\n  for (let r = 0; r < o; ++r) e[0] = t[r], e[1] = t[r] - e[0], n[r] = e[1];\n  return n;\n}\nconst e = new Float32Array(2);\nexport { n as decodeDoubleArray, t as encodeDoubleArray, o as encodeDoubleHi, r as encodeDoubleLo };"],
-  "mappings": ";AAIA,SAAS,EAAEA,IAAG,GAAGC,IAAG;AAClB,WAASC,KAAI,GAAGA,KAAID,IAAG,EAAEC,GAAG,GAAE,IAAIA,EAAC,IAAIF,GAAEE,EAAC,GAAG,EAAE,IAAIA,KAAI,CAAC,IAAIF,GAAEE,EAAC,IAAI,EAAE,IAAIA,EAAC;AAC5E;AAIA,SAAS,EAAEC,IAAG,GAAG;AACf,QAAMC,KAAID,GAAE;AACZ,WAASE,KAAI,GAAGA,KAAID,IAAG,EAAEC,GAAG,GAAE,CAAC,IAAIF,GAAEE,EAAC,GAAG,EAAEA,EAAC,IAAI,EAAE,CAAC;AACnD,SAAO;AACT;AACA,SAAS,EAAEF,IAAG,GAAG;AACf,QAAMC,KAAID,GAAE;AACZ,WAASE,KAAI,GAAGA,KAAID,IAAG,EAAEC,GAAG,GAAE,CAAC,IAAIF,GAAEE,EAAC,GAAG,EAAE,CAAC,IAAIF,GAAEE,EAAC,IAAI,EAAE,CAAC,GAAG,EAAEA,EAAC,IAAI,EAAE,CAAC;AACvE,SAAO;AACT;AACA,IAAM,IAAI,IAAI,aAAa,CAAC;",
-  "names": ["t", "o", "r", "t", "o", "r"]
-}

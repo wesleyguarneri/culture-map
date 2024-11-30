@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/rest/query/executeForTopExtents.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport \"../../geometry.js\";\nimport { parseUrl as t } from \"../utils.js\";\nimport { executeQueryForTopExtents as o } from \"./operations/queryTopFeatures.js\";\nimport r from \"../support/TopFeaturesQuery.js\";\nimport e from \"../../geometry/Extent.js\";\nasync function a(a, m, n) {\n  const s = t(a),\n    i = await o(s, r.from(m), {\n      ...n\n    }),\n    u = i.data.extent;\n  return !u || isNaN(u.xmin) || isNaN(u.ymin) || isNaN(u.xmax) || isNaN(u.ymax) ? {\n    count: i.data.count,\n    extent: null\n  } : {\n    count: i.data.count,\n    extent: e.fromJSON(u)\n  };\n}\nexport { a as executeForTopExtents };"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AASA,SAAe,EAAEA,IAAG,GAAG,GAAG;AAAA;AACxB,UAAM,IAAI,EAAEA,EAAC,GACX,IAAI,MAAM,EAAE,GAAG,EAAE,KAAK,CAAC,GAAG,mBACrB,EACJ,GACD,IAAI,EAAE,KAAK;AACb,WAAO,CAAC,KAAK,MAAM,EAAE,IAAI,KAAK,MAAM,EAAE,IAAI,KAAK,MAAM,EAAE,IAAI,KAAK,MAAM,EAAE,IAAI,IAAI;AAAA,MAC9E,OAAO,EAAE,KAAK;AAAA,MACd,QAAQ;AAAA,IACV,IAAI;AAAA,MACF,OAAO,EAAE,KAAK;AAAA,MACd,QAAQ,EAAE,SAAS,CAAC;AAAA,IACtB;AAAA,EACF;AAAA;",
-  "names": ["a"]
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/interactive/snapping/candidates/VertexSnappingCandidate.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { PointConstraint as t } from \"../../sketch/constraints.js\";\nimport { FeatureSnappingCandidate as n } from \"./FeatureSnappingCandidate.js\";\nimport { PointSnappingHint as i } from \"../hints/PointSnappingHint.js\";\nclass r extends n {\n  constructor(n) {\n    super({\n      ...n,\n      constraint: new t(n.targetPoint)\n    });\n  }\n  get hints() {\n    return [new i(this.targetPoint, this.isDraped, this.domain)];\n  }\n}\nexport { r as VertexSnappingCandidate };"],
-  "mappings": ";;;;;;;;;;;;;;;AAOA,IAAM,IAAN,cAAgBA,GAAE;AAAA,EAChB,YAAYA,IAAG;AACb,UAAM,iCACDA,KADC;AAAA,MAEJ,YAAY,IAAI,GAAEA,GAAE,WAAW;AAAA,IACjC,EAAC;AAAA,EACH;AAAA,EACA,IAAI,QAAQ;AACV,WAAO,CAAC,IAAI,EAAE,KAAK,aAAa,KAAK,UAAU,KAAK,MAAM,CAAC;AAAA,EAC7D;AACF;",
-  "names": ["n"]
-}

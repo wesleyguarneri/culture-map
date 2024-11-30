@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/support/requestPresets.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport e from \"../request.js\";\nasync function t(t, o) {\n  const {\n    data: r\n  } = await e(t, {\n    responseType: \"json\",\n    query: {\n      f: \"json\",\n      ...o?.customParameters,\n      token: o?.apiKey\n    }\n  });\n  return r;\n}\nexport { t as fetchArcGISServiceJSON };"],
-  "mappings": ";;;;;;;;;;AAKA,SAAe,EAAEA,IAAG,GAAG;AAAA;AACrB,UAAM;AAAA,MACJ,MAAM;AAAA,IACR,IAAI,MAAM,EAAEA,IAAG;AAAA,MACb,cAAc;AAAA,MACd,OAAO;AAAA,QACL,GAAG;AAAA,SACA,GAAG,mBAFD;AAAA,QAGL,OAAO,GAAG;AAAA,MACZ;AAAA,IACF,CAAC;AACD,WAAO;AAAA,EACT;AAAA;",
-  "names": ["t"]
-}

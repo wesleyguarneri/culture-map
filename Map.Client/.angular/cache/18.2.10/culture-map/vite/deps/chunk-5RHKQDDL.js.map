@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/core/shaderModules/BooleanPassUniform.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { Uniform as o } from \"./Uniform.js\";\nimport { BindType as r } from \"../shaderTechnique/BindType.js\";\nclass s extends o {\n  constructor(o, s) {\n    super(o, \"bool\", r.Pass, (r, e, t) => r.setUniform1b(o, s(e, t)));\n  }\n}\nexport { s as BooleanPassUniform };"],
-  "mappings": ";;;;;;;;AAMA,IAAM,IAAN,cAAgBA,GAAE;AAAA,EAChB,YAAY,GAAGC,IAAG;AAChB,UAAM,GAAG,QAAQ,EAAE,MAAM,CAAC,GAAG,GAAG,MAAM,EAAE,aAAa,GAAGA,GAAE,GAAG,CAAC,CAAC,CAAC;AAAA,EAClE;AACF;",
-  "names": ["a", "s"]
-}

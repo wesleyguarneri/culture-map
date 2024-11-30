@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/2d/engine/highlightReasons.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport o from \"../../../Color.js\";\nimport r from \"../support/HighlightOptions.js\";\nconst c = {\n  selection: c => new r({\n    color: new o([c.color.r / 2, c.color.g / 2, c.color.b / 2, c.color.a])\n  }),\n  highlight: o => o,\n  popup: c => new r({\n    color: new o([c.color.g, c.color.b, c.color.r, c.color.a])\n  })\n};\nfunction t(o) {\n  if (!o) return 0;\n  let r = 1;\n  for (const t in c) {\n    if (t === o) break;\n    r <<= 1;\n  }\n  return r;\n}\nconst l = Object.keys(c);\nexport { t as getHighlightBits, c as highlightConfigurator, l as highlightReasons };"],
-  "mappings": ";;;;;;;;;AAMA,IAAM,IAAI;AAAA,EACR,WAAW,CAAAA,OAAK,IAAI,EAAE;AAAA,IACpB,OAAO,IAAI,EAAE,CAACA,GAAE,MAAM,IAAI,GAAGA,GAAE,MAAM,IAAI,GAAGA,GAAE,MAAM,IAAI,GAAGA,GAAE,MAAM,CAAC,CAAC;AAAA,EACvE,CAAC;AAAA,EACD,WAAW,OAAK;AAAA,EAChB,OAAO,CAAAA,OAAK,IAAI,EAAE;AAAA,IAChB,OAAO,IAAI,EAAE,CAACA,GAAE,MAAM,GAAGA,GAAE,MAAM,GAAGA,GAAE,MAAM,GAAGA,GAAE,MAAM,CAAC,CAAC;AAAA,EAC3D,CAAC;AACH;AACA,SAAS,EAAE,GAAG;AACZ,MAAI,CAAC,EAAG,QAAO;AACf,MAAI,IAAI;AACR,aAAWC,MAAK,GAAG;AACjB,QAAIA,OAAM,EAAG;AACb,UAAM;AAAA,EACR;AACA,SAAO;AACT;AACA,IAAM,IAAI,OAAO,KAAK,CAAC;",
-  "names": ["c", "t"]
-}

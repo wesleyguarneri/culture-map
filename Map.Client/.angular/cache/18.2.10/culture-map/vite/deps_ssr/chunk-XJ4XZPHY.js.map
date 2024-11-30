@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/widgets/support/Heading.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { clamp as r } from \"../../core/mathUtils.js\";\nimport { globalCss as t } from \"./globalCss.js\";\nimport { classes as o } from \"./widgetUtils.js\";\nimport { tsx as i } from \"./jsxFactory.js\";\nfunction e({\n  level: r,\n  class: e,\n  ...n\n}, l) {\n  const a = s(r);\n  return i(`h${a}`, {\n    ...n,\n    \"aria-level\": String(a),\n    class: o(t.heading, e),\n    role: \"heading\"\n  }, l);\n}\nfunction s(t) {\n  return r(Math.ceil(t), 1, 6);\n}\nfunction n(r, t = 1) {\n  return s(r + t);\n}\nexport { e as Heading, n as incrementHeadingLevel };"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;AAQA,SAASA,GAAE,IAIR,GAAG;AAJK,eACT;AAAA,WAAO;AAAA,IACP,OAAOA;AAAA,EAVT,IAQW,IAGNC,KAAA,UAHM,IAGN;AAAA,IAFH;AAAA,IACA;AAAA;AAGA,QAAM,IAAI,EAAE,CAAC;AACb,SAAO,EAAE,IAAI,CAAC,IAAI,iCACbA,KADa;AAAA,IAEhB,cAAc,OAAO,CAAC;AAAA,IACtB,OAAO,EAAED,GAAE,SAASA,EAAC;AAAA,IACrB,MAAM;AAAA,EACR,IAAG,CAAC;AACN;AACA,SAAS,EAAE,GAAG;AACZ,SAAO,EAAE,KAAK,KAAK,CAAC,GAAG,GAAG,CAAC;AAC7B;AACA,SAASC,GAAE,GAAG,IAAI,GAAG;AACnB,SAAO,EAAE,IAAI,CAAC;AAChB;",
-  "names": ["e", "n"]
-}

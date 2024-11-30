@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/form/support/formUtils.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nconst t = t => \"field\" === t.type,\n  e = t => \"group\" === t.type,\n  p = t => \"text\" === t.type,\n  o = t => \"relationship\" === t.type;\nexport { t as isFieldElement, e as isGroupElement, o as isRelationshipElement, p as isTextElement };"],
-  "mappings": ";AAIA,IAAM,IAAI,CAAAA,OAAK,YAAYA,GAAE;AAA7B,IACE,IAAI,CAAAA,OAAK,YAAYA,GAAE;AADzB,IAEE,IAAI,CAAAA,OAAK,WAAWA,GAAE;AAFxB,IAGE,IAAI,CAAAA,OAAK,mBAAmBA,GAAE;",
-  "names": ["t"]
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/support/geodesicAreaMeasurementUtils.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { createArea as e } from \"../../core/quantityUtils.js\";\nimport { geodesicArea as r } from \"../../geometry/geometryEngine.js\";\nimport { geodesicAreas as t } from \"../../geometry/support/geodesicUtils.js\";\nimport { geodesicMeasure as s } from \"./geodesicMeasurementUtils.js\";\nfunction o(e) {\n  const {\n    spatialReference: r\n  } = e;\n  return s(r, n, i, e);\n}\nfunction n(r) {\n  return e(Math.abs(t([r], \"square-meters\")[0]), \"square-meters\");\n}\nfunction i(t) {\n  try {\n    return e(Math.abs(r(t, \"square-meters\")), \"square-meters\");\n  } catch (s) {\n    return null;\n  }\n}\nexport { o as geodesicArea };"],
-  "mappings": ";;;;;;;;;;;;;;AAQA,SAAS,EAAE,GAAG;AACZ,QAAM;AAAA,IACJ,kBAAkB;AAAA,EACpB,IAAI;AACJ,SAAO,EAAE,GAAG,GAAG,GAAG,CAAC;AACrB;AACA,SAAS,EAAE,GAAG;AACZ,SAAO,EAAE,KAAK,IAAI,EAAE,CAAC,CAAC,GAAG,eAAe,EAAE,CAAC,CAAC,GAAG,eAAe;AAChE;AACA,SAAS,EAAE,GAAG;AACZ,MAAI;AACF,WAAO,EAAE,KAAK,IAAI,EAAE,GAAG,eAAe,CAAC,GAAG,eAAe;AAAA,EAC3D,SAAS,GAAG;AACV,WAAO;AAAA,EACT;AACF;",
-  "names": []
-}

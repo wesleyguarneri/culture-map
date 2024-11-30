@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/lib/ContentObject.js", "../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/lib/ContentObjectType.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { generateUID as o } from \"../../../../core/uid.js\";\nclass r {\n  constructor() {\n    this.id = o();\n  }\n}\nexport { r as ContentObject };", "/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nvar e;\n!function (e) {\n  e[e.Layer = 0] = \"Layer\", e[e.Object = 1] = \"Object\", e[e.Mesh = 2] = \"Mesh\", e[e.Line = 3] = \"Line\", e[e.Point = 4] = \"Point\", e[e.Material = 5] = \"Material\", e[e.Texture = 6] = \"Texture\", e[e.COUNT = 7] = \"COUNT\";\n}(e || (e = {}));\nexport { e as ContentObjectType };"],
-  "mappings": ";;;;;;AAKA,IAAM,IAAN,MAAQ;AAAA,EACN,cAAc;AACZ,SAAK,KAAK,EAAE;AAAA,EACd;AACF;;;ACLA,IAAIA;AACJ,CAAC,SAAUA,IAAG;AACZ,EAAAA,GAAEA,GAAE,QAAQ,CAAC,IAAI,SAASA,GAAEA,GAAE,SAAS,CAAC,IAAI,UAAUA,GAAEA,GAAE,OAAO,CAAC,IAAI,QAAQA,GAAEA,GAAE,OAAO,CAAC,IAAI,QAAQA,GAAEA,GAAE,QAAQ,CAAC,IAAI,SAASA,GAAEA,GAAE,WAAW,CAAC,IAAI,YAAYA,GAAEA,GAAE,UAAU,CAAC,IAAI,WAAWA,GAAEA,GAAE,QAAQ,CAAC,IAAI;AACjN,EAAEA,OAAMA,KAAI,CAAC,EAAE;",
-  "names": ["e"]
-}

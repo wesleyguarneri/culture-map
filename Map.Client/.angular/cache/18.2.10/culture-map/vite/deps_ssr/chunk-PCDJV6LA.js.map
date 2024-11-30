@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/support/actions/actionUtils.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport \"../../intl.js\";\nimport { substitute as i } from \"../../intl/substitute.js\";\nfunction t(i) {\n  return i.icon ? i.icon : \"image\" in i && i.image || i.className ? void 0 : \"question\";\n}\nfunction n(i) {\n  return i ? {\n    backgroundImage: `url(${i})`\n  } : {};\n}\nfunction e({\n  action: t,\n  feature: n\n}) {\n  const e = n?.attributes,\n    o = \"image\" in t ? t.image : void 0;\n  return o && e ? i(o, e) : o ?? \"\";\n}\nexport { t as getActionIcon, n as getActionStyles, e as substituteActionImage };"],
-  "mappings": ";;;;;;AAMA,SAAS,EAAE,GAAG;AACZ,SAAO,EAAE,OAAO,EAAE,OAAO,WAAW,KAAK,EAAE,SAAS,EAAE,YAAY,SAAS;AAC7E;AACA,SAAS,EAAE,GAAG;AACZ,SAAO,IAAI;AAAA,IACT,iBAAiB,OAAO,CAAC;AAAA,EAC3B,IAAI,CAAC;AACP;AACA,SAAS,EAAE;AAAA,EACT,QAAQA;AAAA,EACR,SAASC;AACX,GAAG;AACD,QAAMC,KAAID,IAAG,YACX,IAAI,WAAWD,KAAIA,GAAE,QAAQ;AAC/B,SAAO,KAAKE,KAAI,EAAE,GAAGA,EAAC,IAAI,KAAK;AACjC;",
-  "names": ["t", "n", "e"]
-}

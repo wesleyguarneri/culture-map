@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/core/shaderLibrary/util/DiscardOrAdjustAlphaBlend.glsl.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { symbolAlphaCutoff as o } from \"./AlphaCutoff.js\";\nimport { glsl as r } from \"../../shaderModules/interfaces.js\";\nfunction d(d) {\n  d.fragment.code.add(r`\n    #define discardOrAdjustAlpha(color) { if (color.a < ${r.float(o)}) { discard; } }\n  `);\n}\nexport { d as DiscardOrAdjustAlphaBlend };"],
-  "mappings": ";;;;;;;;AAMA,SAAS,EAAEA,IAAG;AACZ,EAAAA,GAAE,SAAS,KAAK,IAAI;AAAA,0DACoC,EAAE,MAAM,CAAC,CAAC;AAAA,GACjE;AACH;",
-  "names": ["d"]
-}

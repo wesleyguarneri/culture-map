@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/webdoc/support/opacityUtils.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { ensureInteger as t } from \"../../core/accessorSupport/ensureType.js\";\nfunction n(n) {\n  const r = t(100 * (1 - n));\n  return Math.max(0, Math.min(r, 100));\n}\nfunction r(t) {\n  const n = 1 - t / 100;\n  return Math.max(0, Math.min(n, 1));\n}\nexport { n as opacityToTransparency, r as transparencyToOpacity };"],
-  "mappings": ";;;;;AAKA,SAAS,EAAEA,IAAG;AACZ,QAAMC,KAAI,EAAE,OAAO,IAAID,GAAE;AACzB,SAAO,KAAK,IAAI,GAAG,KAAK,IAAIC,IAAG,GAAG,CAAC;AACrC;AACA,SAAS,EAAE,GAAG;AACZ,QAAMD,KAAI,IAAI,IAAI;AAClB,SAAO,KAAK,IAAI,GAAG,KAAK,IAAIA,IAAG,CAAC,CAAC;AACnC;",
-  "names": ["n", "r"]
-}

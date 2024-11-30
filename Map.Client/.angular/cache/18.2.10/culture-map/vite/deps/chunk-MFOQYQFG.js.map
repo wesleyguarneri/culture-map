@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/core/accessorSupport/decorators/writer.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { propertyJSONMeta as t } from \"./property.js\";\nfunction r(r, o, e) {\n  let i, n;\n  return void 0 === o ? (n = r, i = [void 0]) : \"string\" != typeof o ? (n = r, i = [void 0], e = o) : (n = o, i = Array.isArray(r) ? r : [r]), (r, o) => {\n    const p = r.constructor.prototype;\n    for (const c of i) {\n      const i = t(r, c, n);\n      i.write && \"object\" == typeof i.write || (i.write = {}), e && (i.write.target = e), i.write.writer = p[o];\n    }\n  };\n}\nexport { r as writer };"],
-  "mappings": ";;;;;AAKA,SAAS,EAAEA,IAAG,GAAG,GAAG;AAClB,MAAI,GAAG;AACP,SAAO,WAAW,KAAK,IAAIA,IAAG,IAAI,CAAC,MAAM,KAAK,YAAY,OAAO,KAAK,IAAIA,IAAG,IAAI,CAAC,MAAM,GAAG,IAAI,MAAM,IAAI,GAAG,IAAI,MAAM,QAAQA,EAAC,IAAIA,KAAI,CAACA,EAAC,IAAI,CAACA,IAAGC,OAAM;AACrJ,UAAM,IAAID,GAAE,YAAY;AACxB,eAAW,KAAK,GAAG;AACjB,YAAME,KAAI,EAAEF,IAAG,GAAG,CAAC;AACnB,MAAAE,GAAE,SAAS,YAAY,OAAOA,GAAE,UAAUA,GAAE,QAAQ,CAAC,IAAI,MAAMA,GAAE,MAAM,SAAS,IAAIA,GAAE,MAAM,SAAS,EAAED,EAAC;AAAA,IAC1G;AAAA,EACF;AACF;",
-  "names": ["r", "o", "i"]
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/core/shaderLibrary/util/EllipsoidMode.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { isMars as r, isMoon as o } from \"../../../../../../geometry/support/spatialReferenceUtils.js\";\nvar t;\nfunction a(a) {\n  return a && r(a) ? t.Mars : a && o(a) ? t.Moon : t.Earth;\n}\n!function (r) {\n  r[r.Earth = 1] = \"Earth\", r[r.Mars = 2] = \"Mars\", r[r.Moon = 3] = \"Moon\", r[r.COUNT = 4] = \"COUNT\";\n}(t || (t = {}));\nexport { t as EllipsoidMode, a as getEllipsoidMode };"],
-  "mappings": ";;;;;;AAKA,IAAI;AACJ,SAAS,EAAEA,IAAG;AACZ,SAAOA,MAAK,EAAEA,EAAC,IAAI,EAAE,OAAOA,MAAK,EAAEA,EAAC,IAAI,EAAE,OAAO,EAAE;AACrD;AACA,CAAC,SAAU,GAAG;AACZ,IAAE,EAAE,QAAQ,CAAC,IAAI,SAAS,EAAE,EAAE,OAAO,CAAC,IAAI,QAAQ,EAAE,EAAE,OAAO,CAAC,IAAI,QAAQ,EAAE,EAAE,QAAQ,CAAC,IAAI;AAC7F,EAAE,MAAM,IAAI,CAAC,EAAE;",
-  "names": ["a"]
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/interactive/snapping/hints/PointSnappingHint.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { e as t } from \"../../../../chunks/vec32.js\";\nimport { SnappingHint as s } from \"./SnappingHint.js\";\nclass n extends s {\n  constructor(t, s, n) {\n    super(s, n), this.point = t;\n  }\n  equals(s) {\n    return s instanceof n && t(this.point, s.point);\n  }\n}\nexport { n as PointSnappingHint };"],
-  "mappings": ";;;;;;;;AAMA,IAAM,IAAN,MAAM,WAAU,EAAE;AAAA,EAChB,YAAY,GAAGA,IAAGC,IAAG;AACnB,UAAMD,IAAGC,EAAC,GAAG,KAAK,QAAQ;AAAA,EAC5B;AAAA,EACA,OAAOD,IAAG;AACR,WAAOA,cAAa,MAAK,EAAE,KAAK,OAAOA,GAAE,KAAK;AAAA,EAChD;AACF;",
-  "names": ["s", "n"]
-}

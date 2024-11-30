@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@esri/calcite-components/dist/components/Heading.js"],
-  "sourcesContent": ["/*!\n * All material copyright ESRI, All Rights Reserved, unless otherwise specified.\n * See https://github.com/Esri/calcite-design-system/blob/dev/LICENSE.md for details.\n * v2.13.2\n */\nimport { h } from '@stencil/core/internal/client';\nfunction constrainHeadingLevel(level) {\n  return Math.min(Math.max(Math.ceil(level), 1), 6);\n}\nconst Heading = (props, children) => {\n  const HeadingTag = props.level ? `h${props.level}` : \"div\";\n  delete props.level;\n  return h(HeadingTag, {\n    class: props.class,\n    key: props.key\n  }, children);\n};\nexport { Heading as H, constrainHeadingLevel as c };\n\n"],
-  "mappings": ";;;;;;AASA,IAAM,UAAU,CAAC,OAAO,aAAa;AACnC,QAAM,aAAa,MAAM,QAAQ,IAAI,MAAM,KAAK,KAAK;AACrD,SAAO,MAAM;AACb,SAAO,EAAE,YAAY;AAAA,IACnB,OAAO,MAAM;AAAA,IACb,KAAK,MAAM;AAAA,EACb,GAAG,QAAQ;AACb;",
-  "names": []
-}

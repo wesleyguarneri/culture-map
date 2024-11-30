@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/core/libs/gl-matrix-2/math/common.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nlet t = 1e-6;\nfunction e() {\n  return t;\n}\nfunction n(e) {\n  t = e;\n}\nconst o = Math.random,\n  a = Math.PI / 180,\n  r = 180 / Math.PI;\nfunction u(t) {\n  return t * a;\n}\nfunction c(t) {\n  return t * r;\n}\nfunction i(e, n) {\n  return Math.abs(e - n) <= t * Math.max(1, Math.abs(e), Math.abs(n));\n}\nconst s = Object.freeze(Object.defineProperty({\n  __proto__: null,\n  RANDOM: o,\n  equals: i,\n  getEpsilon: e,\n  setEpsilon: n,\n  toDegree: c,\n  toRadian: u\n}, Symbol.toStringTag, {\n  value: \"Module\"\n}));\nexport { o as RANDOM, s as c, i as equals, e as getEpsilon, n as setEpsilon, c as toDegree, u as toRadian };"],
-  "mappings": ";;;AAIA,IAAI,IAAI;AACR,SAAS,IAAI;AACX,SAAO;AACT;AACA,SAAS,EAAEA,IAAG;AACZ,MAAIA;AACN;AACA,IAAM,IAAI,KAAK;AAAf,IACE,IAAI,KAAK,KAAK;AADhB,IAEE,IAAI,MAAM,KAAK;AACjB,SAAS,EAAEC,IAAG;AACZ,SAAOA,KAAI;AACb;AACA,SAAS,EAAEA,IAAG;AACZ,SAAOA,KAAI;AACb;AACA,SAAS,EAAED,IAAGE,IAAG;AACf,SAAO,KAAK,IAAIF,KAAIE,EAAC,KAAK,IAAI,KAAK,IAAI,GAAG,KAAK,IAAIF,EAAC,GAAG,KAAK,IAAIE,EAAC,CAAC;AACpE;AACA,IAAM,IAAI,OAAO,OAAO,OAAO,eAAe;AAAA,EAC5C,WAAW;AAAA,EACX,QAAQ;AAAA,EACR,QAAQ;AAAA,EACR,YAAY;AAAA,EACZ,YAAY;AAAA,EACZ,UAAU;AAAA,EACV,UAAU;AACZ,GAAG,OAAO,aAAa;AAAA,EACrB,OAAO;AACT,CAAC,CAAC;",
-  "names": ["e", "t", "n"]
-}

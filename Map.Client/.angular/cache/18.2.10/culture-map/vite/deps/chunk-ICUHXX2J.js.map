@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/core/shaderLibrary/output/OutputHighlight.glsl.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nimport { fromValues as e } from \"../../../../../../core/libs/gl-matrix-2/factories/vec4f64.js\";\nimport { glsl as o } from \"../../shaderModules/interfaces.js\";\nimport { Texture2DPassUniform as t } from \"../../shaderModules/Texture2DPassUniform.js\";\nconst r = e(1, 1, 0, 1),\n  d = e(1, 0, 1, 1);\nfunction a(e) {\n  e.fragment.uniforms.add(new t(\"depthTexture\", (e, o) => o.mainDepth)), e.fragment.constants.add(\"occludedHighlightFlag\", \"vec4\", r).add(\"unoccludedHighlightFlag\", \"vec4\", d), e.fragment.code.add(o`void outputHighlight() {\nfloat sceneDepth = float(texelFetch(depthTexture, ivec2(gl_FragCoord.xy), 0).x);\nif (gl_FragCoord.z > sceneDepth + 5e-7) {\nfragColor = occludedHighlightFlag;\n} else {\nfragColor = unoccludedHighlightFlag;\n}\n}`);\n}\nexport { a as OutputHighlight, r as occludedHighlightFlag, d as unoccludedHighlightFlag };"],
-  "mappings": ";;;;;;;;;;;AAOA,IAAMA,KAAI,EAAE,GAAG,GAAG,GAAG,CAAC;AAAtB,IACE,IAAI,EAAE,GAAG,GAAG,GAAG,CAAC;AAClB,SAAS,EAAE,GAAG;AACZ,IAAE,SAAS,SAAS,IAAI,IAAI,EAAE,gBAAgB,CAACC,IAAGC,OAAMA,GAAE,SAAS,CAAC,GAAG,EAAE,SAAS,UAAU,IAAI,yBAAyB,QAAQF,EAAC,EAAE,IAAI,2BAA2B,QAAQ,CAAC,GAAG,EAAE,SAAS,KAAK,IAAI;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,EAOnM;AACF;",
-  "names": ["r", "e", "o"]
-}

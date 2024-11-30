@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/views/interactive/tooltip/components/directionModeIcons.js"],
-  "sourcesContent": ["/*\nAll material copyright ESRI, All Rights Reserved, unless otherwise specified.\nSee https://js.arcgis.com/4.30/esri/copyright.txt for details.\n*/\nconst e = {\n  absolute: \"absolute-direction\",\n  relative: \"relative-direction\"\n};\nexport { e as directionModeIcons };"],
-  "mappings": ";;;AAIA,IAAM,IAAI;AAAA,EACR,UAAU;AAAA,EACV,UAAU;AACZ;",
-  "names": []
-}
