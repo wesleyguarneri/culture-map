@@ -19,7 +19,7 @@ export default function Home() {
 
       <Section>
         <Container>
-          <Map className={styles.homeMap} width="100vw" height="100vh" center={DEFAULT_CENTER} zoom={12}>
+          <Map className={styles.homeMap} center={DEFAULT_CENTER} zoom={12}>
             {({ TileLayer, Marker, Popup }) => (
               <>
                 <TileLayer
