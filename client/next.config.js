@@ -15,7 +15,11 @@ const nextConfig = {
           },
         ],
       }),
-    )
+    );
+    config.module.rules.push({
+      test: /\.geojson$/,
+      use: ["json-loader"]
+    });
     return config
   }
 }
