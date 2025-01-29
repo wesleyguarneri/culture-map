@@ -14,10 +14,10 @@ public class CountryController : Controller
         
     }
     
-    [HttpGet("{ISOA2}")]
-    public ActionResult<Country> GetByIsoA2(string ISO_A2)
+    [HttpGet("{IsoA2}")]
+    public ActionResult<Country> GetByIsoA2(string isoA2)
     {
-        var country = _countries.FirstOrDefault(c => c.ISO_A2 == ISO_A2);
+        var country = _countries.FirstOrDefault(c => c.IsoA2 == isoA2);
         if (country == null)
         {
             return NotFound();
