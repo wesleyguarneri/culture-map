@@ -6,7 +6,9 @@ import Container from '@components/Container';
 import Map from '@components/Map';
 import Button from '@components/Button';
 import styles from '@styles/Home.module.scss';
+import React from 'react';
 import geoJsonData from 'public/countries.geojson';
+
 
 const DEFAULT_CENTER = [38.907132, -77.036546]
 

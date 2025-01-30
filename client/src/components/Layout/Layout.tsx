@@ -5,7 +5,12 @@ import Footer from '@components/Footer';
 
 import styles from './Layout.module.scss';
 
-const Layout = ({ children, className, ...rest }) => {
+interface LayoutProps {
+  children: React.ReactNode;
+  className?: string; // Optional
+}
+
+const Layout: React.FC<LayoutProps> = ({ children, className, ...rest }) => {
   return (
     <div className={styles.layout}>
       <Head>

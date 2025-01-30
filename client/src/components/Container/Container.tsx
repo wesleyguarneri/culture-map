@@ -1,6 +1,13 @@
+import { ReactNode } from 'react';
 import styles from './Container.module.scss';
 
-const Container = ({ children, className, ...rest }) => {
+interface ContainerProps {
+  children?: ReactNode;
+  className?: string;
+  [key: string]: any; 
+}
+
+const Container: React.FC<ContainerProps> = ({ children, className, ...rest }) => {
   let containerClassName = styles.container;
 
   if (className) {
