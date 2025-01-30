@@ -19,14 +19,17 @@
   },
   "dependencies": {
     "@babel/preset-env": "^7.26.0",
+    "@tailwindcss/postcss": "^4.0.1",
     "copy-webpack-plugin": "^11.0.0",
     "leaflet": "^1.9.4",
     "next": "^14.0.1",
+    "postcss": "^8.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-leaflet": "^4.2.1",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "tailwindcss": "^4.0.1"
   },
   "devDependencies": {
     "json-loader": "^0.5.7"
