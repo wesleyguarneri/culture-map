@@ -6,7 +6,7 @@ public class Country
     
     public string IsoA3 { get; set; }  = string.Empty;
 
-    public int Numeric { get; set; } = 0;
+    public int Numeric{ get; set; } = 0;
 
     public string Name { get; set; }  = string.Empty;
 
@@ -14,5 +14,4 @@ public class Country
     
     public string Subregion { get; set; }  = string.Empty;
     
-    public string Capital { get; set; }  = string.Empty;
 }
