@@ -26,7 +26,7 @@ const Map = ({ children, className, width, height, ...rest }) => {
   }, []);
 
   return (
-    <MapContainer className={mapClassName} {...rest}>
+    <MapContainer className={mapClassName} style={{ zIndex: 0 }} {...rest}>
       {children(ReactLeaflet, Leaflet)}
     </MapContainer>
   )

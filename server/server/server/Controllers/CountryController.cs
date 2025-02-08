@@ -8,21 +8,35 @@ namespace server.Controllers;
 [ApiController]
 public class CountryController : Controller
 {
-    private readonly List<Country> _countries = new List<Country>();
     private readonly string _connectionString = "Host=localhost;Port=5432;Username=admin;Password=postgres;Database=postgres";
 
     
     [HttpGet("{IsoA2}")]
-    public ActionResult<Country> GetByIsoA2(string isoA2)
+    public ActionResult<String> GetByIsoA2(string isoA2)
     {
-        var country = _countries.FirstOrDefault(c => c.IsoA2 == isoA2);
-        if (country == null)
+        System.Console.WriteLine($"GetByIsoA2: {isoA2}");
+        Country c = new Country();
+        using (var connection = new NpgsqlConnection(_connectionString))
         {
-            return NotFound();
+            connection.Open();
+            string sql = "SELECT c.* FROM public.countries AS c WHERE c.iso_a2=@isoA2";
+            using var command = new NpgsqlCommand(sql, connection);
+            {
+                NpgsqlDataReader reader = command.ExecuteReader();
+                while(reader.Read()){
+                    Console.WriteLine(reader.GetString(0));
+                };
+            };
         }
-
-        return Ok(country);
+        return Ok(c);
     }
+
+    [HttpGet]
+    public ActionResult<String> Get()
+    {
+        return "hello";
+    }
+    
 
     [HttpPost]
     public ActionResult<Country> Add(Country country)

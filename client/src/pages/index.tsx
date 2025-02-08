@@ -8,16 +8,29 @@ import Button from '@components/Button';
 import styles from '@styles/Home.module.scss';
 import React from 'react';
 import geoJsonData from 'public/countries.geojson';
-
+import DetailPanel from '@components/Detail Panel';
 
 const DEFAULT_CENTER = [38.907132, -77.036546]
+const API_URL = "http://localhost:5000/api/country"
 
 
 export default function Home() {
 
-  const onCountryClick = (event) => {
-    const countryName = event.target.feature.properties.ADMIN; 
-    console.log(`You clicked on: ${countryName}`);
+  const onCountryClick = async (event) => {
+    const country = event.target.feature.properties.ISO_A2; 
+    console.log(`You clicked on: ${country}`);
+    const url = API_URL+""
+    try {
+      const response = await fetch(API_URL+`/${country}`, {mode:'no-cors'});
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+  
+      const json = await response.json();
+      console.log(json);
+    } catch (error) {
+      console.error(error.message);
+    }
   };
 
   const onEachFeature = (feature, layer) => {
@@ -56,6 +69,7 @@ export default function Home() {
               </>
             )}
           </Map>
+          <DetailPanel></DetailPanel>
         </Container>
       </Section>
     </Layout>
