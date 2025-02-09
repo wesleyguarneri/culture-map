@@ -10,6 +10,17 @@ namespace server
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:3000")
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                    });
+            });
+            
             services.AddControllers();
             
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "SimpleAPI", Version = "v1"}); });
@@ -23,6 +34,8 @@ namespace server
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors("AllowSpecificOrigin");
+            
             app.UseRouting();
 
             app.UseAuthorization();
