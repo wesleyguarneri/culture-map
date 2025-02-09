@@ -13,8 +13,8 @@ import DetailPanel from '@components/Detail Panel';
 const DEFAULT_CENTER = [38.907132, -77.036546]
 const API_URL = "http://localhost:5000/api/country"
 
-
 export default function Home() {
+  const [countryJson, setCountryJson] = useState(null);
 
   const onCountryClick = async (event) => {
     const country = event.target.feature.properties.ISO_A2; 
@@ -27,15 +27,14 @@ export default function Home() {
           "Access-Control-Allow-Origin": "*"
         },
       });
-      console.log('res',response)
       if (!response.ok) {
         throw new Error(`Response status: ${response.status}`);
       }
   
-      const json = await response.json();
-      console.log(json);
+      const data = await response.json();
+      setCountryJson(data); 
+
     } catch (error) {
-      console.error(error.message);
     }
   };
 
@@ -75,7 +74,7 @@ export default function Home() {
               </>
             )}
           </Map>
-          <DetailPanel></DetailPanel>
+          <DetailPanel countryData={countryJson} />
         </Container>
       </Section>
     </Layout>
