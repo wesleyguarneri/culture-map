@@ -14,21 +14,40 @@ public class CountryController : Controller
     [HttpGet("{IsoA2}")]
     public ActionResult<String> GetByIsoA2(string isoA2)
     {
-        System.Console.WriteLine($"GetByIsoA2: {isoA2}");
-        Country c = new Country();
+        Country? country = null;
+
         using (var connection = new NpgsqlConnection(_connectionString))
         {
             connection.Open();
             string sql = "SELECT c.* FROM public.countries AS c WHERE c.iso_a2=@isoA2";
-            using var command = new NpgsqlCommand(sql, connection);
+            
+            using (var command = new NpgsqlCommand(sql, connection))
             {
-                NpgsqlDataReader reader = command.ExecuteReader();
-                while(reader.Read()){
-                    Console.WriteLine(reader.GetString(0));
-                };
+                command.Parameters.AddWithValue("@isoA2", isoA2);
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        country = new Country
+                        {
+                            IsoA2 = reader.GetString(reader.GetOrdinal("iso_a2")),
+                            IsoA3 = reader.GetString(reader.GetOrdinal("iso_a3")),
+                            Numeric = reader.GetString(reader.GetOrdinal("numeric")),
+                            Name = reader.GetString(reader.GetOrdinal("name")),
+                            Region = reader.GetString(reader.GetOrdinal("region")),
+                            Subregion = reader.GetString(reader.GetOrdinal("subregion"))
+                        };
+                        Console.WriteLine($"Found Country: {country.Name} ({country.IsoA2})");
+                    }   
+                }
             };
         }
-        return Ok(c);
+        if (country == null)
+        {
+            return NotFound($"Country with ISO_A2 '{isoA2}' not found.");
+        }
+
+        return Ok(country);
     }
 
     [HttpGet]

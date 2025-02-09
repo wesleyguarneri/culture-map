@@ -19,9 +19,15 @@ export default function Home() {
   const onCountryClick = async (event) => {
     const country = event.target.feature.properties.ISO_A2; 
     console.log(`You clicked on: ${country}`);
-    const url = API_URL+""
     try {
-      const response = await fetch(API_URL+`/${country}`, {mode:'no-cors'});
+      const response = await fetch(API_URL+`/${country}`,{
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*"
+        },
+      });
+      console.log('res',response)
       if (!response.ok) {
         throw new Error(`Response status: ${response.status}`);
       }
