@@ -18,7 +18,6 @@ export default function Home() {
 
   const onCountryClick = async (event) => {
     const country = event.target.feature.properties.ISO_A2; 
-    console.log(`You clicked on: ${country}`);
     try {
       const response = await fetch(API_URL+`/${country}`,{
         method: "GET",

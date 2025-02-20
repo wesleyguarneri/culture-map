@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 
 import styles from './Map.module.scss';
 
-const { MapContainer } = ReactLeaflet;
+const { MapContainer, TileLayer } = ReactLeaflet;
 
 const Map = ({ children, className, width, height, ...rest }) => {
   let mapClassName = styles.map;
@@ -16,7 +16,7 @@ const Map = ({ children, className, width, height, ...rest }) => {
 
   useEffect(() => {
     (async function init() {
-      delete Leaflet.Icon.Default.prototype._getIconUrl;
+      // delete Leaflet.Icon.Default.prototype._getIconUrl;
       Leaflet.Icon.Default.mergeOptions({
         iconRetinaUrl: 'leaflet/images/marker-icon-2x.png',
         iconUrl: 'leaflet/images/marker-icon.png',
@@ -26,9 +26,18 @@ const Map = ({ children, className, width, height, ...rest }) => {
   }, []);
 
   return (
-    <MapContainer className={mapClassName} style={{ zIndex: 0 }} {...rest}>
-      {children(ReactLeaflet, Leaflet)}
-    </MapContainer>
+<MapContainer
+  className={mapClassName}
+  style={{ zIndex: 0, width, height }}
+  center={[38.9072, -77.0369]}
+  zoom={5} 
+  scrollWheelZoom={true} 
+>
+  <TileLayer
+    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+  />
+  {children(ReactLeaflet, Leaflet)}
+</MapContainer>
   )
 }
 
