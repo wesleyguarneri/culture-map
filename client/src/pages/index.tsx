@@ -33,14 +33,16 @@ export default function Home() {
   
       const data = await response.json();
       setCountryJson(data); 
+      getBookDataByCountry(data.isoA3);
+
 
     } catch (error) {
     }
   };
 
-  const getBookDataByCountry = async (iso_A3) => {
+  const getBookDataByCountry = async (isoA3) => {
     try {
-      const response = await fetch(API_URL+`/book/iso_A3`,{
+      const response = await fetch(API_URL+`/book/country/${isoA3}`,{
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -52,6 +54,7 @@ export default function Home() {
       }
   
       const data = await response.json();
+      console.log('book',data)
       setBookData(data); 
 
     } catch (error) {
@@ -94,7 +97,9 @@ export default function Home() {
               </>
             )}
           </Map>
-          <DetailPanel countryData={countryJson} />
+          {countryJson && bookData && (
+            <DetailPanel countryData={countryJson} bookData={bookData} />
+          )}
         </Container>
       </Section>
     </Layout>

@@ -48,28 +48,39 @@ public class BookController : Controller
         return Ok(book);
     }
     
-    [HttpGet("country/{country}")]
-    public ActionResult<Book> GetAllByCountry(string iso_A3)
+    [HttpGet("country/{isoA3}")]
+    public ActionResult<Book> GetAllByCountry(string isoA3)
     {
-        Book? book = null;
+        List<Book> books = new List<Book>();
 
         using (var connection = new NpgsqlConnection(_connectionString))
         {
             connection.Open();
-            string sql = "SELECT * FROM public.books WHERE country=@iso_A3";
+            string sql = "SELECT * FROM public.books WHERE country=@isoA3";
             
             using (var command = new NpgsqlCommand(sql, connection))
             {
-                command.Parameters.AddWithValue("@iso_A3", iso_A3);
+                command.Parameters.AddWithValue("@isoA3", isoA3);
+                
                 using (var reader = command.ExecuteReader())
                 {
-                    if (reader.Read())
+                    while (reader.Read())
                     {
-                    }   
+                        books.Add(new Book
+                        {
+                            Title = reader.GetString(reader.GetOrdinal("title")),
+                            Author = reader.GetString(reader.GetOrdinal("author")),
+                            Isbn = reader.GetString(reader.GetOrdinal("isbn")),
+                            Year = reader.GetString(reader.GetOrdinal("year")),
+                            Genre = reader.GetString(reader.GetOrdinal("genre")),
+                            Country = reader.GetString(reader.GetOrdinal("country")),
+                            Description = reader.GetString(reader.GetOrdinal("description"))
+                        });
+                    } 
                 }
             };
         }
-
+        return books.Count > 0 ? Ok(books) : NotFound();
     }
 
     [HttpPost]
