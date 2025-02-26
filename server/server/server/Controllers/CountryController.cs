@@ -50,13 +50,6 @@ public class CountryController : Controller
         return Ok(country);
     }
 
-    [HttpGet]
-    public ActionResult<String> Get()
-    {
-        return "hello";
-    }
-    
-
     [HttpPost]
     public ActionResult<Country> Add(Country country)
     {

@@ -11,15 +11,16 @@ import geoJsonData from 'public/countries.geojson';
 import DetailPanel from '@components/Detail Panel';
 
 const DEFAULT_CENTER = [38.907132, -77.036546]
-const API_URL = "http://localhost:5000/api/country"
+const API_URL = "http://localhost:5000/api"
 
 export default function Home() {
   const [countryJson, setCountryJson] = useState(null);
+  const [bookData, setBookData] = useState(null);
 
   const onCountryClick = async (event) => {
     const country = event.target.feature.properties.ISO_A2; 
     try {
-      const response = await fetch(API_URL+`/${country}`,{
+      const response = await fetch(API_URL+`/country/${country}`,{
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -32,6 +33,26 @@ export default function Home() {
   
       const data = await response.json();
       setCountryJson(data); 
+
+    } catch (error) {
+    }
+  };
+
+  const getBookDataByCountry = async (iso_A3) => {
+    try {
+      const response = await fetch(API_URL+`/book/iso_A3`,{
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*"
+        },
+      });
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+  
+      const data = await response.json();
+      setBookData(data); 
 
     } catch (error) {
     }
