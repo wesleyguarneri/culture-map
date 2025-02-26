@@ -15,7 +15,7 @@ const API_URL = "http://localhost:5000/api"
 
 export default function Home() {
   const [countryJson, setCountryJson] = useState(null);
-  const [bookData, setBookData] = useState(null);
+  const [bookData, setBookData] = useState([]);
 
   const onCountryClick = async (event) => {
     const country = event.target.feature.properties.ISO_A2; 
@@ -35,7 +35,6 @@ export default function Home() {
       setCountryJson(data); 
       getBookDataByCountry(data.isoA3);
 
-
     } catch (error) {
     }
   };
@@ -50,14 +49,15 @@ export default function Home() {
         },
       });
       if (!response.ok) {
+        setBookData([]);
         throw new Error(`Response status: ${response.status}`);
       }
   
       const data = await response.json();
-      console.log('book',data)
       setBookData(data); 
 
     } catch (error) {
+
     }
   };
 
