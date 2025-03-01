@@ -8,5 +8,29 @@
     background-color: #FEFBEA;
     z-index: 1;
     border-radius: 10px;
+}
 
+.bookTile {
+    display: flex;
+    flex-direction: row;
+}
+
+.imageContainer {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+}
+
+.detailContainer {
+    width: 100%;
+    height: 100px;
+    margin-left: 5px;
+}
+
+.bookTile {
+    background-color: #FEFBEA;
+}
+
+.description {
+    font-size: 14px;
 }

@@ -54,6 +54,7 @@ export default function Home() {
       }
   
       const data = await response.json();
+      console.log('bookData',data)
       setBookData(data); 
 
     } catch (error) {
@@ -69,7 +70,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <Head>
+      <Head children={undefined}>
       </Head>
       <Section>
         <Container>

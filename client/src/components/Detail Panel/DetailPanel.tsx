@@ -1,5 +1,5 @@
 import styles from './DetailPanel.module.scss'
-import { Button } from '@carbon/react';
+import { Button, Tile } from '@carbon/react';
 
 const DetailPanel = ({ countryData, bookData }) => {
     return countryData ? (
@@ -8,10 +8,18 @@ const DetailPanel = ({ countryData, bookData }) => {
                 <>
                     <h2>{countryData.name}</h2>
                     {bookData.map((book) => (
-                        <div className='styles.bookCard'>
-                            
-                            <h4>{book.title}</h4>
-                        </div>
+                        <Tile className={styles.bookTile}>
+                            <div className={styles.imageContainer}>
+
+                            </div>
+                            <div className={styles.detailContainer}>
+                                <h4>{book.title}</h4>
+                                <div className={styles.descriptionContainer}>
+                                    <p className={styles.description}>{book.description}</p>
+                                </div>
+
+                            </div>
+                        </Tile>
 
                     ))}
                    
