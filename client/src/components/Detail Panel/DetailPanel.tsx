@@ -7,7 +7,10 @@ const DetailPanel = ({ countryData, bookData }) => {
                 <>
                     <h2>{countryData.name}</h2>
                     {bookData.map((book) => (
-                        <h4>{book.title}</h4>
+                        <div className='styles.bookCard'>
+                            <h4>{book.title}</h4>
+
+                        </div>
 
                     ))}
                    
