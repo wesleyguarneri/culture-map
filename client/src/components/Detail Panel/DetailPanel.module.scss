@@ -18,6 +18,9 @@
 
 .panelTitle {
     margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .panelBody {
@@ -70,10 +73,17 @@
     background-color: $color-cream;
     color: #000000;
     height: 30px;
+    border: none;
 }
 
 .detailButton:hover {
     background-color: $color-dark-cream;
     height: 30px;
+}
 
+.closeButton {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    font-size: 18px;
 }

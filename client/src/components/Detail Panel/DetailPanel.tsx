@@ -1,5 +1,7 @@
 import styles from './DetailPanel.module.scss'
 import { Button, Tile } from '@carbon/react';
+import { Close } from '@carbon/icons-react';
+
 
 const DetailPanel = ({ countryData, bookData }) => {
     return countryData ? (
@@ -8,6 +10,7 @@ const DetailPanel = ({ countryData, bookData }) => {
                 <>
                     <div className={styles.panelTitle}>
                         <h2 className={styles.countryTitle}>{countryData.name}</h2>
+                        <Button renderIcon={Close} className={styles.closeButton} iconDescription="Close" hasIconOnly />
                     </div>
                     <div className={styles.panelBody}>
                         {bookData.map((book) => (
