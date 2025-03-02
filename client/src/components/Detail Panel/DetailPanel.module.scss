@@ -1,13 +1,39 @@
+@import "@styles/settings/_settings";
+
 .detailPanel {
     position: absolute;
-    width: 400px;
+    width: 500px;
     top: 60px;
     bottom: 15px;
     right: 10px;
 
-    background-color: #FEFBEA;
+    background-color: $color-cream;
     z-index: 1;
     border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.panelTitle {
+    margin-left: 1rem;
+}
+
+.panelBody {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.panelFooter {
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.countryTitle {
+    font-weight: 700;
 }
 
 .bookTile {
@@ -16,9 +42,14 @@
 }
 
 .imageContainer {
+    flex: 1 0 100px;
     width: 100px;
-    height: 100px;
-    background-color: #ffffff;
+    height: 120px;
+    background-color: $color-dark-cream;
+}
+
+.tileTitle {
+    font-weight: 700;
 }
 
 .detailContainer {
@@ -28,9 +59,21 @@
 }
 
 .bookTile {
-    background-color: #FEFBEA;
+    background-color: $color-cream;
 }
 
 .description {
     font-size: 14px;
+}
+
+.detailButton {
+    background-color: $color-cream;
+    color: #000000;
+    height: 30px;
+}
+
+.detailButton:hover {
+    background-color: $color-dark-cream;
+    height: 30px;
+
 }

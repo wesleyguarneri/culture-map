@@ -6,22 +6,31 @@ const DetailPanel = ({ countryData, bookData }) => {
         <div className={styles.detailPanel}>
             { 
                 <>
-                    <h2>{countryData.name}</h2>
-                    {bookData.map((book) => (
-                        <Tile className={styles.bookTile}>
-                            <div className={styles.imageContainer}>
+                    <div className={styles.panelTitle}>
+                        <h2 className={styles.countryTitle}>{countryData.name}</h2>
+                    </div>
+                    <div className={styles.panelBody}>
+                        {bookData.map((book) => (
+                            <Tile className={styles.bookTile}>
+                                <div className={styles.imageContainer}>
 
-                            </div>
-                            <div className={styles.detailContainer}>
-                                <h4>{book.title}</h4>
-                                <div className={styles.descriptionContainer}>
-                                    <p className={styles.description}>{book.description}</p>
                                 </div>
+                                <div className={styles.detailContainer}>
+                                    <h4 className={styles.tileTitle}>{book.title}</h4>
+                                    <div className={styles.descriptionContainer}>
+                                        <p className={styles.description}>{book.description}</p>
+                                    </div>
 
-                            </div>
-                        </Tile>
+                                </div>
+                            </Tile>
 
-                    ))}
+                        ))}
+                    </div>
+                    <div className={styles.panelFooter}>
+                        <Button className={styles.detailButton} size='sm'>
+                            View Details
+                        </Button>
+                    </div>
                    
                 </>
             }
