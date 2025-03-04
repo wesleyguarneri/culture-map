@@ -8,11 +8,31 @@
     ".NETCoreApp,Version=v8.0": {
       "server/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "4.0.0-preview.8",
           "Npgsql": "9.0.2",
           "Swashbuckle.AspNetCore": "6.9.0"
         },
         "runtime": {
           "server.dll": {}
+        }
+      },
+      "AWSSDK.Core/4.0.0-preview.8": {
+        "runtime": {
+          "lib/net8.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "AWSSDK.S3/4.0.0-preview.8": {
+        "dependencies": {
+          "AWSSDK.Core": "4.0.0-preview.8"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.S3.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
@@ -99,6 +119,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/4.0.0-preview.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BVaI15facXKQIHaRSTcC2cfNbPVtOK/uGgV41tOtuOLaOAKlpGMyooEnqINHfWoAFFs4ONT1gywh1TRzNdpy1g==",
+      "path": "awssdk.core/4.0.0-preview.8",
+      "hashPath": "awssdk.core.4.0.0-preview.8.nupkg.sha512"
+    },
+    "AWSSDK.S3/4.0.0-preview.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OzvPQADQCItqeLuN4ql/xmqpxDd8diqjvJb/OxHURiEskJVx94IxRglrOJSIi3noGIJ4tWDjzUAUVUElFzcM5A==",
+      "path": "awssdk.s3/4.0.0-preview.8",
+      "hashPath": "awssdk.s3.4.0.0-preview.8.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",

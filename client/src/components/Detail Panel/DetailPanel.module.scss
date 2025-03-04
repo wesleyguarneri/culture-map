@@ -65,6 +65,10 @@
     background-color: $color-cream;
 }
 
+.bookTile:hover {
+    background-color: $color-dark-cream;
+}
+
 .description {
     font-size: 14px;
 }
