@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Amazon.S3;
+using Amazon.Extensions.NETCore.Setup;
 
 namespace server
 {
@@ -22,6 +24,9 @@ namespace server
             });
             
             services.AddControllers();
+            
+            services.AddAWSService<IAmazonS3>();
+
             
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "SimpleAPI", Version = "v1"}); });
 
