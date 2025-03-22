@@ -33,11 +33,7 @@ const DetailPanel = ({ countryData, bookData }) => {
                     {bookData.map((book) => (
                         <Tile className={styles.bookTile} onClick={() => {setView("book"); setSelectedBook(book);}}>
                             <div className={styles.imageContainer}>
-                            <img 
-  src="https://bookimage-bucket.s3.us-west-1.amazonaws.com/images/9780143039433?X-Amz-Expires=3600&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQESE3G77ERLTYYPO/20250322/us-west-1/s3/aws4_request&X-Amz-Date=20250322T155730Z&X-Amz-SignedHeaders=host&X-Amz-Signature=87e6102bd6aa73cb5b0d974b523cc276cb7b7ab3a330e0973dd2a3d175e8b3ab" 
-  alt="Book Cover" 
-  style={{ width: "200px", height: "auto" }}
-/>
+                                <img src={bookImages[book.isbn] || "/placeholder.jpg"} alt={book.title} />
                             </div>
                             <div className={styles.detailContainer}>
                                 <h4 className={styles.tileTitle}>{book.title}</h4>
