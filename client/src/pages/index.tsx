@@ -36,6 +36,7 @@ export default function Home() {
       getBookDataByCountry(data.isoA3);
 
     } catch (error) {
+      console.error(error)
     }
   };
 
@@ -78,7 +79,7 @@ export default function Home() {
             {({ TileLayer, GeoJSON }) => (
               <>
                 <TileLayer
-                  url="https://api.maptiler.com/maps/openstreetmap/{z}/{x}/{y}.jpg?key=bsDT2UzO0Fp8DBbkmOyZ"
+                  url="https://api.maptiler.com/maps/aquarelle/{z}/{x}/{y}.png?key=bsDT2UzO0Fp8DBbkmOyZ"
                   attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
                 />
 

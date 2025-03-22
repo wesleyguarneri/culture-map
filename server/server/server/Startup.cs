@@ -1,3 +1,4 @@
+using Amazon;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,6 +28,8 @@ namespace server
             
             services.AddAWSService<IAmazonS3>();
 
+            services.AddSingleton<IAmazonS3>(sp =>
+                new AmazonS3Client(RegionEndpoint.USEast2));
             
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "SimpleAPI", Version = "v1"}); });
 

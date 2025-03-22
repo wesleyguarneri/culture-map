@@ -16,11 +16,11 @@ public class GenPresignedUrlController : Controller
         _s3Client = s3Client;
     }
 
-    [HttpGet("{*objectKey}")] // Enables full S3 paths to be handled as a single parameter
+    [HttpGet("{*objectKey}")] 
     public async Task<IActionResult> GetPresignedUrl(string objectKey)
     {
         string bucketName = "bookimage-bucket";
-        int expiryDuration = 3600; // 1 hour
+        int expiryDuration = 3600; 
 
         try
         {

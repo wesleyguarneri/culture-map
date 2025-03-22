@@ -34,11 +34,13 @@ const Map = ({ children, className, width, height, ...rest }) => {
   scrollWheelZoom={true} 
 >
   <TileLayer
-    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    url="https://api.maptiler.com/maps/basic-v2/{z}/{x}/{y}.png?key=bsDT2UzO0Fp8DBbkmOyZ"
   />
+  
   {children(ReactLeaflet, Leaflet)}
 </MapContainer>
   )
 }
+// url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 
 export default Map;
