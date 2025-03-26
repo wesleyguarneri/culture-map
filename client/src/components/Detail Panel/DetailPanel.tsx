@@ -24,7 +24,7 @@ const DetailPanel = ({ countryData, bookData }) => {
         if (bookData.length > 0) {
             fetchImages();
         }
-    }, [bookData])
+    }, [JSON.stringify(bookData)])
 
     const renderPanelBody = () => {
         if(view === 'country'){
@@ -63,12 +63,12 @@ const DetailPanel = ({ countryData, bookData }) => {
 
     const getBookImage = async (isbn: string) => {
         try {
-            const response = await fetch(API_URL+`/GenPresignedUrl/images/`+isbn,{
+            const response = await fetch(`${API_URL}/GenPresignedUrl/images/${isbn}.jpg`,{
                 method: "GET",
                 headers: {
-                    "Content-Type": "application/json",
-                    "Access-Control-Allow-Origin": "*"
-                }
+                    "Content-Type": "application/json"
+                },
+                credentials: "include",
             })
             if (!response.ok) {
                 throw new Error(`Response status: ${response.status}`);
@@ -80,7 +80,7 @@ const DetailPanel = ({ countryData, bookData }) => {
         }
         catch(error){
             console.error(error)
-            return ""
+            return "/placeholder.jpg"
         }
     };
 

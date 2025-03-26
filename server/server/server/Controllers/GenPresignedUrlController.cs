@@ -4,9 +4,12 @@ using Amazon.S3;
 using Amazon.S3.Model;
 using System;
 namespace server.Controllers;
+using Microsoft.AspNetCore.Cors;
+
 
 [Route("api/[controller]")]
 [ApiController]
+[EnableCors("AllowFrontend")]
 public class GenPresignedUrlController : Controller
 {
     private readonly IAmazonS3 _s3Client;
