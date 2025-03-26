@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Cors;
 
 [Route("api/[controller]")]
 [ApiController]
-[EnableCors("AllowFrontend")]
 public class GenPresignedUrlController : Controller
 {
     private readonly IAmazonS3 _s3Client;
@@ -19,18 +18,18 @@ public class GenPresignedUrlController : Controller
         _s3Client = s3Client;
     }
 
-    [HttpGet("{*objectKey}")] 
-    public async Task<IActionResult> GetPresignedUrl(string objectKey)
+    [HttpGet("images/{isbn}")] 
+    public async Task<IActionResult> GetPresignedUrl(string isbn)
     {
         string bucketName = "bookimage-bucket";
         int expiryDuration = 3600; 
-
+        Console.WriteLine($"isbn: {isbn}");
         try
         {
             var request = new GetPreSignedUrlRequest
             {
                 BucketName = bucketName,
-                Key = objectKey,
+                Key = "/images/"+isbn,
                 Expires = DateTime.UtcNow.AddSeconds(expiryDuration),
                 Verb = HttpVerb.GET
             };

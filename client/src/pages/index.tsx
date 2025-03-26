@@ -20,7 +20,7 @@ export default function Home() {
   const onCountryClick = async (event) => {
     const country = event.target.feature.properties.ISO_A2; 
     try {
-      const response = await fetch(API_URL+`/country/${country}`,{
+      const response = await fetch(`/api/country/${country}`,{
         method: "GET",
         headers: {
           "Content-Type": "application/json",

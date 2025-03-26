@@ -46,3 +46,5 @@
 /Users/wesleyguarneri/Desktop/culture-map/server/server/server/bin/Debug/net8.0/AWSSDK.Core.dll
 /Users/wesleyguarneri/Desktop/culture-map/server/server/server/bin/Debug/net8.0/AWSSDK.S3.dll
 /Users/wesleyguarneri/Desktop/culture-map/server/server/server/bin/Debug/net8.0/AWSSDK.Extensions.NETCore.Setup.dll
+/Users/wesleyguarneri/Desktop/culture-map/server/server/server/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/wesleyguarneri/Desktop/culture-map/server/server/server/bin/Debug/net8.0/appsettings.json
