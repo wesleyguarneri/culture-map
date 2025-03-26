@@ -63,12 +63,8 @@ const DetailPanel = ({ countryData, bookData }) => {
 
     const getBookImage = async (isbn: string) => {
         try {
-            const response = await fetch(`/api/GenPresignedUrl/images/${isbn}.jpg`,{
-                method: "GET",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Access-Control-Allow-Origin": "*"
-                },
+            const response = await fetch(`/api/GenPresignedUrl/images/${isbn}`,{
+                method: "GET"
             })
             if (!response.ok) {
                 throw new Error(`Response status: ${response.status}`);

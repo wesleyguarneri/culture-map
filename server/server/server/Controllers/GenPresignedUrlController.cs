@@ -29,7 +29,7 @@ public class GenPresignedUrlController : Controller
             var request = new GetPreSignedUrlRequest
             {
                 BucketName = bucketName,
-                Key = "/images/"+isbn,
+                Key = "images/"+isbn,
                 Expires = DateTime.UtcNow.AddSeconds(expiryDuration),
                 Verb = HttpVerb.GET
             };
