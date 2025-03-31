@@ -1,9 +1,10 @@
+import styles from './BookPanel.module.scss'
 
-const BookPanel = ({ bookData }) => {
+const BookPanel = ({ bookData, bookImage }) => {
     console.log(bookData)
 
     return (
-        <div>
+        <div className={styles.bookPanel}>
             {bookData?.title}
         </div>
       );

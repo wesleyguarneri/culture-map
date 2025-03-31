@@ -16,6 +16,7 @@ const API_URL = "http://localhost:5000/api"
 export default function Home() {
   const [countryJson, setCountryJson] = useState(null);
   const [bookData, setBookData] = useState([]);
+  const [isPanelOpen, setIsPanelOpen] = useState(true);
 
   const onCountryClick = async (event) => {
     const country = event.target.feature.properties.ISO_A2; 
@@ -67,7 +68,14 @@ export default function Home() {
     layer.on({
       click: onCountryClick,
     });
+    setIsPanelOpen(true);
   };
+
+  useEffect(() => {
+    if (countryJson) {
+      setIsPanelOpen(true);
+    }
+  }, [countryJson]);
 
   return (
     <Layout>
@@ -99,9 +107,12 @@ export default function Home() {
               </>
             )}
           </Map>
-          {countryJson && bookData && (
-            <DetailPanel countryData={countryJson} bookData={bookData} />
-          )}
+          {isPanelOpen && countryJson && bookData && (
+            <DetailPanel 
+            countryData={countryJson} 
+            bookData={bookData} 
+            onClose={() => setIsPanelOpen(false)}
+          />          )}
         </Container>
       </Section>
     </Layout>

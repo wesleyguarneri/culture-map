@@ -7,9 +7,9 @@ import BookPanel from './Book Panel';
 const API_URL = "http://localhost:5000/api"
 
 
-const DetailPanel = ({ countryData, bookData }) => {
+const DetailPanel = ({ countryData, bookData, onClose }) => {
     const [view, setView] = useState("country");
-    const [selectedBook, setSelectedBook] = useState(null);
+    const [selectedBook, setSelectedBook] = useState<Book | null>(null);
     const [bookImages, setBookImages] = useState({}); 
 
     useEffect(() => {
@@ -46,10 +46,13 @@ const DetailPanel = ({ countryData, bookData }) => {
                 </div>
             )
         }
-        else if(view === 'book'){
+        else if(view === 'book' ){
             return(
                 <div className={styles.panelBody}>
-                    <BookPanel bookData={selectedBook}/>
+                    <BookPanel 
+                        bookData={selectedBook}
+                        bookImage={ selectedBook ? bookImages[selectedBook.isbn] : '/placeholder.jpg'}
+                    />
                 </div>
             )
         }
@@ -84,16 +87,24 @@ const DetailPanel = ({ countryData, bookData }) => {
         <div className={styles.detailPanel}>
             <div className={styles.panelTitle}>
                 <h2 className={styles.countryTitle}>{countryData.name}</h2>
-                <Button renderIcon={Close}  className={styles.closeButton} iconDescription="Close" hasIconOnly/>
-            </div>
+                <Button 
+                    renderIcon={Close}  
+                    className={styles.closeButton} 
+                    iconDescription="Close" 
+                    hasIconOnly 
+                    onClick={onClose} 
+                />
+           </div>
 
 
             {renderPanelBody()}
 
             <div className={styles.panelFooter}>
-                <Button className={styles.detailButton} size='sm' onClick={() => {setView(view === "country" ? "book" : "country")}}>
-                    {view === "country" ? "View Details" : "Back to Country"}
-                </Button>
+                {view === "book" &&(
+                    <Button className={styles.detailButton} size='sm' onClick={() => {setView("country")}}>
+                        Back to Country
+                    </Button>  
+                )}
             </div>
                    
         </div>
