@@ -9,7 +9,7 @@ const BookPanel = ({ bookData, bookImage }) => {
                 <img src={bookImage} />
             </div>
             <div className={styles.titleContainer}>
-                {bookData?.title}
+                <b>{bookData?.title}</b>
             </div>
             <div className={styles.detailContainer}>
                 <div className={styles.detailEntry}>

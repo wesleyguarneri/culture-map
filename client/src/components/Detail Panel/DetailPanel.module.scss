@@ -42,15 +42,15 @@
 .bookTile {
     display: flex;
     flex-direction: row;
-    height: 16vh;
+    height: 16.5vh;
     align-items: center;
 }
 
 .imageContainer {
     // flex: 0 1 14.5vh;
     width: 8vw;
-    height: 14.5vh;
-    background-color: $color-dark-cream;
+    height: 15vh;
+    // background-color: $color-dark-cream;
     overflow: hidden;
 }
 
