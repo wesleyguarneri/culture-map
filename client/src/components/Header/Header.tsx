@@ -10,7 +10,7 @@ const Header = () => {
         <h1 className={styles.headerTitle}>
           Book Atlas
         </h1>
-        <Menu />
+        <Menu size="32" className={styles.menuIcon} />
       </Container>
     </header>
   );

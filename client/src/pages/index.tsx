@@ -86,10 +86,10 @@ export default function Home() {
           <Map className={styles.homeMap} center={DEFAULT_CENTER} zoom={12}>
             {({ TileLayer, GeoJSON }) => (
               <>
-                <TileLayer
+                {/* <TileLayer
                   url="https://api.maptiler.com/maps/aquarelle/{z}/{x}/{y}.png?key=bsDT2UzO0Fp8DBbkmOyZ"
                   attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
-                />
+                /> */}
 
                 <GeoJSON
                     data={geoJsonData}
@@ -99,14 +99,11 @@ export default function Home() {
                     }}
                     onEachFeature={onEachFeature}
                 />
-                {/* <Marker position={DEFAULT_CENTER}>
-                  <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
-                  </Popup>
-                </Marker> */}
               </>
             )}
           </Map>
+
+
           {isPanelOpen && countryJson && bookData && (
             <DetailPanel 
             countryData={countryJson} 

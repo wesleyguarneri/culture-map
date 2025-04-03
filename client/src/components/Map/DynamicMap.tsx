@@ -4,6 +4,7 @@ import * as ReactLeaflet from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 import styles from './Map.module.scss';
+import VectorTileLayer from 'react-leaflet-vector-tile-layer';
 
 const { MapContainer, TileLayer } = ReactLeaflet;
 
@@ -33,10 +34,12 @@ const Map = ({ children, className, width, height, ...rest }) => {
   zoom={5} 
   scrollWheelZoom={true} 
 >
-  <TileLayer
+  {/* <TileLayer
     url="https://api.maptiler.com/maps/basic-v2/{z}/{x}/{y}.png?key=bsDT2UzO0Fp8DBbkmOyZ"
-  />
-  
+  /> */}
+  <VectorTileLayer
+        styleUrl="https://api.maptiler.com/maps/0195be4d-4012-75a6-b86c-5531b79afda5/style.json?key=bsDT2UzO0Fp8DBbkmOyZ"
+      />
   {children(ReactLeaflet, Leaflet)}
 </MapContainer>
   )

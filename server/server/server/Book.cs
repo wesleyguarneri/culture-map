@@ -12,4 +12,6 @@ public class Book
     public string Country { get; set; } = string.Empty;
 
     public string Description { get; set; } = string.Empty;
+    
+    public string Language { get; set; } = string.Empty;
 }

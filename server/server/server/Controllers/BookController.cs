@@ -89,7 +89,7 @@ public class BookController : Controller
         using (var connection = new NpgsqlConnection(_connectionString))
         {
             connection.Open();
-            string sql = "INSERT INTO books (title, author, isbn, year, genre, country, description ) VALUES (@title, @author, @isbn, @year, @genre, @country, @description)";
+            string sql = "INSERT INTO books (title, author, isbn, year, genre, country, description, language ) VALUES (@title, @author, @isbn, @year, @genre, @country, @description, @language)";
 
             using (var command = new NpgsqlCommand(sql, connection))
             {
@@ -100,6 +100,7 @@ public class BookController : Controller
                 command.Parameters.AddWithValue("genre", book.Genre);
                 command.Parameters.AddWithValue("country", book.Country);
                 command.Parameters.AddWithValue("description", book.Description);
+                command.Parameters.AddWithValue("language", book.Language);
 
                 int rowsAffected = command.ExecuteNonQuery();
                 if (rowsAffected == 0)
