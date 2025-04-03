@@ -34,7 +34,8 @@ public class BookController : Controller
                             Year = reader.GetString(reader.GetOrdinal("year")),
                             Genre = reader.GetString(reader.GetOrdinal("genre")),
                             Country = reader.GetString(reader.GetOrdinal("country")),
-                            Description = reader.GetString(reader.GetOrdinal("description"))
+                            Description = reader.GetString(reader.GetOrdinal("description")),
+                            Language = reader.GetString(reader.GetOrdinal("language")),
                         };
                         Console.WriteLine($"Found Book: {book.Title} ");
                     }   
@@ -74,7 +75,8 @@ public class BookController : Controller
                             Year = reader.GetString(reader.GetOrdinal("year")),
                             Genre = reader.GetString(reader.GetOrdinal("genre")),
                             Country = reader.GetString(reader.GetOrdinal("country")),
-                            Description = reader.GetString(reader.GetOrdinal("description"))
+                            Description = reader.GetString(reader.GetOrdinal("description")),
+                            Language = reader.GetString(reader.GetOrdinal("language")),
                         });
                     } 
                 }
