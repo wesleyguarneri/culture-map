@@ -1,14 +1,16 @@
 import Container from '@components/Container';
 
 import styles from './Header.module.scss';
+import { Menu } from '@carbon/icons-react';
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <Container className={styles.headerContainer}>
-        <p className={styles.headerTitle}>
-
-        </p>
+        <h1 className={styles.headerTitle}>
+          Book Atlas
+        </h1>
+        <Menu />
       </Container>
     </header>
   );

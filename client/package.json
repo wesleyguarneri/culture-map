@@ -19,12 +19,11 @@
   },
   "dependencies": {
     "@babel/preset-env": "^7.26.0",
+    "@carbon/icons-react": "^11.57.0",
     "@carbon/react": "1.33.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@fontsource/roboto": "^5.1.1",
-    "@mui/icons-material": "^6.4.2",
-    "@mui/material": "^6.4.2",
     "copy-webpack-plugin": "^11.0.0",
     "leaflet": "^1.9.4",
     "next": "^14.0.1",

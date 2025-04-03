@@ -7,4 +7,5 @@ export interface Book{
     genre: string;
     country: string;
     description: string;
+    language: string;
 }
