@@ -8,7 +8,7 @@ const Header = () => {
     <header className={styles.header}>
       <Container className={styles.headerContainer}>
         <h1 className={styles.headerTitle}>
-          Book Atlas
+          The Written World
         </h1>
         <Menu size="32" className={styles.menuIcon} />
       </Container>

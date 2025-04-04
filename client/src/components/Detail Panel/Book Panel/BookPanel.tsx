@@ -25,6 +25,12 @@ const BookPanel = ({ bookData, bookImage }) => {
                     </div>
                 </div>
                 <div className={styles.detailEntry}>
+                    <div className={styles.detailLabel}>Language</div>
+                    <div className={styles.detailValue}>
+                        {bookData?.language}
+                    </div>
+                </div>
+                <div className={styles.detailEntry}>
                     <div className={styles.detailLabel}>Genre</div>
                     <div className={styles.detailValue}>
                         {bookData?.genre}
