@@ -86,19 +86,16 @@ export default function Home() {
           <Map className={styles.homeMap} center={DEFAULT_CENTER} zoom={12}>
             {({ TileLayer, GeoJSON }) => (
               <>
-                {/* <TileLayer
-                  url="https://api.maptiler.com/maps/aquarelle/{z}/{x}/{y}.png?key=bsDT2UzO0Fp8DBbkmOyZ"
-                  attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
-                /> */}
 
-                <GeoJSON
+                {/* <GeoJSON
                     data={geoJsonData}
                     style={{
-                      color: '#ffffff',
+                      color: 'transparent',
+                      fillColor: "transparent",
                       weight: 2,
                     }}
                     onEachFeature={onEachFeature}
-                />
+                /> */}
               </>
             )}
           </Map>
