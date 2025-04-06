@@ -1,37 +1,45 @@
 const CopyPlugin = require('copy-webpack-plugin');
+const path = require('path');
+console.log('Using webpack version:', require('webpack').version);
 
 /** @type {import('next').NextConfig} */
-
 const nextConfig = {
-  // output: 'export',
   reactStrictMode: true,
-  webpack: (config) => {
-    // config.cache = false; 
-    
+  webpack: (config, { isServer }) => {
+    config.cache = false;
+
+    config.snapshot = {
+      ...config.snapshot,
+      managedPaths: [/^(.pnpm|node_modules)/],
+    };
+
     config.plugins.push(
       new CopyPlugin({
         patterns: [
           {
-            from: 'node_modules/leaflet/dist/images',
-            to: 'public/leaflet/images',
+            from: path.resolve(__dirname, 'node_modules/leaflet/dist/images'),
+            to: path.resolve(__dirname, 'public/leaflet/images'),
+            noErrorOnMissing: true, // prevent build crash if folder is missing
           },
         ],
       }),
     );
+
     config.module.rules.push({
       test: /\.geojson$/,
-      use: ["json-loader"]
+      type: 'json',
     });
-    return config
+
+    return config;
   },
   async rewrites() {
     return [
       {
         source: '/:path*',
-        destination: 'http://localhost:5000/:path*'
-      }
-    ]
-  }
-}
+        destination: 'http://localhost:5000/:path*',
+      },
+    ];
+  },
+};
 
 module.exports = nextConfig;

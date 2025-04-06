@@ -87,7 +87,7 @@ export default function Home() {
             {({ TileLayer, GeoJSON }) => (
               <>
 
-                {/* <GeoJSON
+                <GeoJSON
                     data={geoJsonData}
                     style={{
                       color: 'transparent',
@@ -95,7 +95,7 @@ export default function Home() {
                       weight: 2,
                     }}
                     onEachFeature={onEachFeature}
-                /> */}
+                />
               </>
             )}
           </Map>
