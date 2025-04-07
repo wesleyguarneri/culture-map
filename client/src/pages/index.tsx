@@ -13,6 +13,12 @@ import DetailPanel from '@components/Detail Panel';
 const DEFAULT_CENTER = [38.907132, -77.036546]
 const API_URL = "http://localhost:5000/api"
 
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
 export default function Home() {
   const [countryJson, setCountryJson] = useState(null);
   const [bookData, setBookData] = useState([]);
@@ -21,7 +27,7 @@ export default function Home() {
   const onCountryClick = async (event) => {
     const country = event.target.feature.properties.ISO_A2; 
     try {
-      const response = await fetch(`/api/country/${country}`,{
+      const response = await fetch(`${API_URL}/country/${country}`,{
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -43,7 +49,7 @@ export default function Home() {
 
   const getBookDataByCountry = async (isoA3) => {
     try {
-      const response = await fetch(API_URL+`/book/country/${isoA3}`,{
+      const response = await fetch(`${API_URL}/book/country/${isoA3}`,{
         method: "GET",
         headers: {
           "Content-Type": "application/json",

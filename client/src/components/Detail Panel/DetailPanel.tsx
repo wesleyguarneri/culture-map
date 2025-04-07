@@ -66,7 +66,7 @@ const DetailPanel = ({ countryData, bookData, onClose }) => {
 
     const getBookImage = async (isbn: string) => {
         try {
-            const response = await fetch(`/api/GenPresignedUrl/images/${isbn}`,{
+            const response = await fetch(`${API_URL}/GenPresignedUrl/images/${isbn}`,{
                 method: "GET"
             })
             if (!response.ok) {

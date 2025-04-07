@@ -1,21 +1,12 @@
 {
-  "name": "next-leaflet-starter",
-  "homepage": "https://next-leaflet-starter.netlify.app",
+  "name": "the-written-world",
   "version": "0.1.0",
   "license": "MIT",
-  "author": "Colby Fayock <hello@colbyfayock.com>",
+  "author": "Wesley Guarneri",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
     "start": "next start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/colbyfayock/next-leaflet-starter"
-  },
-  "bugs": {
-    "url": "https://github.com/colbyfayock/next-leaflet-starter/issues"
   },
   "dependencies": {
     "@babel/preset-env": "^7.26.0",

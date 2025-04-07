@@ -1,12 +1,15 @@
 const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
-console.log('Using webpack version:', require('webpack').version);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
   webpack: (config, { isServer }) => {
-    config.cache = false;
+    // config.cache = false;
 
     config.snapshot = {
       ...config.snapshot,
@@ -19,7 +22,6 @@ const nextConfig = {
           {
             from: path.resolve(__dirname, 'node_modules/leaflet/dist/images'),
             to: path.resolve(__dirname, 'public/leaflet/images'),
-            noErrorOnMissing: true, // prevent build crash if folder is missing
           },
         ],
       }),
@@ -32,14 +34,14 @@ const nextConfig = {
 
     return config;
   },
-  async rewrites() {
-    return [
-      {
-        source: '/:path*',
-        destination: 'http://localhost:5000/:path*',
-      },
-    ];
-  },
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: '/:path*',
+  //       destination: 'http://localhost:5000/:path*',
+  //     },
+  //   ];
+  // },
 };
 
 module.exports = nextConfig;
