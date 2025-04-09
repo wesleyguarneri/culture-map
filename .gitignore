@@ -2,3 +2,4 @@ node_modules
 server/server/appsettings.json
 server/server/server/appsettings.json
 server/server/server/bin/Debug/net8.0/appsettings.json
+.DS_Store
