@@ -4,4 +4,6 @@ server/server/server/appsettings.json
 server/server/server/bin/Debug/net8.0/appsettings.json
 server/server/server/bin/Release/net8.0/appsettings.json
 server/server/server/bin/Release/net8.0
+server/server/server/publish
+server/server/server/obj
 .DS_Store
