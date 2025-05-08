@@ -7,7 +7,7 @@ namespace server.Controllers;
 [ApiController]
 public class BookController : Controller
 {
-    private readonly string _connectionString = "";
+    private readonly string _connectionString = "Host=localhost;Port=5432;Username=admin;Password=postgres;Database=postgres";
     
     [HttpGet("isbn/{isbn}")]
     public ActionResult<Book> GetByIsbn(string isbn)

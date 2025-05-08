@@ -8,7 +8,7 @@ namespace server.Controllers;
 [ApiController]
 public class CountryController : Controller
 {
-    private readonly string _connectionString = "";
+    private readonly string _connectionString = "Host=localhost;Port=5432;Username=admin;Password=postgres;Database=postgres";
 
     
     [HttpGet("{IsoA2}")]
