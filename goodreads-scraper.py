@@ -2,12 +2,45 @@ from selenium import webdriver
 from selenium.webdriver import Firefox
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
 import pandas as pd
 import logging
 import time
+import psycopg2
+
 
 
 class GoodreadsScraper():
+
+    def connect_to_db(self):
+        try:
+            self.conn = psycopg2.connect(host="localhost", database="postgres", user="admin", password="postgres")
+            self.cur = self.conn.cursor()
+
+            data = {
+                "title":"Moby-Dick",
+                "author":"Herman Melville",
+                "isbn":"9780143105954",
+                "year":"1851",
+                "genre":"Adventure, Epic, Psychological Fiction",
+                "country":"USA",
+                "description": "description",
+                "language": "english"
+            }
+            self.cur.execute("INSERT INTO books (title,author,isbn,year,genre,country,description) VALUES (%s, %s, %s,%s, %s, %s,%s)", 
+                (
+                    data["title"],
+                    data["author"],
+                    data["isbn"],
+                    data["year"],
+                    data["genre"],
+                    data["country"],
+                    data["description"],
+                    data['language']
+                ))
+            self.conn.commit()
+        except Exception as e:
+            logging.error(e)
 
     def get_books_from_list(self):
         list_url = "https://www.goodreads.com/list/show/1339.Best_British_and_Irish_Literature"
@@ -36,11 +69,12 @@ class GoodreadsScraper():
     def run(self):
         options = Options()
         options.headless = True
-        self.driver = Firefox(options=options, executable_path='./geckodriver')
+        service = Service(executable_path='./geckodriver')
+        # self.driver = Firefox(service=service, options=options)
 
-        self.get_books_from_list()
-
-        self.driver.close()
+        # self.get_books_from_list()
+        self.connect_to_db()
+        # self.driver.close()
 
 if __name__ == "__main__":
     l = GoodreadsScraper()

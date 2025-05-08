@@ -4878,3 +4878,649 @@ console.error: "Problem getting stored prefs for TopSites"
 JavaScript error: , line 0: uncaught exception: null
 console.error: "Problem getting stored prefs for TopSites"
 JavaScript error: , line 0: uncaught exception: null
+1746669556781	geckodriver	INFO	Listening on 127.0.0.1:57294
+1746669557269	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/Applications/Firefox. ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/24/39yt3w355d568s5w03hc9k900000gn/T/rust_mozprofileZLRIoJ"
+*** You are running in headless mode.
+1746669557847	Marionette	INFO	Marionette enabled
+1746669557908	Marionette	INFO	Listening on port 57302
+WebDriver BiDi listening on ws://127.0.0.1:57295
+1746669558056	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/24/39yt3w355d568s5w03hc9k900000gn/T/rust_mozprofileZLRIoJ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57295/devtools/browser/87d27cdc-03ff-4bdd-9165-ac146e193b93
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: (new InvalidSignatureError("Invalid content signature (main/query-stripping) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'", "resource://services-settings/RemoteSettingsClient.jsm", 174))
+console.error: services.settings: 
+  main/quicksuggest Signature failed  InvalidSignatureError: Invalid content signature (main/quicksuggest) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/quicksuggest local data was corrupted
+console.warn: services.settings: main/quicksuggest Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/quicksuggest Signature failed again InvalidSignatureError: Invalid content signature (main/quicksuggest) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: (new InvalidSignatureError("Invalid content signature (main/quicksuggest) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'", "resource://services-settings/RemoteSettingsClient.jsm", 174))
+console.error: (new InvalidSignatureError("Invalid content signature (main/quicksuggest) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'", "resource://services-settings/RemoteSettingsClient.jsm", 174))
+console.error: (new InvalidSignatureError("Invalid content signature (main/quicksuggest) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'", "resource://services-settings/RemoteSettingsClient.jsm", 174))
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #425; visit https://reactjs.org/docs/error-decoder.html?invariant=425 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #425; visit https://reactjs.org/docs/error-decoder.html?invariant=425 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #425; visit https://reactjs.org/docs/error-decoder.html?invariant=425 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #425; visit https://reactjs.org/docs/error-decoder.html?invariant=425 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #425; visit https://reactjs.org/docs/error-decoder.html?invariant=425 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.goodreads.com/_next/static/chunks/framework-6af944237f13f84b.js, line 1: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+1746669572985	Marionette	INFO	Stopped listening on port 57302
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+sendPing@resource://gre/modules/EventPing.jsm:51:30
+_submitPing@resource://gre/modules/EventPing.jsm:229:12
+shutdown@resource://gre/modules/EventPing.jsm:112:10
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:940:31
+shutdown/<@resource://gre/modules/TelemetryControllerParent.jsm:1010:24
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:982:34
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:1014:36
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:1692:7
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:374:30
+_getState@resource://gre/modules/TelemetryControllerParent.jsm:1058:38
+setupTelemetry/<@resource://gre/modules/TelemetryControllerParent.jsm:917:18
+safeGetState@resource://gre/modules/AsyncShutdown.jsm:254:17
+Barrier/_internalAddBlocker/promise<@resource://gre/modules/AsyncShutdown.jsm:773:20
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:721:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:249:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1235:42
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+console.error: "Problem getting stored prefs for TopSites"
+JavaScript error: , line 0: uncaught exception: null
+console.error: "Problem getting stored prefs for TopSites"
+JavaScript error: , line 0: uncaught exception: null
+console.error: services.settings: 
+  security-state/cert-revocations Signature failed  InvalidSignatureError: Invalid content signature (security-state/cert-revocations) using 'onecrl.content-signature.mozilla.org-2025-06-23-09-14-27.chain'
+console.error: services.settings: 
+  security-state/cert-revocations local data was corrupted
+console.warn: services.settings: security-state/cert-revocations Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  security-state/cert-revocations Signature failed again InvalidSignatureError: Invalid content signature (security-state/cert-revocations) using 'onecrl.content-signature.mozilla.org-2025-06-23-09-14-27.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (security-state/cert-revocations) using 'onecrl.content-signature.mozilla.org-2025-06-23-09-14-27.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  blocklists/addons-bloomfilters Signature failed  InvalidSignatureError: Invalid content signature (blocklists/addons-bloomfilters) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  blocklists/addons-bloomfilters local data was corrupted
+console.warn: services.settings: blocklists/addons-bloomfilters Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  blocklists/addons-bloomfilters Signature failed again InvalidSignatureError: Invalid content signature (blocklists/addons-bloomfilters) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (blocklists/addons-bloomfilters) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  security-state/intermediates Signature failed  InvalidSignatureError: Invalid content signature (security-state/intermediates) using 'onecrl.content-signature.mozilla.org-2025-06-23-09-14-27.chain'
+console.error: services.settings: 
+  security-state/intermediates local data was corrupted
+console.warn: services.settings: security-state/intermediates Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  security-state/intermediates Signature failed again InvalidSignatureError: Invalid content signature (security-state/intermediates) using 'onecrl.content-signature.mozilla.org-2025-06-23-09-14-27.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (security-state/intermediates) using 'onecrl.content-signature.mozilla.org-2025-06-23-09-14-27.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/quicksuggest Signature failed  InvalidSignatureError: Invalid content signature (main/quicksuggest) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/quicksuggest local data was corrupted
+console.warn: services.settings: main/quicksuggest Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/quicksuggest Signature failed again InvalidSignatureError: Invalid content signature (main/quicksuggest) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/quicksuggest) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/devtools-compatibility-browsers Signature failed  InvalidSignatureError: Invalid content signature (main/devtools-compatibility-browsers) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/devtools-compatibility-browsers local data was corrupted
+console.warn: services.settings: main/devtools-compatibility-browsers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/devtools-compatibility-browsers Signature failed again InvalidSignatureError: Invalid content signature (main/devtools-compatibility-browsers) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/devtools-compatibility-browsers) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/search-default-override-allowlist Signature failed  InvalidSignatureError: Invalid content signature (main/search-default-override-allowlist) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/search-default-override-allowlist local data was corrupted
+console.warn: services.settings: main/search-default-override-allowlist Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/search-default-override-allowlist Signature failed again InvalidSignatureError: Invalid content signature (main/search-default-override-allowlist) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/search-default-override-allowlist) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/top-sites Signature failed  InvalidSignatureError: Invalid content signature (main/top-sites) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/top-sites local data was corrupted
+console.warn: services.settings: main/top-sites Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/top-sites Signature failed again InvalidSignatureError: Invalid content signature (main/top-sites) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/top-sites) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/password-rules Signature failed  InvalidSignatureError: Invalid content signature (main/password-rules) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/password-rules local data was corrupted
+console.warn: services.settings: main/password-rules Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/password-rules Signature failed again InvalidSignatureError: Invalid content signature (main/password-rules) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/password-rules) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/search-telemetry-v2 Signature failed  InvalidSignatureError: Invalid content signature (main/search-telemetry-v2) using 'remote-settings.content-signature.mozilla.org-2025-05-31-18-21-48.chain'
+console.error: services.settings: 
+  main/search-telemetry-v2 local data was corrupted
+console.warn: services.settings: main/search-telemetry-v2 Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/search-telemetry-v2 Signature failed again InvalidSignatureError: Invalid content signature (main/search-telemetry-v2) using 'remote-settings.content-signature.mozilla.org-2025-05-31-18-21-48.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/search-telemetry-v2) using 'remote-settings.content-signature.mozilla.org-2025-05-31-18-21-48.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/url-classifier-skip-urls Signature failed  InvalidSignatureError: Invalid content signature (main/url-classifier-skip-urls) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/url-classifier-skip-urls local data was corrupted
+console.warn: services.settings: main/url-classifier-skip-urls Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/url-classifier-skip-urls Signature failed again InvalidSignatureError: Invalid content signature (main/url-classifier-skip-urls) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/url-classifier-skip-urls) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/websites-with-shared-credential-backends Signature failed  InvalidSignatureError: Invalid content signature (main/websites-with-shared-credential-backends) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/websites-with-shared-credential-backends local data was corrupted
+console.warn: services.settings: main/websites-with-shared-credential-backends Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/websites-with-shared-credential-backends Signature failed again InvalidSignatureError: Invalid content signature (main/websites-with-shared-credential-backends) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/websites-with-shared-credential-backends) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/normandy-recipes-capabilities Signature failed  InvalidSignatureError: Invalid content signature (main/normandy-recipes-capabilities) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/normandy-recipes-capabilities local data was corrupted
+console.warn: services.settings: main/normandy-recipes-capabilities Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/normandy-recipes-capabilities Signature failed again InvalidSignatureError: Invalid content signature (main/normandy-recipes-capabilities) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/normandy-recipes-capabilities) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  security-state/onecrl Signature failed  InvalidSignatureError: Invalid content signature (security-state/onecrl) using 'onecrl.content-signature.mozilla.org-2025-06-02-19-59-10.chain'
+console.error: services.settings: 
+  security-state/onecrl local data was corrupted
+console.warn: services.settings: security-state/onecrl Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  security-state/onecrl Signature failed again InvalidSignatureError: Invalid content signature (security-state/onecrl) using 'onecrl.content-signature.mozilla.org-2025-06-02-19-59-10.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (security-state/onecrl) using 'onecrl.content-signature.mozilla.org-2025-06-02-19-59-10.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  blocklists/gfx Signature failed  InvalidSignatureError: Invalid content signature (blocklists/gfx) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  blocklists/gfx local data was corrupted
+console.warn: services.settings: blocklists/gfx Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  blocklists/gfx Signature failed again InvalidSignatureError: Invalid content signature (blocklists/gfx) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (blocklists/gfx) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/cookie-banner-rules-list Signature failed  InvalidSignatureError: Invalid content signature (main/cookie-banner-rules-list) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/cookie-banner-rules-list local data was corrupted
+console.warn: services.settings: main/cookie-banner-rules-list Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/cookie-banner-rules-list Signature failed again InvalidSignatureError: Invalid content signature (main/cookie-banner-rules-list) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/cookie-banner-rules-list) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/search-config Signature failed  InvalidSignatureError: Invalid content signature (main/search-config) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/search-config local data was corrupted
+console.warn: services.settings: main/search-config Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/search-config Signature failed again InvalidSignatureError: Invalid content signature (main/search-config) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/search-config) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/query-stripping) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/addons-manager-settings Signature failed  InvalidSignatureError: Invalid content signature (main/addons-manager-settings) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/addons-manager-settings local data was corrupted
+console.warn: services.settings: main/addons-manager-settings Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/addons-manager-settings Signature failed again InvalidSignatureError: Invalid content signature (main/addons-manager-settings) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/addons-manager-settings) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/fxmonitor-breaches Signature failed  InvalidSignatureError: Invalid content signature (main/fxmonitor-breaches) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/fxmonitor-breaches local data was corrupted
+console.warn: services.settings: main/fxmonitor-breaches Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/fxmonitor-breaches Signature failed again InvalidSignatureError: Invalid content signature (main/fxmonitor-breaches) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/fxmonitor-breaches) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed again InvalidSignatureError: Invalid content signature (main/doh-config) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/doh-config) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-providers Signature failed again InvalidSignatureError: Invalid content signature (main/doh-providers) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/doh-providers) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/pioneer-study-addons-v1 Signature failed  InvalidSignatureError: Invalid content signature (main/pioneer-study-addons-v1) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/pioneer-study-addons-v1 local data was corrupted
+console.warn: services.settings: main/pioneer-study-addons-v1 Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/pioneer-study-addons-v1 Signature failed again InvalidSignatureError: Invalid content signature (main/pioneer-study-addons-v1) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/pioneer-study-addons-v1) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: services.settings: 
+  main/public-suffix-list Signature failed  InvalidSignatureError: Invalid content signature (main/public-suffix-list) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  main/public-suffix-list local data was corrupted
+console.warn: services.settings: main/public-suffix-list Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/public-suffix-list Signature failed again InvalidSignatureError: Invalid content signature (main/public-suffix-list) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+console.error: services.settings: 
+  Message: InvalidSignatureError: Invalid content signature (main/public-suffix-list) using 'remote-settings.content-signature.mozilla.org-2025-06-20-18-40-46.chain'
+  Stack:
+    InvalidSignatureError@resource://services-settings/RemoteSettingsClient.jsm:174:5
+_validateCollectionSignature@resource://services-settings/RemoteSettingsClient.jsm:993:13
+
+console.error: (new InvalidSignatureError("Invalid content signature (security-state/cert-revocations) using 'onecrl.content-signature.mozilla.org-2025-06-23-09-14-27.chain'", "resource://services-settings/RemoteSettingsClient.jsm", 174))
+console.error: "Problem getting stored prefs for TopSites"
+JavaScript error: , line 0: uncaught exception: null
+console.error: "Problem getting stored prefs for TopSites"
+JavaScript error: , line 0: uncaught exception: null
+console.error: "Problem getting stored prefs for TopSites"
+JavaScript error: , line 0: uncaught exception: null
+console.error: "Problem getting stored prefs for TopSites"
+JavaScript error: , line 0: uncaught exception: null
+console.error: "Problem getting stored prefs for TopSites"
+JavaScript error: , line 0: uncaught exception: null
+console.error: "Problem getting stored prefs for TopSites"
+JavaScript error: , line 0: uncaught exception: null
+console.error: "Problem getting stored prefs for TopSites"
+JavaScript error: , line 0: uncaught exception: null
+console.error: "Problem getting stored prefs for TopSites"
+JavaScript error: , line 0: uncaught exception: null
+console.error: "Problem getting stored prefs for TopSites"
+JavaScript error: , line 0: uncaught exception: null
