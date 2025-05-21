@@ -78,7 +78,7 @@ export default function MapPage() {
         }
       }, [countryJson]);
     return (
-        <Container>
+      <Container>
         <Map className={styles.homeMap} center={DEFAULT_CENTER} zoom={12}>
           {({ TileLayer, GeoJSON }) => (
             <>

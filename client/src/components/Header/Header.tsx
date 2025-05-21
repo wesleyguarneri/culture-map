@@ -1,8 +1,11 @@
 import Container from '@components/Container';
 
 import styles from './Header.module.scss';
-import { Menu } from '@carbon/icons-react';
-
+import { Menu } from '@carbon/icons-react'
+import {
+  Layer,
+  OverflowMenu
+} from '@carbon/react';
 const Header = () => {
   return (
     <header className={styles.header}>
@@ -10,7 +13,8 @@ const Header = () => {
         <h1 className={styles.headerTitle}>
           The Written World
         </h1>
-        <Menu size="32" className={styles.menuIcon} />
+   
+        
       </Container>
     </header>
   );

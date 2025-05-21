@@ -1,18 +1,18 @@
 import { Section } from "@carbon/react";
+import Container from "@components/Container";
 import Layout from "@components/Layout";
-import { Head } from "next/document";
 
 
 
 
-function About() {
+export default function About() {
  return(
     <Layout>
-    <Head children={undefined}>
-    </Head>
-    <Section>
-
-    </Section>
-  </Layout>
+        <Section>
+            <Container>
+                About
+            </Container>
+        </Section>
+    </Layout>
  )
 }
