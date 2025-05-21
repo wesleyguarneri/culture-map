@@ -7,7 +7,7 @@ import pandas as pd
 import logging
 import time
 import psycopg2
-
+import urllib
 
 
 class GoodreadsScraper():
@@ -20,9 +20,80 @@ class GoodreadsScraper():
         except Exception as e:
             logging.error(e)
 
-    def get_books_from_list(self):
-        list_url = "https://www.goodreads.com/list/show/2702.Best_Canadian_Literature"
-        country = "CAN"
+    def get_book(self, url, country):
+        try:
+            self.driver.get(url)
+
+            title = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__rightColumn > div.BookPage__mainContent > div.BookPageTitleSection > div.BookPageTitleSection__title > h1').text
+            author = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__rightColumn > div.BookPage__mainContent > div.BookPageMetadataSection > div.BookPageMetadataSection__contributor > h3 > div > span:nth-child(1) > a > span.ContributorLink__name').text
+
+            year = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__rightColumn > div.BookPage__mainContent > div.BookPageMetadataSection > div.BookDetails > div > span:nth-child(1) > span > div > p:nth-child(2)').text
+            year = str(year.split(' ')[4])
+
+            description = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__rightColumn > div.BookPage__mainContent > div.BookPageMetadataSection > div.BookPageMetadataSection__description > div > div.TruncatedContent__text.TruncatedContent__text--large > div > div > span').text
+
+            try:
+                details_button = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__rightColumn > div.BookPage__mainContent > div.BookPageMetadataSection > div.BookDetails > div > div > button')
+                details_button.click()
+                time.sleep(0.25)
+            except Exception as e:
+                print('detail button error')
+
+            dt_elements = self.driver.find_elements(By.CSS_SELECTOR, "dl > div > dt")
+
+            language = ""
+            isbn = ""
+
+            for dt in dt_elements:
+                if dt.text.strip() == "Language":
+                    parent_div = dt.find_element(By.XPATH, "..") 
+                    dd = parent_div.find_element(By.TAG_NAME, "dd")
+                    language = dd.text.strip()
+
+                if dt.text.strip() == "ISBN":
+                    isbn_parent_div = dt.find_element(By.XPATH, "..") 
+                    isbn_dd = isbn_parent_div.find_element(By.TAG_NAME, "dd")
+                    isbn = isbn_dd.text.strip()
+                    isbn = isbn.split(' ')[0]
+
+            image = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__leftColumn > div > div.BookPage__bookCover > div > div > div > div > div > div > img')
+            image_src = image.get_attribute('src')
+            print(image_src)
+            urllib.request.urlretrieve(image_src, "images/"+isbn+".png")
+                    
+
+            genreList = []
+            for idx in range(3):
+                genre = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__rightColumn > div.BookPage__mainContent > div.BookPageMetadataSection > div.BookPageMetadataSection__genres > ul > span:nth-child(1) > span:nth-child({})'.format(idx+2)).text
+                if genre == 'Classics':
+                    idx = idx-1
+                    continue
+                genreList.append(genre)
+            
+            genres = ','.join(genreList)
+
+            print(genres)
+            print(language)
+            print(isbn)
+            
+            self.driver.back()
+
+            # self.cur.execute("INSERT INTO books (title,author,isbn,year,genre,country,description,language) VALUES (%s, %s, %s,%s, %s, %s,%s,%s)", 
+            # (
+            #     title,
+            #     author,
+            #     isbn,
+            #     year,
+            #     genres,
+            #     country,
+            #     description,
+            #     language
+            # ))
+            # self.conn.commit()
+        except Exception as e:
+            logging.error(e)
+
+    def get_books_from_list(self,list_url,country):
         max_results = 5
 
         try:
@@ -41,7 +112,7 @@ class GoodreadsScraper():
                         login_button.click()
                         time.sleep(0.5)
                 except Exception as e:
-                    print('login error')
+                    print('login close error')
                 
 
 
@@ -60,9 +131,6 @@ class GoodreadsScraper():
                 except Exception as e:
                     print('detail button error')
 
-                # isbn = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__rightColumn > div.BookPage__mainContent > div.BookPageMetadataSection > div.BookDetails > div > span:nth-child(2) > div.BookDetails__list > span > div > dl > div:nth-child(3) > dd > div > div.TruncatedContent__text.TruncatedContent__text--small').text
-                # isbn = isbn.split(' ')[0]
-
                 dt_elements = self.driver.find_elements(By.CSS_SELECTOR, "dl > div > dt")
 
                 language = ""
@@ -80,7 +148,10 @@ class GoodreadsScraper():
                         isbn = isbn_dd.text.strip()
                         isbn = isbn.split(' ')[0]
 
-
+                image = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__leftColumn > div > div.BookPage__bookCover > div > div > div > div > div > div > img')
+                image_src = image.get_attribute('src')
+                print(image_src)
+                urllib.request.urlretrieve(image_src, "images/"+isbn+".png")
                         
 
                 genreList = []
@@ -124,7 +195,8 @@ class GoodreadsScraper():
 
         self.driver = Firefox(service=service, options=options)
 
-        self.get_books_from_list()
+        # self.get_books_from_list()
+        self.get_book("https://www.goodreads.com/book/show/30659.Meditations","SPQR")
         self.driver.close()
 
 if __name__ == "__main__":
