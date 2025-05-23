@@ -148,10 +148,11 @@ class GoodreadsScraper():
                         isbn = isbn_dd.text.strip()
                         isbn = isbn.split(' ')[0]
 
-                image = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__leftColumn > div > div.BookPage__bookCover > div > div > div > div > div > div > img')
-                image_src = image.get_attribute('src')
-                print(image_src)
-                urllib.request.urlretrieve(image_src, "images/"+isbn+".png")
+                if isbn != "":
+                    image = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__leftColumn > div > div.BookPage__bookCover > div > div > div > div > div > div > img')
+                    image_src = image.get_attribute('src')
+                    print(image_src)
+                    urllib.request.urlretrieve(image_src, "images/"+isbn+".png")
                         
 
                 genreList = []
