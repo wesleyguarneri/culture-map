@@ -1,23 +1,28 @@
 import Container from '@components/Container';
-
 import styles from './Header.module.scss';
-import { Menu } from '@carbon/icons-react'
+import { Menu, Switcher } from '@carbon/icons-react'
 import {
-  Layer,
-  OverflowMenu
+  Header,
+  HeaderMenuButton,
+  HeaderName,
+  HeaderGlobalBar,
+  HeaderGlobalAction,
+  SkipToContent,
 } from '@carbon/react';
-const Header = () => {
+
+const NavHeader = () => {
   return (
-    <header className={styles.header}>
-      <Container className={styles.headerContainer}>
-        <h1 className={styles.headerTitle}>
+    <Header className={styles.header}>
+        <HeaderName href="/" prefix="" className={styles.headerTitle}>
           The Written World
-        </h1>
-   
-        
-      </Container>
-    </header>
+        </HeaderName>
+        <HeaderMenuButton
+          className={styles.headerIcon}
+          aria-label="Open menu"
+          isCollapsible
+        />      
+    </Header>
   );
 };
 
-export default Header;
+export default NavHeader;

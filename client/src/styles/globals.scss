@@ -41,3 +41,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+:global(.cds--header__action svg) {
+  color: white !important;
+}

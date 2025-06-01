@@ -3,11 +3,11 @@
 .header {
   height: 5vh;
   width: 100%;
-  font-size: 1em;
-  color: white;
+  color: #fff;
   background-color: $color-blue;
-  // padding: 1.5em 0;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .headerContainer {
@@ -19,13 +19,19 @@
 }
 
 .headerTitle {
-  font-size: 1.6em;
+  font-size: 1.5em !important;
   font-weight: bold;
   font-family: 'PT Serif';
   font-style: italic;
+  color: #fff !important;
   margin: 0;
 }
 
-.menuIcon {
-  justify-self: flex-end;
+.headerIcon {
+  color: #fff !important;
+  fill: #fff !important;
+  svg {
+    color: white !important;
+    fill: #fff;
+  }
 }
