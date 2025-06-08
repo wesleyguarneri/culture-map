@@ -8,7 +8,9 @@ import logging
 import time
 import psycopg2
 import urllib
-
+import json
+from PIL import Image, ImageFile
+import requests
 
 class GoodreadsScraper():
 
@@ -186,19 +188,43 @@ class GoodreadsScraper():
         except Exception as e:
             logging.error(e)
 
+    def upload_image_to_s3(self,image_path,isbn):
+        with open('./client/config.json', 'r') as config_file:
+            config_data = json.load(config_file)
+            API_URL = config_data['API_URL']
+        
+        try:
+            # img = Image.open(image_path)
+            with open(image_path, 'rb') as file:
+                files = {"file": file}
+                response = requests.post(API_URL+'/image?isbn='+isbn, files=files)
+
+                if response.status_code == 200:
+                    print("Request successful!")
+                    print(response.text)  
+                else:
+                    print(f"Request failed with status code: {response.status_code}")
+        except FileNotFoundError:
+            print(f"Error: Image not found at {image_path}")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+
+
 
     def run(self):
         
         options = Options()
         options.headless = True
-        service = Service(executable_path='./geckodriver')
-        self.connect_to_db()
+        # service = Service(executable_path='./geckodriver')
+        # self.connect_to_db()
 
-        self.driver = Firefox(service=service, options=options)
+        # self.driver = Firefox(service=service, options=options)
+
+        self.upload_image_to_s3("images/9780140449334.png",'123')
 
         # self.get_books_from_list()
-        self.get_book("https://www.goodreads.com/book/show/30659.Meditations","SPQR")
-        self.driver.close()
+        # self.get_book("https://www.goodreads.com/book/show/30659.Meditations","SPQR")
+        # self.driver.close()
 
 if __name__ == "__main__":
     l = GoodreadsScraper()

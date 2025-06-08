@@ -5,9 +5,6 @@ import {
   Header,
   HeaderMenuButton,
   HeaderName,
-  HeaderGlobalBar,
-  HeaderGlobalAction,
-  SkipToContent,
 } from '@carbon/react';
 
 const NavHeader = () => {

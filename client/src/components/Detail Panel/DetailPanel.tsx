@@ -3,8 +3,9 @@ import { Button, Tile } from '@carbon/react';
 import { Close } from '@carbon/icons-react';
 import { useEffect, useState } from 'react';
 import BookPanel from './Book Panel';
+import config from 'config.json'
 
-const API_URL = "http://localhost:5000/api"
+const API_URL = config.API_URL
 
 
 const DetailPanel = ({ countryData, bookData, onClose }) => {
