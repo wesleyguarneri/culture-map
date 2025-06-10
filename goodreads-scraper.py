@@ -196,12 +196,11 @@ class GoodreadsScraper():
         try:
             # img = Image.open(image_path)
             with open(image_path, 'rb') as file:
-                files = {"file": file}
-                response = requests.post(API_URL+'/image?isbn='+isbn, files=files)
+                files = {"file": (f"{isbn}.png", file, "image/png")}
+                response = requests.post(API_URL+'/upload/image?isbn='+isbn, files=files)
 
                 if response.status_code == 200:
                     print("Request successful!")
-                    print(response.text)  
                 else:
                     print(f"Request failed with status code: {response.status_code}")
         except FileNotFoundError:

@@ -26,7 +26,7 @@ namespace server.Controllers
         [HttpPost("image")]
         public async Task<IActionResult> UploadImage(IFormFile file,[FromQuery] string isbn)
         {
-            if (file == null || file.Length == 0)
+            if (file.Length == 0)
             {
                 return BadRequest("No file uploaded.");
             }
