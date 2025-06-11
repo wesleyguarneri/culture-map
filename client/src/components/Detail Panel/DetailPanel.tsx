@@ -67,16 +67,15 @@ const DetailPanel = ({ countryData, bookData, onClose }) => {
 
     const getBookImage = async (isbn: string) => {
         try {
-            // const response = await fetch(`${API_URL}/GenPresignedUrl/images/${isbn}`,{
-            //     method: "GET"
-            // })
-            // if (!response.ok) {
-            //     throw new Error(`Response status: ${response.status}`);
-            // }
+            const response = await fetch(`${API_URL}/GenPresignedUrl/images/${isbn}`,{
+                method: "GET"
+            })
+            if (!response.ok) {
+                throw new Error(`Response status: ${response.status}`);
+            }
 
-            // const data = await response.json();
-            // console.log('data',data)
-            // return data.url
+            const data = await response.json();
+            return data.url
         }
         catch(error){
             console.error(error)

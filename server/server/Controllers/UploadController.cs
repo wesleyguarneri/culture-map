@@ -15,7 +15,7 @@ namespace server.Controllers
     public class UploadController : Controller
     {
         private readonly IAmazonS3 _s3Client;
-        private const string bucketName = "bookimage-bucket";
+        private const string bucketName = "book-image-bucket-us-east-1";
 
         public UploadController()
         {

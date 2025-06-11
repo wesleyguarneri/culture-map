@@ -27,10 +27,16 @@ class GoodreadsScraper():
             self.driver.get(url)
 
             title = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__rightColumn > div.BookPage__mainContent > div.BookPageTitleSection > div.BookPageTitleSection__title > h1').text
+            print(title)
+            
             author = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__rightColumn > div.BookPage__mainContent > div.BookPageMetadataSection > div.BookPageMetadataSection__contributor > h3 > div > span:nth-child(1) > a > span.ContributorLink__name').text
+            print(author)
 
-            year = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__rightColumn > div.BookPage__mainContent > div.BookPageMetadataSection > div.BookDetails > div > span:nth-child(1) > span > div > p:nth-child(2)').text
-            year = str(year.split(' ')[4])
+            # Extracts the year from the Goodreads date string with these formats: 'Published July 1, 1950' or 'First Published July 1, 1950'
+            full_date_value = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__rightColumn > div.BookPage__mainContent > div.BookPageMetadataSection > div.BookDetails > div > span:nth-child(1) > span > div > p:nth-child(2)').text
+
+            date_value_list = full_date_value.split(' ') 
+            year = str(date_value_list[len(date_value_list)-1])
 
             description = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__rightColumn > div.BookPage__mainContent > div.BookPageMetadataSection > div.BookPageMetadataSection__description > div > div.TruncatedContent__text.TruncatedContent__text--large > div > div > span').text
 
@@ -59,10 +65,13 @@ class GoodreadsScraper():
                     isbn = isbn.split(' ')[0]
 
             image = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__leftColumn > div > div.BookPage__bookCover > div > div > div > div > div > div > img')
+
             image_src = image.get_attribute('src')
-            print(image_src)
-            urllib.request.urlretrieve(image_src, "images/"+isbn+".png")
-                    
+
+            if isbn != "":
+                urllib.request.urlretrieve(image_src, f"images/{isbn}.png")
+                self.upload_image_to_s3(f"images/{isbn}.png",isbn)
+    
 
             genreList = []
             for idx in range(3):
@@ -80,18 +89,18 @@ class GoodreadsScraper():
             
             self.driver.back()
 
-            # self.cur.execute("INSERT INTO books (title,author,isbn,year,genre,country,description,language) VALUES (%s, %s, %s,%s, %s, %s,%s,%s)", 
-            # (
-            #     title,
-            #     author,
-            #     isbn,
-            #     year,
-            #     genres,
-            #     country,
-            #     description,
-            #     language
-            # ))
-            # self.conn.commit()
+            self.cur.execute("INSERT INTO books (title,author,isbn,year,genre,country,description,language) VALUES (%s, %s, %s,%s, %s, %s,%s,%s)", 
+            (
+                title,
+                author,
+                isbn,
+                year,
+                genres,
+                country,
+                description,
+                language
+            ))
+            self.conn.commit()
         except Exception as e:
             logging.error(e)
 
@@ -153,9 +162,10 @@ class GoodreadsScraper():
                 if isbn != "":
                     image = self.driver.find_element(By.CSS_SELECTOR,'#__next > div.PageFrame.PageFrame--siteHeaderBanner > main > div.BookPage__gridContainer > div.BookPage__leftColumn > div > div.BookPage__bookCover > div > div > div > div > div > div > img')
                     image_src = image.get_attribute('src')
-                    print(image_src)
-                    urllib.request.urlretrieve(image_src, "images/"+isbn+".png")
-                        
+                    urllib.request.urlretrieve(image_src, f"images/{isbn}.png")
+                    self.upload_image_to_s3(f"images/{isbn}.png",isbn)
+
+                
 
                 genreList = []
                 for idx in range(3):
@@ -185,6 +195,7 @@ class GoodreadsScraper():
                     language
                 ))
                 self.conn.commit()
+
         except Exception as e:
             logging.error(e)
 
@@ -209,21 +220,18 @@ class GoodreadsScraper():
             print(f"An error occurred: {e}")
 
 
-
     def run(self):
         
         options = Options()
-        options.headless = True
-        # service = Service(executable_path='./geckodriver')
-        # self.connect_to_db()
+        options.add_argument('--headless')
+        service = Service(executable_path='./geckodriver')
+        self.connect_to_db()
 
-        # self.driver = Firefox(service=service, options=options)
+        self.driver = Firefox(service=service, options=options)
 
-        self.upload_image_to_s3("images/9780140449334.png",'123')
-
-        # self.get_books_from_list()
-        # self.get_book("https://www.goodreads.com/book/show/30659.Meditations","SPQR")
-        # self.driver.close()
+        # self.get_books_from_list("https://www.goodreads.com/shelf/show/spanish-literature","ESP")
+        self.get_book("https://www.goodreads.com/book/show/158770.Three_Kingdoms","CHN")
+        self.driver.close()
 
 if __name__ == "__main__":
     l = GoodreadsScraper()

@@ -21,7 +21,7 @@ public class GenPresignedUrlController : Controller
     [HttpGet("images/{isbn}")] 
     public async Task<IActionResult> GetPresignedUrl(string isbn)
     {
-        string bucketName = "bookimage-bucket";
+        string bucketName = "book-image-bucket-us-east-1";
         int expiryDuration = 3600; 
         Console.WriteLine($"isbn: {isbn}");
         try
