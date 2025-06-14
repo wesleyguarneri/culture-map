@@ -9,8 +9,11 @@ namespace server.Controllers;
 [ApiController]
 public class CountryController : Controller
 {
-    private readonly string _connectionString = "Host=localhost;Port=5432;Username=admin;Password=postgres;Database=postgres";
-    
+    private readonly string _connectionString;
+    public CountryController(IConfiguration configuration)
+    {
+        _connectionString = configuration.GetConnectionString("DefaultConnection");
+    }
 
     [HttpGet("{IsoA2}")]
     public ActionResult<String> GetByIsoA2(string isoA2)

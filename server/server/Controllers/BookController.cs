@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Npgsql;
 
 namespace server.Controllers;
@@ -7,7 +8,11 @@ namespace server.Controllers;
 [ApiController]
 public class BookController : Controller
 {
-    private readonly string _connectionString = "Host=localhost;Port=5432;Username=admin;Password=postgres;Database=postgres";
+    private readonly string _connectionString;
+    public BookController(IConfiguration configuration)
+    {
+        _connectionString = configuration.GetConnectionString("DefaultConnection");
+    }
     
     [HttpGet("isbn/{isbn}")]
     public ActionResult<Book> GetByIsbn(string isbn)
