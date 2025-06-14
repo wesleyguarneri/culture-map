@@ -3,9 +3,10 @@ import DetailPanel from "@components/Detail Panel";
 import geoJsonData from 'public/countries.geojson';
 import Map from '@components/Map';
 import { useState, useEffect } from 'react';
+import config from 'config.json'
 
+const API_URL = config.API_URL
 const DEFAULT_CENTER = [38.907132, -77.036546]
-const API_URL = "http://localhost:5000/api"
 
 export async function getStaticProps() {
   return {
