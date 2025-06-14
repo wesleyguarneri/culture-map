@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Npgsql;
 
 namespace server.Controllers;
@@ -9,8 +10,8 @@ namespace server.Controllers;
 public class CountryController : Controller
 {
     private readonly string _connectionString = "Host=localhost;Port=5432;Username=admin;Password=postgres;Database=postgres";
-
     
+
     [HttpGet("{IsoA2}")]
     public ActionResult<String> GetByIsoA2(string isoA2)
     {

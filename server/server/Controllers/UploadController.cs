@@ -19,7 +19,7 @@ namespace server.Controllers
 
         public UploadController()
         {
-            _s3Client = new AmazonS3Client(RegionEndpoint.USEast2);
+            _s3Client = new AmazonS3Client(RegionEndpoint.USEast1);
         }
         
 

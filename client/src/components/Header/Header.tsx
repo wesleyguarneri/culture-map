@@ -4,8 +4,12 @@ import { Menu, Switcher } from '@carbon/icons-react'
 import {
   Header,
   HeaderMenuButton,
+  HeaderMenuItem,
   HeaderName,
+  HeaderNavigation,
+  SwitcherItem,
 } from '@carbon/react';
+import { FALSE } from 'sass';
 
 const NavHeader = () => {
   return (
@@ -13,11 +17,16 @@ const NavHeader = () => {
         <HeaderName href="/" prefix="" className={styles.headerTitle}>
           The Written World
         </HeaderName>
-        <HeaderMenuButton
+        {/* <HeaderMenuButton
           className={styles.headerIcon}
           aria-label="Open menu"
           isCollapsible
-        />      
+        /> */}
+        {/* <Switcher aria-label="Switcher Container">
+          <SwitcherItem aria-label="About"
+            children="about">
+          </SwitcherItem>
+        </Switcher> */}
     </Header>
   );
 };

@@ -17,7 +17,9 @@ const Layout: React.FC<LayoutProps> = ({ children, className, ...rest }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-        <main className={styles.main}>{children}</main>
+       
+      <main className={styles.main}>{children}</main>
+      
       <Footer />
     </div>
   );
