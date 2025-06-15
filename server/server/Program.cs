@@ -28,7 +28,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend", policy =>
     {
         policy.WithOrigins(
-                "http://thewrittenworld.vercel.app",
+                "https://www.writtenworld.net",
                 "http://localhost:3000"
             )
             .AllowAnyHeader()
