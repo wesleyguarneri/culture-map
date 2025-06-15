@@ -29,7 +29,8 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins(
                 "https://www.writtenworld.net",
-                "http://localhost:3000"
+                "http://localhost:3000",
+                "https://thewrittenworld.vercel.app"
             )
             .AllowAnyHeader()
             .AllowAnyMethod();
