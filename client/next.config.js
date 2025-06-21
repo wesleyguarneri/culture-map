@@ -34,14 +34,14 @@ const nextConfig = {
 
     return config;
   },
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: '/:path*',
-  //       destination: 'http://localhost:5000/:path*',
-  //     },
-  //   ];
-  // },
+  async rewrites() {
+    return [
+      {
+        "source": "/api/:path*",
+        "destination": "https://Writtenworld-env.eba-5nua9ut5.us-east-1.elasticbeanstalk.com/api/:path*"
+      }
+    ];
+  },
 };
 
 module.exports = nextConfig;

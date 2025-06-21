@@ -41,8 +41,10 @@ builder.Services.AddCors(options =>
 var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenAnyIP(Int32.Parse(port));
+    var port = Int32.Parse(Environment.GetEnvironmentVariable("PORT") ?? "5000");
+    options.ListenAnyIP(port); // HTTP (Elastic Beanstalk forwards traffic to this)
 });
+
 
 var app = builder.Build();
 
