@@ -9,13 +9,13 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// AWS SDK setup (preferred default method)
+// AWS SDK setup 
 builder.Services.AddDefaultAWSOptions(builder.Configuration.GetAWSOptions());
 builder.Services.AddAWSService<IAmazonS3>();
 
 builder.Services.AddControllers();
 
-// Register connection string (you must inject it later or use it in DbContext)
+// Register connection string 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddSingleton(connectionString);
 
@@ -31,31 +31,32 @@ builder.Services.AddCors(options =>
         policy.WithOrigins(
                 "https://www.writtenworld.net",
                 "http://localhost:3000",
+                "http://127.0.0.1:3000",
                 "https://thewrittenworld.vercel.app"
             )
             .AllowAnyHeader()
-            .AllowAnyMethod();
+            .AllowAnyMethod()
+            .AllowCredentials();
     });
 });
 
-var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5050";
 builder.WebHost.ConfigureKestrel(options =>
 {
-    var port = Int32.Parse(Environment.GetEnvironmentVariable("PORT") ?? "5000");
-    options.ListenAnyIP(port); // HTTP (Elastic Beanstalk forwards traffic to this)
+    var port = Int32.Parse(Environment.GetEnvironmentVariable("PORT") ?? "5050");
+    options.ListenAnyIP(port); 
 });
 
 
 var app = builder.Build();
 
-app.UseCors("AllowFrontend");
-
 app.UseSwagger(); // optional: enable always
 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SimpleAPI v1"));
 
 app.UseRouting();
+app.UseCors("AllowFrontend");
 app.UseAuthorization();
-app.MapControllers();
+app.MapControllers().RequireCors("AllowFrontend");
 
 app.MapGet("/health", () => Results.Ok("Healthy"));
 app.MapGet("/", () => "App is working!");

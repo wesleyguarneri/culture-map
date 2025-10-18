@@ -1,3 +1,4 @@
 {
-    "API_URL": "https://www.writtenworld.net/api"
+    "API_URL": "http://localhost:5050/api",
+    "DEPLOYED_URL": "https://www.writtenworld.net/api"
 }

@@ -23,13 +23,7 @@ export default function MapPage() {
       const onCountryClick = async (event) => {
         const country = event.target.feature.properties.ISO_A2; 
         try {
-          const response = await fetch(`${API_URL}/country/${country}`,{
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              "Access-Control-Allow-Origin": "*"
-            },
-          });
+          const response = await fetch(`${API_URL}/country/${country}`);
           if (!response.ok) {
             throw new Error(`Response status: ${response.status}`);
           }
@@ -45,13 +39,7 @@ export default function MapPage() {
     
       const getBookDataByCountry = async (isoA3) => {
         try {
-          const response = await fetch(`${API_URL}/book/country/${isoA3}`,{
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              "Access-Control-Allow-Origin": "*"
-            },
-          });
+          const response = await fetch(`${API_URL}/book/country/${isoA3}`);
           if (!response.ok) {
             setBookData([]);
             throw new Error(`Response status: ${response.status}`);
