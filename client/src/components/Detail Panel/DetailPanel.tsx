@@ -32,9 +32,17 @@ const DetailPanel = ({ countryData, bookData, onClose }) => {
             return (
                 <div className={styles.panelBody}>
                     {bookData.map((book) => (
-                        <Tile className={styles.bookTile} onClick={() => {setView("book"); setSelectedBook(book);}}>
+                        <Tile 
+                            key={book.isbn ?? book.title}
+                            className={styles.bookTile} 
+                            onClick={() => {setView("book"); setSelectedBook(book);}}
+                        >
                             <div className={styles.imageContainer}>
-                                <img src={bookImages[book.isbn] || "/placeholder.jpg"} alt={book.title} />
+                                <img 
+                                    src={bookImages[book.isbn] || "/placeholder.jpg"} 
+                                    alt={book.title} 
+                                    loading="lazy"
+                                />
                             </div>
                             <div className={styles.detailContainer}>
                                 <h4 className={styles.tileTitle}>{book.title}</h4>
@@ -91,7 +99,9 @@ const DetailPanel = ({ countryData, bookData, onClose }) => {
                     renderIcon={Close}  
                     className={styles.closeButton} 
                     iconDescription="Close" 
-                    hasIconOnly 
+                    hasIconOnly
+                    kind="ghost"
+                    size="sm"
                     onClick={onClose} 
                 />
            </div>

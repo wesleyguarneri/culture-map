@@ -1,12 +1,10 @@
 import styles from './BookPanel.module.scss'
 
 const BookPanel = ({ bookData, bookImage }) => {
-    console.log(bookData)
-
     return (
         <div className={styles.bookPanel}>
             <div className={styles.imageContainer}>
-                <img src={bookImage} />
+                <img src={bookImage} alt={bookData?.title ?? 'Book cover'} />
             </div>
             <div className={styles.titleContainer}>
                 {bookData?.title}
